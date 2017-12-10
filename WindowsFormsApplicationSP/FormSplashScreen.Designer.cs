@@ -34,12 +34,13 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(588, 360);
+            this.buttonExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonExit.Location = new System.Drawing.Point(560, 410);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.Size = new System.Drawing.Size(45, 23);
             this.buttonExit.TabIndex = 0;
             this.buttonExit.Text = "退出";
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FormSplashScreen
@@ -47,8 +48,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(675, 395);
+            this.BackgroundImage = global::WindowsFormsApplicationSP.Properties.Resources.SplashScreen;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(607, 433);
             this.Controls.Add(this.buttonExit);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSplashScreen";

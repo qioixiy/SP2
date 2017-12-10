@@ -16,5 +16,265 @@ namespace WindowsFormsApplicationSP
         {
             InitializeComponent();
         }
+
+        private void 上报接收ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void 使用单位ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form伙食单位参数().ShowDialog();
+        }
+
+        private void 系统密码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form更改密码().ShowDialog();
+        }
+
+        private void 食谱备份ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form军人食谱系统().ShowDialog();
+        }
+
+        private void 食谱恢复ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form食谱恢复().ShowDialog();
+        }
+
+        private void 食谱清空ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 标准维护ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form标准维护().ShowDialog();
+        }
+
+        private void 营养标准ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form营养维护().ShowDialog();
+        }
+
+        private void 军粮差价ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form军粮差价().ShowDialog();
+        }
+
+        private void 打印设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 更换背景ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 标准模式ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form食谱生成标准模式().ShowDialog();
+        }
+
+        private void 自定义模式ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form食谱生成自定义模式().ShowDialog();
+        }
+
+        private void 点菜模式ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form食谱生成点菜模式().ShowDialog();
+        }
+
+        private void 食谱调用ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form食谱调用().ShowDialog();
+        }
+
+        private void 食谱编辑ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 食谱评估ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 总体评估ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 伙食费评估ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 热能分析ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 食谱打印ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 节日食谱ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form节日食谱().ShowDialog();
+        }
+
+        private void 计划汇总ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form计划汇总().ShowDialog();
+        }
+
+        private void 计划维护ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form计划维护().ShowDialog();
+        }
+
+        private void 外购计划ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form外购计划().ShowDialog();
+        }
+
+        private void 食谱上报ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form食谱上报().ShowDialog();
+        }
+
+        private void 食谱接收ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 食谱查看ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form食谱查看().ShowDialog();
+        }
+
+        private void 包伙制食堂ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 购买制食堂ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 膳食指南ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 美食天地ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 名菜制作ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 小菜制作ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 选料配菜ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 基础数据备份ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 基础数据恢复ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 常用原料ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 常用菜肴ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 原料编辑ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 菜肴编辑ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 模板编辑ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 标准模式ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 自定义模式ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 权重调整ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 节日食谱ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 淡旺季区分ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 自产菜登记ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 库存菜登记ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 帮助ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 关于食谱ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FormIconTest().ShowDialog();
+        }
     }
 }

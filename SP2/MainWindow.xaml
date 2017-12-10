@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="军人食谱系统" WindowState="Maximized">
     <Grid>
-        
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="470">
+            <MenuItem Header="MenuItem"/>
+            <MenuItem Header="MenuItem"/>
+            <MenuItem Header="MenuItem"/>
+            <MenuItem Header="MenuItem"/>
+            <MenuItem Header="MenuItem"/>
+        </Menu>
+
     </Grid>
 </Window>

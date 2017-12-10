@@ -13,5 +13,20 @@ namespace SP2
     /// </summary>
     public partial class App : Application
     {
+        Login loginWinow;
+        MainWindow mainWindow;
+        private void ApplicationStartup(object sender, StartupEventArgs e)
+        {
+            loginWinow = new Login();
+            bool? ret = loginWinow.ShowDialog();
+
+            if (ret == true)
+            {
+                // Create the startup window  
+                mainWindow = new MainWindow();
+                // Show the window  
+                mainWindow.Show();
+            }
+        }
     }
 }

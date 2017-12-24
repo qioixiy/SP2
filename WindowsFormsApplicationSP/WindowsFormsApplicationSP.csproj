@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>SPSC.ICO</ApplicationIcon>
+    <ApplicationIcon>Resources\SPSC.ICO</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,204 +49,204 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormIconTest.cs">
+    <Compile Include="Forms\FormIconTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormIconTest.Designer.cs">
+    <Compile Include="Forms\FormIconTest.Designer.cs">
       <DependentUpon>FormIconTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMainWindow.cs">
+    <Compile Include="Forms\FormMainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMainWindow.Designer.cs">
+    <Compile Include="Forms\FormMainWindow.Designer.cs">
       <DependentUpon>FormMainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSplashScreen.cs">
+    <Compile Include="Forms\FormSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSplashScreen.Designer.cs">
+    <Compile Include="Forms\FormSplashScreen.Designer.cs">
       <DependentUpon>FormSplashScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form伙食单位参数.cs">
+    <Compile Include="Forms\Form伙食单位参数.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form伙食单位参数.Designer.cs">
+    <Compile Include="Forms\Form伙食单位参数.Designer.cs">
       <DependentUpon>Form伙食单位参数.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form军粮差价.cs">
+    <Compile Include="Forms\Form军粮差价.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form军粮差价.Designer.cs">
+    <Compile Include="Forms\Form军粮差价.Designer.cs">
       <DependentUpon>Form军粮差价.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form外购计划.cs">
+    <Compile Include="Forms\Form外购计划.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form外购计划.Designer.cs">
+    <Compile Include="Forms\Form外购计划.Designer.cs">
       <DependentUpon>Form外购计划.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form更改密码.cs">
+    <Compile Include="Forms\Form更改密码.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form更改密码.Designer.cs">
+    <Compile Include="Forms\Form更改密码.Designer.cs">
       <DependentUpon>Form更改密码.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form标准维护.cs">
+    <Compile Include="Forms\Form标准维护.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form标准维护.Designer.cs">
+    <Compile Include="Forms\Form标准维护.Designer.cs">
       <DependentUpon>Form标准维护.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form节日食谱.cs">
+    <Compile Include="Forms\Form节日食谱.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form节日食谱.Designer.cs">
+    <Compile Include="Forms\Form节日食谱.Designer.cs">
       <DependentUpon>Form节日食谱.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form营养维护.cs">
+    <Compile Include="Forms\Form营养维护.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form营养维护.Designer.cs">
+    <Compile Include="Forms\Form营养维护.Designer.cs">
       <DependentUpon>Form营养维护.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form计划汇总.cs">
+    <Compile Include="Forms\Form计划汇总.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form计划汇总.Designer.cs">
+    <Compile Include="Forms\Form计划汇总.Designer.cs">
       <DependentUpon>Form计划汇总.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form计划维护.cs">
+    <Compile Include="Forms\Form计划维护.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form计划维护.Designer.cs">
+    <Compile Include="Forms\Form计划维护.Designer.cs">
       <DependentUpon>Form计划维护.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱上报.cs">
+    <Compile Include="Forms\Form食谱上报.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱上报.Designer.cs">
+    <Compile Include="Forms\Form食谱上报.Designer.cs">
       <DependentUpon>Form食谱上报.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱备份.cs">
+    <Compile Include="Forms\Form食谱备份.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱备份.Designer.cs">
+    <Compile Include="Forms\Form食谱备份.Designer.cs">
       <DependentUpon>Form食谱备份.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱恢复.cs">
+    <Compile Include="Forms\Form食谱恢复.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱恢复.Designer.cs">
+    <Compile Include="Forms\Form食谱恢复.Designer.cs">
       <DependentUpon>Form食谱恢复.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱查看.cs">
+    <Compile Include="Forms\Form食谱查看.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱查看.Designer.cs">
+    <Compile Include="Forms\Form食谱查看.Designer.cs">
       <DependentUpon>Form食谱查看.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱清空.cs">
+    <Compile Include="Forms\Form食谱清空.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱清空.Designer.cs">
+    <Compile Include="Forms\Form食谱清空.Designer.cs">
       <DependentUpon>Form食谱清空.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱生成标准模式.cs">
+    <Compile Include="Forms\Form食谱生成标准模式.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱生成标准模式.Designer.cs">
+    <Compile Include="Forms\Form食谱生成标准模式.Designer.cs">
       <DependentUpon>Form食谱生成标准模式.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱生成点菜模式.cs">
+    <Compile Include="Forms\Form食谱生成点菜模式.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱生成点菜模式.Designer.cs">
+    <Compile Include="Forms\Form食谱生成点菜模式.Designer.cs">
       <DependentUpon>Form食谱生成点菜模式.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱生成自定义模式.cs">
+    <Compile Include="Forms\Form食谱生成自定义模式.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱生成自定义模式.Designer.cs">
+    <Compile Include="Forms\Form食谱生成自定义模式.Designer.cs">
       <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form食谱调用.cs">
+    <Compile Include="Forms\Form食谱调用.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form食谱调用.Designer.cs">
+    <Compile Include="Forms\Form食谱调用.Designer.cs">
       <DependentUpon>Form食谱调用.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormIconTest.resx">
+    <EmbeddedResource Include="Forms\FormIconTest.resx">
       <DependentUpon>FormIconTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMainWindow.resx">
+    <EmbeddedResource Include="Forms\FormMainWindow.resx">
       <DependentUpon>FormMainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSplashScreen.resx">
+    <EmbeddedResource Include="Forms\FormSplashScreen.resx">
       <DependentUpon>FormSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form伙食单位参数.resx">
+    <EmbeddedResource Include="Forms\Form伙食单位参数.resx">
       <DependentUpon>Form伙食单位参数.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form军粮差价.resx">
+    <EmbeddedResource Include="Forms\Form军粮差价.resx">
       <DependentUpon>Form军粮差价.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form外购计划.resx">
+    <EmbeddedResource Include="Forms\Form外购计划.resx">
       <DependentUpon>Form外购计划.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form更改密码.resx">
+    <EmbeddedResource Include="Forms\Form更改密码.resx">
       <DependentUpon>Form更改密码.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form标准维护.resx">
+    <EmbeddedResource Include="Forms\Form标准维护.resx">
       <DependentUpon>Form标准维护.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form节日食谱.resx">
+    <EmbeddedResource Include="Forms\Form节日食谱.resx">
       <DependentUpon>Form节日食谱.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form营养维护.resx">
+    <EmbeddedResource Include="Forms\Form营养维护.resx">
       <DependentUpon>Form营养维护.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form计划汇总.resx">
+    <EmbeddedResource Include="Forms\Form计划汇总.resx">
       <DependentUpon>Form计划汇总.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form计划维护.resx">
+    <EmbeddedResource Include="Forms\Form计划维护.resx">
       <DependentUpon>Form计划维护.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱上报.resx">
+    <EmbeddedResource Include="Forms\Form食谱上报.resx">
       <DependentUpon>Form食谱上报.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱备份.resx">
+    <EmbeddedResource Include="Forms\Form食谱备份.resx">
       <DependentUpon>Form食谱备份.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱恢复.resx">
+    <EmbeddedResource Include="Forms\Form食谱恢复.resx">
       <DependentUpon>Form食谱恢复.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱查看.resx">
+    <EmbeddedResource Include="Forms\Form食谱查看.resx">
       <DependentUpon>Form食谱查看.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱清空.resx">
+    <EmbeddedResource Include="Forms\Form食谱清空.resx">
       <DependentUpon>Form食谱清空.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱生成标准模式.resx">
+    <EmbeddedResource Include="Forms\Form食谱生成标准模式.resx">
       <DependentUpon>Form食谱生成标准模式.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱生成点菜模式.resx">
+    <EmbeddedResource Include="Forms\Form食谱生成点菜模式.resx">
       <DependentUpon>Form食谱生成点菜模式.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱生成自定义模式.resx">
+    <EmbeddedResource Include="Forms\Form食谱生成自定义模式.resx">
       <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form食谱调用.resx">
+    <EmbeddedResource Include="Forms\Form食谱调用.resx">
       <DependentUpon>Form食谱调用.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

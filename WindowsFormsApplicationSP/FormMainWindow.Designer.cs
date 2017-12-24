@@ -90,6 +90,10 @@
             this.系统帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于食谱ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.食谱评估ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.总体评估ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.伙食费评估ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.热能分析ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,11 +102,12 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统维护ToolStripMenuItem,
             this.食谱生成ToolStripMenuItem,
+            this.食谱评估ToolStripMenuItem1,
             this.采购计划ToolStripMenuItem,
+            this.数据管理ToolStripMenuItem,
             this.上报接收ToolStripMenuItem,
             this.社会化ToolStripMenuItem,
             this.实用知识ToolStripMenuItem,
-            this.数据管理ToolStripMenuItem,
             this.系统帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -231,22 +236,23 @@
             // 标准模式ToolStripMenuItem
             // 
             this.标准模式ToolStripMenuItem.Name = "标准模式ToolStripMenuItem";
-            this.标准模式ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.标准模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.标准模式ToolStripMenuItem.Text = "标准模式";
             this.标准模式ToolStripMenuItem.Click += new System.EventHandler(this.标准模式ToolStripMenuItem_Click);
             // 
             // 自定义模式ToolStripMenuItem
             // 
             this.自定义模式ToolStripMenuItem.Name = "自定义模式ToolStripMenuItem";
-            this.自定义模式ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.自定义模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.自定义模式ToolStripMenuItem.Text = "自定义模式";
             this.自定义模式ToolStripMenuItem.Click += new System.EventHandler(this.自定义模式ToolStripMenuItem_Click);
             // 
             // 点菜模式ToolStripMenuItem
             // 
             this.点菜模式ToolStripMenuItem.Name = "点菜模式ToolStripMenuItem";
-            this.点菜模式ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.点菜模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.点菜模式ToolStripMenuItem.Text = "点菜模式";
+            this.点菜模式ToolStripMenuItem.Visible = false;
             this.点菜模式ToolStripMenuItem.Click += new System.EventHandler(this.点菜模式ToolStripMenuItem_Click);
             // 
             // 食谱调用ToolStripMenuItem
@@ -254,6 +260,7 @@
             this.食谱调用ToolStripMenuItem.Name = "食谱调用ToolStripMenuItem";
             this.食谱调用ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.食谱调用ToolStripMenuItem.Text = "食谱调用";
+            this.食谱调用ToolStripMenuItem.Visible = false;
             this.食谱调用ToolStripMenuItem.Click += new System.EventHandler(this.食谱调用ToolStripMenuItem_Click);
             // 
             // 食谱编辑ToolStripMenuItem
@@ -272,6 +279,7 @@
             this.食谱评估ToolStripMenuItem.Name = "食谱评估ToolStripMenuItem";
             this.食谱评估ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.食谱评估ToolStripMenuItem.Text = "食谱评估";
+            this.食谱评估ToolStripMenuItem.Visible = false;
             this.食谱评估ToolStripMenuItem.Click += new System.EventHandler(this.食谱评估ToolStripMenuItem_Click);
             // 
             // 总体评估ToolStripMenuItem
@@ -307,6 +315,7 @@
             this.节日食谱ToolStripMenuItem.Name = "节日食谱ToolStripMenuItem";
             this.节日食谱ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.节日食谱ToolStripMenuItem.Text = "节日食谱";
+            this.节日食谱ToolStripMenuItem.Visible = false;
             this.节日食谱ToolStripMenuItem.Click += new System.EventHandler(this.节日食谱ToolStripMenuItem_Click);
             // 
             // 采购计划ToolStripMenuItem
@@ -349,26 +358,27 @@
             this.上报接收ToolStripMenuItem.Name = "上报接收ToolStripMenuItem";
             this.上报接收ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.上报接收ToolStripMenuItem.Text = "上报接收";
+            this.上报接收ToolStripMenuItem.Visible = false;
             this.上报接收ToolStripMenuItem.Click += new System.EventHandler(this.上报接收ToolStripMenuItem_Click);
             // 
             // 食谱上报ToolStripMenuItem
             // 
             this.食谱上报ToolStripMenuItem.Name = "食谱上报ToolStripMenuItem";
-            this.食谱上报ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.食谱上报ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.食谱上报ToolStripMenuItem.Text = "食谱上报";
             this.食谱上报ToolStripMenuItem.Click += new System.EventHandler(this.食谱上报ToolStripMenuItem_Click);
             // 
             // 食谱接收ToolStripMenuItem
             // 
             this.食谱接收ToolStripMenuItem.Name = "食谱接收ToolStripMenuItem";
-            this.食谱接收ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.食谱接收ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.食谱接收ToolStripMenuItem.Text = "食谱接收";
             this.食谱接收ToolStripMenuItem.Click += new System.EventHandler(this.食谱接收ToolStripMenuItem_Click);
             // 
             // 食谱查看ToolStripMenuItem
             // 
             this.食谱查看ToolStripMenuItem.Name = "食谱查看ToolStripMenuItem";
-            this.食谱查看ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.食谱查看ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.食谱查看ToolStripMenuItem.Text = "食谱查看";
             this.食谱查看ToolStripMenuItem.Click += new System.EventHandler(this.食谱查看ToolStripMenuItem_Click);
             // 
@@ -380,18 +390,19 @@
             this.社会化ToolStripMenuItem.Name = "社会化ToolStripMenuItem";
             this.社会化ToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
             this.社会化ToolStripMenuItem.Text = "社会化";
+            this.社会化ToolStripMenuItem.Visible = false;
             // 
             // 包伙制食堂ToolStripMenuItem
             // 
             this.包伙制食堂ToolStripMenuItem.Name = "包伙制食堂ToolStripMenuItem";
-            this.包伙制食堂ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.包伙制食堂ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.包伙制食堂ToolStripMenuItem.Text = "包伙制食堂";
             this.包伙制食堂ToolStripMenuItem.Click += new System.EventHandler(this.包伙制食堂ToolStripMenuItem_Click);
             // 
             // 购买制食堂ToolStripMenuItem
             // 
             this.购买制食堂ToolStripMenuItem.Name = "购买制食堂ToolStripMenuItem";
-            this.购买制食堂ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.购买制食堂ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.购买制食堂ToolStripMenuItem.Text = "购买制食堂";
             this.购买制食堂ToolStripMenuItem.Click += new System.EventHandler(this.购买制食堂ToolStripMenuItem_Click);
             // 
@@ -406,39 +417,40 @@
             this.实用知识ToolStripMenuItem.Name = "实用知识ToolStripMenuItem";
             this.实用知识ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.实用知识ToolStripMenuItem.Text = "实用知识";
+            this.实用知识ToolStripMenuItem.Visible = false;
             // 
             // 膳食指南ToolStripMenuItem
             // 
             this.膳食指南ToolStripMenuItem.Name = "膳食指南ToolStripMenuItem";
-            this.膳食指南ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.膳食指南ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.膳食指南ToolStripMenuItem.Text = "膳食指南";
             this.膳食指南ToolStripMenuItem.Click += new System.EventHandler(this.膳食指南ToolStripMenuItem_Click);
             // 
             // 美食天地ToolStripMenuItem
             // 
             this.美食天地ToolStripMenuItem.Name = "美食天地ToolStripMenuItem";
-            this.美食天地ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.美食天地ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.美食天地ToolStripMenuItem.Text = "美食天地";
             this.美食天地ToolStripMenuItem.Click += new System.EventHandler(this.美食天地ToolStripMenuItem_Click);
             // 
             // 名菜制作ToolStripMenuItem
             // 
             this.名菜制作ToolStripMenuItem.Name = "名菜制作ToolStripMenuItem";
-            this.名菜制作ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.名菜制作ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.名菜制作ToolStripMenuItem.Text = "名菜制作";
             this.名菜制作ToolStripMenuItem.Click += new System.EventHandler(this.名菜制作ToolStripMenuItem_Click);
             // 
             // 小菜制作ToolStripMenuItem
             // 
             this.小菜制作ToolStripMenuItem.Name = "小菜制作ToolStripMenuItem";
-            this.小菜制作ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.小菜制作ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.小菜制作ToolStripMenuItem.Text = "小菜制作";
             this.小菜制作ToolStripMenuItem.Click += new System.EventHandler(this.小菜制作ToolStripMenuItem_Click);
             // 
             // 选料配菜ToolStripMenuItem
             // 
             this.选料配菜ToolStripMenuItem.Name = "选料配菜ToolStripMenuItem";
-            this.选料配菜ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.选料配菜ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.选料配菜ToolStripMenuItem.Text = "选料配菜";
             this.选料配菜ToolStripMenuItem.Click += new System.EventHandler(this.选料配菜ToolStripMenuItem_Click);
             // 
@@ -464,42 +476,42 @@
             // 基础数据备份ToolStripMenuItem
             // 
             this.基础数据备份ToolStripMenuItem.Name = "基础数据备份ToolStripMenuItem";
-            this.基础数据备份ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.基础数据备份ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.基础数据备份ToolStripMenuItem.Text = "基础数据备份";
             this.基础数据备份ToolStripMenuItem.Click += new System.EventHandler(this.基础数据备份ToolStripMenuItem_Click);
             // 
             // 基础数据恢复ToolStripMenuItem
             // 
             this.基础数据恢复ToolStripMenuItem.Name = "基础数据恢复ToolStripMenuItem";
-            this.基础数据恢复ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.基础数据恢复ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.基础数据恢复ToolStripMenuItem.Text = "基础数据恢复";
             this.基础数据恢复ToolStripMenuItem.Click += new System.EventHandler(this.基础数据恢复ToolStripMenuItem_Click);
             // 
             // 常用原料ToolStripMenuItem
             // 
             this.常用原料ToolStripMenuItem.Name = "常用原料ToolStripMenuItem";
-            this.常用原料ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.常用原料ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.常用原料ToolStripMenuItem.Text = "常用原料";
             this.常用原料ToolStripMenuItem.Click += new System.EventHandler(this.常用原料ToolStripMenuItem_Click);
             // 
             // 常用菜肴ToolStripMenuItem
             // 
             this.常用菜肴ToolStripMenuItem.Name = "常用菜肴ToolStripMenuItem";
-            this.常用菜肴ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.常用菜肴ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.常用菜肴ToolStripMenuItem.Text = "常用菜肴";
             this.常用菜肴ToolStripMenuItem.Click += new System.EventHandler(this.常用菜肴ToolStripMenuItem_Click);
             // 
             // 原料编辑ToolStripMenuItem
             // 
             this.原料编辑ToolStripMenuItem.Name = "原料编辑ToolStripMenuItem";
-            this.原料编辑ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.原料编辑ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.原料编辑ToolStripMenuItem.Text = "原料编辑";
             this.原料编辑ToolStripMenuItem.Click += new System.EventHandler(this.原料编辑ToolStripMenuItem_Click);
             // 
             // 菜肴编辑ToolStripMenuItem
             // 
             this.菜肴编辑ToolStripMenuItem.Name = "菜肴编辑ToolStripMenuItem";
-            this.菜肴编辑ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.菜肴编辑ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.菜肴编辑ToolStripMenuItem.Text = "菜肴编辑";
             this.菜肴编辑ToolStripMenuItem.Click += new System.EventHandler(this.菜肴编辑ToolStripMenuItem_Click);
             // 
@@ -509,7 +521,7 @@
             this.标准模式ToolStripMenuItem1,
             this.自定义模式ToolStripMenuItem1});
             this.模板编辑ToolStripMenuItem.Name = "模板编辑ToolStripMenuItem";
-            this.模板编辑ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.模板编辑ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.模板编辑ToolStripMenuItem.Text = "模板编辑";
             this.模板编辑ToolStripMenuItem.Click += new System.EventHandler(this.模板编辑ToolStripMenuItem_Click);
             // 
@@ -530,35 +542,35 @@
             // 权重调整ToolStripMenuItem
             // 
             this.权重调整ToolStripMenuItem.Name = "权重调整ToolStripMenuItem";
-            this.权重调整ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.权重调整ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.权重调整ToolStripMenuItem.Text = "权重调整";
             this.权重调整ToolStripMenuItem.Click += new System.EventHandler(this.权重调整ToolStripMenuItem_Click);
             // 
             // 节日食谱ToolStripMenuItem1
             // 
             this.节日食谱ToolStripMenuItem1.Name = "节日食谱ToolStripMenuItem1";
-            this.节日食谱ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.节日食谱ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.节日食谱ToolStripMenuItem1.Text = "节日食谱";
             this.节日食谱ToolStripMenuItem1.Click += new System.EventHandler(this.节日食谱ToolStripMenuItem1_Click);
             // 
             // 淡旺季区分ToolStripMenuItem
             // 
             this.淡旺季区分ToolStripMenuItem.Name = "淡旺季区分ToolStripMenuItem";
-            this.淡旺季区分ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.淡旺季区分ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.淡旺季区分ToolStripMenuItem.Text = "淡旺季区分";
             this.淡旺季区分ToolStripMenuItem.Click += new System.EventHandler(this.淡旺季区分ToolStripMenuItem_Click);
             // 
             // 自产菜登记ToolStripMenuItem
             // 
             this.自产菜登记ToolStripMenuItem.Name = "自产菜登记ToolStripMenuItem";
-            this.自产菜登记ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.自产菜登记ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.自产菜登记ToolStripMenuItem.Text = "自产菜登记";
             this.自产菜登记ToolStripMenuItem.Click += new System.EventHandler(this.自产菜登记ToolStripMenuItem_Click);
             // 
             // 库存菜登记ToolStripMenuItem
             // 
             this.库存菜登记ToolStripMenuItem.Name = "库存菜登记ToolStripMenuItem";
-            this.库存菜登记ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.库存菜登记ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.库存菜登记ToolStripMenuItem.Text = "库存菜登记";
             this.库存菜登记ToolStripMenuItem.Click += new System.EventHandler(this.库存菜登记ToolStripMenuItem_Click);
             // 
@@ -570,20 +582,52 @@
             this.系统帮助ToolStripMenuItem.Name = "系统帮助ToolStripMenuItem";
             this.系统帮助ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.系统帮助ToolStripMenuItem.Text = "系统帮助";
+            this.系统帮助ToolStripMenuItem.Visible = false;
             // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.帮助ToolStripMenuItem.Text = "帮助";
             this.帮助ToolStripMenuItem.Click += new System.EventHandler(this.帮助ToolStripMenuItem_Click);
             // 
             // 关于食谱ToolStripMenuItem
             // 
             this.关于食谱ToolStripMenuItem.Name = "关于食谱ToolStripMenuItem";
-            this.关于食谱ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.关于食谱ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.关于食谱ToolStripMenuItem.Text = "关于食谱";
             this.关于食谱ToolStripMenuItem.Click += new System.EventHandler(this.关于食谱ToolStripMenuItem_Click);
+            // 
+            // 食谱评估ToolStripMenuItem1
+            // 
+            this.食谱评估ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.总体评估ToolStripMenuItem1,
+            this.伙食费评估ToolStripMenuItem1,
+            this.热能分析ToolStripMenuItem1});
+            this.食谱评估ToolStripMenuItem1.Name = "食谱评估ToolStripMenuItem1";
+            this.食谱评估ToolStripMenuItem1.Size = new System.Drawing.Size(68, 21);
+            this.食谱评估ToolStripMenuItem1.Text = "食谱评估";
+            // 
+            // 总体评估ToolStripMenuItem1
+            // 
+            this.总体评估ToolStripMenuItem1.Name = "总体评估ToolStripMenuItem1";
+            this.总体评估ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.总体评估ToolStripMenuItem1.Text = "总体评估";
+            this.总体评估ToolStripMenuItem1.Click += new System.EventHandler(this.总体评估ToolStripMenuItem1_Click);
+            // 
+            // 伙食费评估ToolStripMenuItem1
+            // 
+            this.伙食费评估ToolStripMenuItem1.Name = "伙食费评估ToolStripMenuItem1";
+            this.伙食费评估ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.伙食费评估ToolStripMenuItem1.Text = "伙食费评估";
+            this.伙食费评估ToolStripMenuItem1.Click += new System.EventHandler(this.伙食费评估ToolStripMenuItem1_Click);
+            // 
+            // 热能分析ToolStripMenuItem1
+            // 
+            this.热能分析ToolStripMenuItem1.Name = "热能分析ToolStripMenuItem1";
+            this.热能分析ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.热能分析ToolStripMenuItem1.Text = "热能分析";
+            this.热能分析ToolStripMenuItem1.Click += new System.EventHandler(this.热能分析ToolStripMenuItem1_Click);
             // 
             // FormMainWindow
             // 
@@ -666,5 +710,9 @@
         private System.Windows.Forms.ToolStripMenuItem 总体评估ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 伙食费评估ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 热能分析ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 食谱评估ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 总体评估ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 伙食费评估ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 热能分析ToolStripMenuItem1;
     }
 }

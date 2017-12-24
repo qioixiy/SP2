@@ -276,5 +276,20 @@ namespace WindowsFormsApplicationSP
         {
             new FormIconTest().ShowDialog();
         }
+
+        private void 总体评估ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            总体评估ToolStripMenuItem_Click(sender, e);
+        }
+
+        private void 伙食费评估ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            伙食费评估ToolStripMenuItem_Click(sender, e);
+        }
+
+        private void 热能分析ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            热能分析ToolStripMenuItem_Click(sender, e);
+        }
     }
 }

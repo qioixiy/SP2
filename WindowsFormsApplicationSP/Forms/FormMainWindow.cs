@@ -39,7 +39,7 @@ namespace WindowsFormsApplicationSP
 
         private void 食谱备份ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form军人食谱系统().ShowDialog();
+            new 食谱备份().ShowDialog();
         }
 
         private void 食谱恢复ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -290,6 +290,36 @@ namespace WindowsFormsApplicationSP
         private void 热能分析ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             热能分析ToolStripMenuItem_Click(sender, e);
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            new Form伙食单位参数().ShowDialog();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            new 食谱备份().ShowDialog();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            new Form标准维护().ShowDialog();
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            new 食谱备份().ShowDialog();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            new Form食谱恢复().ShowDialog();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            new Form营养维护().ShowDialog();
         }
     }
 }

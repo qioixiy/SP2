@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplicationSP
 {
-    public partial class Form军人食谱系统 : Form
+    public partial class 食谱备份 : Form
     {
-        public Form军人食谱系统()
+        public 食谱备份()
         {
             InitializeComponent();
         }

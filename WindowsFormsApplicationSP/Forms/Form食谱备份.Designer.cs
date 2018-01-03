@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplicationSP
 {
-    partial class Form军人食谱系统
+    partial class 食谱备份
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form军人食谱系统));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(食谱备份));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -65,7 +65,7 @@
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "即将备份： \r\n2017年12月16日启用的周食谱，是否备份？\r\n************************************\r\n";
             // 
-            // Form军人食谱系统
+            // 食谱备份
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,7 +76,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form军人食谱系统";
+            this.Name = "食谱备份";
             this.ShowInTaskbar = false;
             this.Text = "Form食谱备份";
             this.ResumeLayout(false);

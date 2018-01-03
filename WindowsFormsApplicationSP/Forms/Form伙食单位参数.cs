@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplicationSP.DataModel;
 
 namespace WindowsFormsApplicationSP
 {
@@ -44,6 +45,9 @@ namespace WindowsFormsApplicationSP
 
         private void Form伙食单位参数_Load(object sender, EventArgs e)
         {
+            Model伙食单位 data = new Model伙食单位();
+            data.select();
+
             listView1.GridLines = true;//表格是否显示网格线
             listView1.FullRowSelect = true;//是否选中整行
 

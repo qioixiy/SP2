@@ -34,10 +34,12 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonExit.Location = new System.Drawing.Point(560, 410);
+            this.buttonExit.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonExit.Location = new System.Drawing.Point(592, 390);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(45, 23);
+            this.buttonExit.Size = new System.Drawing.Size(70, 28);
             this.buttonExit.TabIndex = 0;
             this.buttonExit.Text = "退出";
             this.buttonExit.UseVisualStyleBackColor = false;
@@ -48,9 +50,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BackgroundImage = global::WindowsFormsApplicationSP.Properties.Resources.SplashScreen;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(607, 433);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(674, 430);
             this.Controls.Add(this.buttonExit);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

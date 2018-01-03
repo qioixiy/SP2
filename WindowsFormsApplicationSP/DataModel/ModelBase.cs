@@ -6,17 +6,21 @@ namespace WindowsFormsApplicationSP.DataModel
 {
     class ModelBase
     {
+        protected string dbName = "SP2.db";
         //数据库连接
-        SQLiteConnection mSQLiteConnection;
+        protected SQLiteConnection mSQLiteConnection;
 
         public ModelBase()
         {
-            //test();
+            connectToDatabase();
         }
 
+        ~ModelBase()
+        {
+            disconnectToDatabase();
+        }
 
-
-        private void test()
+        private void testCase()
         {
             createNewDatabase();
             connectToDatabase();
@@ -29,17 +33,17 @@ namespace WindowsFormsApplicationSP.DataModel
         //创建一个空的数据库
         void createNewDatabase()
         {
-            if (File.Exists("MyDatabase.db"))
-            {
-                return;
-            }
-            SQLiteConnection.CreateFile("MyDatabase.db");
+            SQLiteConnection.CreateFile(dbName);
         }
 
         //创建一个连接到指定数据库
         void connectToDatabase()
         {
-            mSQLiteConnection = new SQLiteConnection("Data Source=MyDatabase.db;Version=3;");
+            if (!File.Exists(dbName))
+            {
+                createNewDatabase();
+            }
+            mSQLiteConnection = new SQLiteConnection("Data Source=" + dbName+ ";Version=3;");
             mSQLiteConnection.Open();
         }
 

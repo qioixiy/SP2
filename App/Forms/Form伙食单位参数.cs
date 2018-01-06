@@ -8,11 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SP.DataModel;
+using DataModel;
+using System.Data.SqlClient;
 
 namespace SP
 {
     public partial class Form伙食单位参数 : Form
     {
+        /// <summary>  
+        /// 数据适配器  
+        /// </summary>  
+        SqlDataAdapter adapter = null;
+        /// <summary>  
+        /// 数据集对象  
+        /// </summary>  
+        DataSet dSet = null;
+
+        /// <summary>  
+        /// 连接字符串  
+        /// </summary>  
+        private static string strConn = LocalDBConnect.Instance().getConnectString();
+
         public Form伙食单位参数()
         {
             InitializeComponent();
@@ -25,17 +41,40 @@ namespace SP
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //创建命令重建对象  
+            SqlCommandBuilder scb = new SqlCommandBuilder(adapter);
 
+            //更新数据  
+            try
+            {
+                upadte();
+
+                MessageBox.Show("修改成功");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                upadte();
 
+                MessageBox.Show("添加成功");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+            upadte();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -45,45 +84,26 @@ namespace SP
 
         private void Form伙食单位参数_Load(object sender, EventArgs e)
         {
-            Dao伙食单位 data = new Dao伙食单位();
-            data.select();
+            adapter = new SqlDataAdapter("select * from 伙食单位参数", strConn);
+            dSet = new DataSet();
+            adapter.Fill(dSet);
+            dataGridView1.DataSource = dSet.Tables[0];
+            //adapter.Fill(dSet, "t1");
+            //dataGridView1.DataSource = dSet;
+            //dataGridView1.DataMember = "t1";
 
-            listView1.GridLines = true;//表格是否显示网格线
-            listView1.FullRowSelect = true;//是否选中整行
-
-            listView1.View = View.Details;//设置显示方式
-            listView1.Scrollable = true;//是否自动显示滚动条
-            listView1.MultiSelect = false;//是否可以选择多行
-
-            ////添加表头（列）
-            //listView1.Columns.Add("ProductName", "产品名称");
-            //listView1.Columns.Add("SN", "产品型号");
-            //listView1.Columns.Add("Price", "价格");
-            //listView1.Columns.Add("Number", "数量");
-
-            //添加表格内容
-            for (int i = 0; i < 3; i++)
-            {
-                ListViewItem item = new ListViewItem();
-                item.SubItems.Clear();
-
-                item.SubItems[0].Text = "产品" + i.ToString();
-                item.SubItems.Add(i.ToString());
-                item.SubItems.Add((i + 7).ToString());
-                item.SubItems.Add((i * i).ToString());
-                listView1.Items.Add(item);
-            }
-
-            //listView1.Columns["ProductName"].Width = -1;//根据内容设置宽度
-            //listView1.Columns["SN"].Width = -2;//根据标题设置宽度
-
-            //listView1.Columns["Price"].Width = -2;
-            //listView1.Columns["Number"].Width = -2;
+            return;
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void upadte()
+        {
+            SqlCommandBuilder sql_command = new SqlCommandBuilder(adapter);
+            adapter.Update(dSet.Tables[0]);
         }
     }
 }

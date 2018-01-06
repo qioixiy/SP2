@@ -22,7 +22,7 @@ namespace DataModel
             if (null == sLocalDBConnect)
             {
                 string dbName = "SP.mdf";
-                string dbDir = System.Environment.CurrentDirectory + "\\db\\";
+                string dbDir = System.Environment.CurrentDirectory + "\\";
                 string attachDbFilename = dbDir + dbName;
 
                 sLocalDBConnect = new LocalDBConnect(attachDbFilename);
@@ -56,9 +56,24 @@ namespace DataModel
             {
                 if (con.State == ConnectionState.Open)
                 {
-                    con.Close();
+                    try
+                    {
+                        con.Close();
+                    } catch (Exception e)
+                    {
+                        Console.WriteLine(e.ToString());
+                    }
                 }
             }
+        }
+
+        public string getConnectString()
+        {
+            string dbName = "SP.mdf";
+            string dbDir = System.Environment.CurrentDirectory + "\\";
+            string attachDbFilename = dbDir + dbName;
+
+            return "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + attachDbFilename;
         }
 
         public List<object> ExecuteCommand(string command)

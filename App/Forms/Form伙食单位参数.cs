@@ -45,7 +45,7 @@ namespace SP
 
         private void Form伙食单位参数_Load(object sender, EventArgs e)
         {
-            Model伙食单位 data = new Model伙食单位();
+            Dao伙食单位 data = new Dao伙食单位();
             data.select();
 
             listView1.GridLines = true;//表格是否显示网格线

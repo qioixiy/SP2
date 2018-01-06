@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace WindowsFormsApplicationSP
 
         private void FormSplashScreen_Load(object sender, EventArgs e)
         {
-            ;
+            buttonExit.Text = LocalDBConnect.test();
         }
 
         private void FormSplashScreen_Click(object sender, EventArgs e)

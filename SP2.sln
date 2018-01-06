@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP2", "SP2\SP2.csproj", "{6E00F3D2-814B-4358-872B-24134BBF8579}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplicationSP", "WindowsFormsApplicationSP\WindowsFormsApplicationSP.csproj", "{A2581633-9D03-41EF-96AE-3FCFCCC33196}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{A2581633-9D03-41EF-96AE-3FCFCCC33196}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6E00F3D2-814B-4358-872B-24134BBF8579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E00F3D2-814B-4358-872B-24134BBF8579}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E00F3D2-814B-4358-872B-24134BBF8579}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E00F3D2-814B-4358-872B-24134BBF8579}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2581633-9D03-41EF-96AE-3FCFCCC33196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2581633-9D03-41EF-96AE-3FCFCCC33196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2581633-9D03-41EF-96AE-3FCFCCC33196}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -207,6 +207,7 @@
     <Compile Include="Forms\Form食谱调用.Designer.cs">
       <DependentUpon>Form食谱调用.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataModel\LocalDBConnect.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormIconTest.resx">
@@ -304,7 +305,6 @@
     <Content Include="Resources\login_bg.jpg" />
     <Content Include="Resources\SPSC.ICO" />
     <Content Include="Resources\system_bg.jpg" />
-    <Content Include="SPSC.ICO" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.106.0\build\net40\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.106.0\build\net40\System.Data.SQLite.Core.targets')" />

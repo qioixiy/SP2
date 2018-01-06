@@ -12,8 +12,12 @@ namespace SP
 {
     public partial class FormMainWindow : Form
     {
+        public UserContext mUserContext;
+
         public FormMainWindow()
         {
+            mUserContext = new UserContext();
+
             InitializeComponent();
         }
 

@@ -228,6 +228,7 @@
     <Compile Include="DataModel\LocalDBConnect.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserContext.cs" />
     <Compile Include="Utils\Common.cs" />
     <EmbeddedResource Include="Forms\FormIconTest.resx">
       <DependentUpon>FormIconTest.cs</DependentUpon>

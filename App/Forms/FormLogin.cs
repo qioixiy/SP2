@@ -28,7 +28,13 @@ namespace SP
 
             if (dao.verfiyWithUserPasswd(user, passwd))
             {
+                Program.FormMainWindowInstance.mUserContext.UserName = user;
                 DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                MessageBox.Show("密码不正确");
+                textBox1.Focus();
             }
         }
 

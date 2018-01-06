@@ -10,7 +10,6 @@ namespace SP.DataModel
         public int id;
         public string 用户;
         public string 密码;
-        public string 驻地;
-        public int 就餐人数;
+        public string 日期;
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
+using System.Data;
 
 namespace SP.Utils
 {
@@ -43,6 +44,26 @@ namespace SP.Utils
             {
                 throw new Exception("读取图片失败：" + ex.Message);
 
+            }
+        }
+
+        public static void dumpDataSet(DataSet ds)
+        {
+            foreach (DataTable dt in ds.Tables)
+            {
+                foreach (DataColumn dc in dt.Columns)
+                {
+                    Console.Write(dc.ColumnName + " ");
+                }
+                Console.Write('\n');
+                foreach (DataRow dr in dt.Rows)
+                {
+                    foreach (object obj in dr.ItemArray)
+                    {
+                        Console.Write(obj + " ");
+                    }
+                    Console.Write('\n');
+                }
             }
         }
     }

@@ -20,7 +20,7 @@ namespace SP
 
         private void FormSplashScreen_Load(object sender, EventArgs e)
         {
-            buttonExit.Text = LocalDBConnect.test();
+            ;
         }
 
         private void FormSplashScreen_Click(object sender, EventArgs e)

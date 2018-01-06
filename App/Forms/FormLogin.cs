@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataModel;
+using SP.DataModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +21,29 @@ namespace SP
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            Dao用户 dao = new Dao用户();
+
+            string user = "admin";
+            string passwd = textBox1.Text;
+
+            if (dao.verfiyWithUserPasswd(user, passwd))
+            {
+                DialogResult = DialogResult.OK;
+            }
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.buttonOk.Focus();
+                buttonOk_Click(sender, e);
+            }
         }
     }
 }

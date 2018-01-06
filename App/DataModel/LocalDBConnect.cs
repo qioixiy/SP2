@@ -92,7 +92,6 @@ namespace DataModel
             SqlDataAdapter da = new SqlDataAdapter(sql, con);//从数据库中查询  
             da.Fill(ds);//将数据填充到DataSet
             return ds;//返回结果  
-
         }
 
         /// <summary>  
@@ -108,6 +107,24 @@ namespace DataModel
             oc.Connection = con;//设置命令的连接  
             int x = oc.ExecuteNonQuery();//执行SQL语句  
             return x;   //返回一个影响行数  
+        }
+
+        public bool exist(string sql)
+        {
+            bool ret = false;
+
+            SqlCommand cmd = null;
+
+            cmd = con.CreateCommand();
+            cmd.CommandText = sql; //T-SQL语句   
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            ret = reader.Read();
+
+            reader.Close();
+            
+            return ret;
         }
 
         public static string test()

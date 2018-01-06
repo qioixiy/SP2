@@ -17,7 +17,7 @@ namespace SP.DataModel
 
         ~ModelBase()
         {
-            disconnectToDatabase();
+            ;
         }
 
         private void testCase()
@@ -49,7 +49,10 @@ namespace SP.DataModel
 
         void disconnectToDatabase()
         {
-            mSQLiteConnection.Close();
+            if (mSQLiteConnection.State == System.Data.ConnectionState.Open)
+            {
+                mSQLiteConnection.Close();
+            }
         }
 
         //在指定数据库中创建一个table

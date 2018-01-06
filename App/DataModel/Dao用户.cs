@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DataModel;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SQLite;
 using System.Linq;
 using System.Text;
@@ -23,14 +25,47 @@ namespace SP.DataModel
         public Model用户[] select()
         {
             return new Model用户[2];
-            string sql = "select* from 使用单位 order by id desc";
-            SQLiteCommand command = new SQLiteCommand(sql, mSQLiteConnection);
-            SQLiteDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-                Console.WriteLine("Name: " + reader["name"] + "\tScore: " + reader["score"]);
-            Console.ReadLine();
-
             Model用户[] ret = new Model用户[2];
+            return ret;
+        }
+
+        public bool verfiyWithUserPasswd(string user, string passwd)
+        {
+            bool ret = false;
+
+            string sql = "select* from dbo.用户 where 用户 = '" + user + "' and 密码 = '" + passwd + "'";
+
+            bool b = LocalDBConnect.Instance().exist(sql);
+            if (b)
+            {
+                ret = true;
+            }
+
+            return ret;
+        }
+
+        public bool verify()
+        {
+            bool ret = false;
+
+            string sql = "select * from dbo.用户";
+            DataSet ds = LocalDBConnect.Instance().query(sql);
+
+            foreach (DataTable dt in ds.Tables)
+            {
+                foreach (DataColumn dc in dt.Columns)
+                {
+                    Console.WriteLine(dc.ColumnName);
+                }
+                foreach (DataRow dr in dt.Rows)
+                {
+                    foreach (object obj in dr.ItemArray)
+                    {
+                        Console.WriteLine(obj);
+                    }
+                }
+            }
+            
             return ret;
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplicationSP
+﻿namespace SP
 {
     partial class Form节日食谱
     {

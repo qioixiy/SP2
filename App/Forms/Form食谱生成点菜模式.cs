@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplicationSP
+namespace SP
 {
     public partial class Form食谱生成点菜模式 : Form
     {

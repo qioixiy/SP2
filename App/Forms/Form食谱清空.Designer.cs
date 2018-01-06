@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplicationSP
+﻿namespace SP
 {
     partial class Form食谱清空
     {

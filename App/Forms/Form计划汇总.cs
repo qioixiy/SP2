@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplicationSP
+namespace SP
 {
     public partial class Form计划汇总 : Form
     {

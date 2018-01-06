@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplicationSP
+﻿namespace SP
 {
     partial class Form军粮差价
     {

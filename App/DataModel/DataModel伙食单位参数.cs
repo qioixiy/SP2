@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SP.DataModel
 {
-    class Model伙食单位 : ModelBase
+    class DataModel伙食单位参数 : ModelBase
     {
         public void insertItem(伙食单位 item)
         {

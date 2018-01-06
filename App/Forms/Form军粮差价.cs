@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplicationSP
+namespace SP
 {
     public partial class Form军粮差价 : Form
     {

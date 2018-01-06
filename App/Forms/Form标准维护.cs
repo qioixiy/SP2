@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplicationSP
+namespace SP
 {
     public partial class Form标准维护 : Form
     {

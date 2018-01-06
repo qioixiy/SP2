@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApplicationSP.DataModel;
+using SP.DataModel;
 
-namespace WindowsFormsApplicationSP
+namespace SP
 {
     public partial class Form伙食单位参数 : Form
     {

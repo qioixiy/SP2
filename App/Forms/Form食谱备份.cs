@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplicationSP
+namespace SP
 {
     public partial class 食谱备份 : Form
     {

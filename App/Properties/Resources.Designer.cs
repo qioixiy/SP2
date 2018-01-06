@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApplicationSP.Properties {
+namespace SP.Properties {
     using System;
     
     

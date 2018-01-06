@@ -2,7 +2,7 @@
 using System.Data.SQLite;
 using System.IO;
 
-namespace WindowsFormsApplicationSP.DataModel
+namespace SP.DataModel
 {
     class ModelBase
     {

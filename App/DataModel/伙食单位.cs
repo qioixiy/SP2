@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WindowsFormsApplicationSP.DataModel
+namespace SP.DataModel
 {
     class 伙食单位
     {

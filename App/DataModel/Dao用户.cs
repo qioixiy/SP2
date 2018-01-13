@@ -31,7 +31,7 @@ namespace SP.DataModel
 
             string sql = "select* from dbo.用户 where 用户 = '" + user + "' and 密码 = '" + passwd + "'";
 
-            bool b = LocalDBConnect.Instance().exist(sql);
+            bool b = DBConnect.Instance().exist(sql);
             if (b)
             {
                 ret = true;
@@ -45,7 +45,7 @@ namespace SP.DataModel
             bool ret = false;
 
             string sql = "select * from dbo.用户";
-            DataSet ds = LocalDBConnect.Instance().query(sql);
+            DataSet ds = DBConnect.Instance().query(sql);
 
             foreach (DataTable dt in ds.Tables)
             {

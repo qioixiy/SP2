@@ -26,7 +26,7 @@ namespace SP
         /// <summary>  
         /// 连接字符串  
         /// </summary>  
-        private static string strConn = LocalDBConnect.Instance().getConnectString();
+        private static string strConn = DBConnect.Instance().getConnectString();
 
         public Form更改密码()
         {
@@ -44,7 +44,7 @@ namespace SP
             {
                 string user = Program.FormMainWindowInstance.mUserContext.UserName;
                 string oldpasswd = textBox1.Text;
-                string sql = "select* from dbo.用户 where 用户 = '" + user + "' and 密码 = '" + oldpasswd + "'";
+                string sql = "select * from dbo.用户 where 用户 = '" + user + "' and 密码 = '" + oldpasswd + "'";
 
                 adapter = new SqlDataAdapter(sql, strConn);
                 dSet = new DataSet();

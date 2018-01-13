@@ -27,7 +27,7 @@ namespace SP
         /// <summary>  
         /// 连接字符串  
         /// </summary>  
-        private static string strConn = LocalDBConnect.Instance().getConnectString();
+        private static string strConn = DBConnect.Instance().getConnectString();
 
         public Form伙食单位参数()
         {

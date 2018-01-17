@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form标准维护));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -182,6 +183,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.form标准维护BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -189,13 +191,14 @@
             this.tabPage3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.form标准维护BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -204,6 +207,8 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(624, 294);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.tabControl1.TabIndexChanged += new System.EventHandler(this.tabControl1_TabIndexChanged);
             // 
             // tabPage2
             // 
@@ -328,6 +333,7 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(468, 226);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(50, 21);
             this.textBox9.TabIndex = 2;
             // 
@@ -335,6 +341,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(468, 147);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(50, 21);
             this.textBox6.TabIndex = 2;
             // 
@@ -342,6 +349,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(468, 72);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(50, 21);
             this.textBox3.TabIndex = 2;
             // 
@@ -349,6 +357,7 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(324, 224);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(50, 21);
             this.textBox8.TabIndex = 2;
             // 
@@ -356,6 +365,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(178, 225);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(50, 21);
             this.textBox7.TabIndex = 2;
             // 
@@ -363,6 +373,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(324, 145);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(50, 21);
             this.textBox5.TabIndex = 2;
             // 
@@ -370,6 +381,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(178, 146);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(50, 21);
             this.textBox4.TabIndex = 2;
             // 
@@ -386,6 +398,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(324, 70);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(50, 21);
             this.textBox2.TabIndex = 2;
             // 
@@ -411,6 +424,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(178, 71);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(50, 21);
             this.textBox1.TabIndex = 2;
             // 
@@ -491,9 +505,9 @@
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(71, 16);
             this.radioButton8.TabIndex = 1;
-            this.radioButton8.TabStop = true;
             this.radioButton8.Text = "四类补助";
             this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // radioButton7
             // 
@@ -502,9 +516,9 @@
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(71, 16);
             this.radioButton7.TabIndex = 0;
-            this.radioButton7.TabStop = true;
             this.radioButton7.Text = "三类补助";
             this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -513,9 +527,9 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(59, 16);
             this.radioButton4.TabIndex = 1;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "四类灶";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton6
             // 
@@ -524,9 +538,9 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(71, 16);
             this.radioButton6.TabIndex = 1;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "二类补助";
             this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -535,9 +549,9 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(59, 16);
             this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "三类灶";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton5
             // 
@@ -546,9 +560,9 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(71, 16);
             this.radioButton5.TabIndex = 0;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "一类补助";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -557,13 +571,14 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(59, 16);
             this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "二类灶";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(15, 17);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(59, 16);
@@ -571,6 +586,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "一类灶";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // tabPage1
             // 
@@ -656,6 +672,7 @@
             // 
             this.textBox27.Location = new System.Drawing.Point(483, 211);
             this.textBox27.Name = "textBox27";
+            this.textBox27.ReadOnly = true;
             this.textBox27.Size = new System.Drawing.Size(36, 21);
             this.textBox27.TabIndex = 2;
             // 
@@ -663,6 +680,7 @@
             // 
             this.textBox24.Location = new System.Drawing.Point(483, 173);
             this.textBox24.Name = "textBox24";
+            this.textBox24.ReadOnly = true;
             this.textBox24.Size = new System.Drawing.Size(36, 21);
             this.textBox24.TabIndex = 2;
             // 
@@ -670,6 +688,7 @@
             // 
             this.textBox21.Location = new System.Drawing.Point(483, 135);
             this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(36, 21);
             this.textBox21.TabIndex = 2;
             // 
@@ -677,6 +696,7 @@
             // 
             this.textBox18.Location = new System.Drawing.Point(483, 96);
             this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(36, 21);
             this.textBox18.TabIndex = 2;
             // 
@@ -684,6 +704,7 @@
             // 
             this.textBox15.Location = new System.Drawing.Point(483, 58);
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(36, 21);
             this.textBox15.TabIndex = 2;
             // 
@@ -691,6 +712,7 @@
             // 
             this.textBox12.Location = new System.Drawing.Point(483, 22);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(36, 21);
             this.textBox12.TabIndex = 2;
             // 
@@ -752,6 +774,7 @@
             // 
             this.textBox26.Location = new System.Drawing.Point(334, 213);
             this.textBox26.Name = "textBox26";
+            this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(36, 21);
             this.textBox26.TabIndex = 2;
             // 
@@ -768,6 +791,7 @@
             // 
             this.textBox23.Location = new System.Drawing.Point(334, 175);
             this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(36, 21);
             this.textBox23.TabIndex = 2;
             // 
@@ -784,6 +808,7 @@
             // 
             this.textBox20.Location = new System.Drawing.Point(334, 137);
             this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(36, 21);
             this.textBox20.TabIndex = 2;
             // 
@@ -800,6 +825,7 @@
             // 
             this.textBox17.Location = new System.Drawing.Point(334, 98);
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(36, 21);
             this.textBox17.TabIndex = 2;
             // 
@@ -834,6 +860,7 @@
             // 
             this.textBox14.Location = new System.Drawing.Point(334, 60);
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(36, 21);
             this.textBox14.TabIndex = 2;
             // 
@@ -859,6 +886,7 @@
             // 
             this.textBox32.Location = new System.Drawing.Point(50, 210);
             this.textBox32.Name = "textBox32";
+            this.textBox32.ReadOnly = true;
             this.textBox32.Size = new System.Drawing.Size(36, 21);
             this.textBox32.TabIndex = 2;
             // 
@@ -866,6 +894,7 @@
             // 
             this.textBox25.Location = new System.Drawing.Point(192, 210);
             this.textBox25.Name = "textBox25";
+            this.textBox25.ReadOnly = true;
             this.textBox25.Size = new System.Drawing.Size(36, 21);
             this.textBox25.TabIndex = 2;
             // 
@@ -873,6 +902,7 @@
             // 
             this.textBox31.Location = new System.Drawing.Point(50, 172);
             this.textBox31.Name = "textBox31";
+            this.textBox31.ReadOnly = true;
             this.textBox31.Size = new System.Drawing.Size(36, 21);
             this.textBox31.TabIndex = 2;
             // 
@@ -889,6 +919,7 @@
             // 
             this.textBox22.Location = new System.Drawing.Point(192, 172);
             this.textBox22.Name = "textBox22";
+            this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(36, 21);
             this.textBox22.TabIndex = 2;
             // 
@@ -896,6 +927,7 @@
             // 
             this.textBox30.Location = new System.Drawing.Point(50, 134);
             this.textBox30.Name = "textBox30";
+            this.textBox30.ReadOnly = true;
             this.textBox30.Size = new System.Drawing.Size(36, 21);
             this.textBox30.TabIndex = 2;
             // 
@@ -903,6 +935,7 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(334, 24);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(36, 21);
             this.textBox11.TabIndex = 2;
             // 
@@ -910,6 +943,7 @@
             // 
             this.textBox19.Location = new System.Drawing.Point(192, 134);
             this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(36, 21);
             this.textBox19.TabIndex = 2;
             // 
@@ -926,6 +960,7 @@
             // 
             this.textBox29.Location = new System.Drawing.Point(50, 95);
             this.textBox29.Name = "textBox29";
+            this.textBox29.ReadOnly = true;
             this.textBox29.Size = new System.Drawing.Size(36, 21);
             this.textBox29.TabIndex = 2;
             // 
@@ -942,6 +977,7 @@
             // 
             this.textBox16.Location = new System.Drawing.Point(192, 95);
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(36, 21);
             this.textBox16.TabIndex = 2;
             // 
@@ -967,6 +1003,7 @@
             // 
             this.textBox28.Location = new System.Drawing.Point(50, 57);
             this.textBox28.Name = "textBox28";
+            this.textBox28.ReadOnly = true;
             this.textBox28.Size = new System.Drawing.Size(36, 21);
             this.textBox28.TabIndex = 2;
             // 
@@ -992,6 +1029,7 @@
             // 
             this.textBox13.Location = new System.Drawing.Point(192, 57);
             this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(36, 21);
             this.textBox13.TabIndex = 2;
             // 
@@ -1134,6 +1172,7 @@
             // 
             this.textBox10.Location = new System.Drawing.Point(192, 21);
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(36, 21);
             this.textBox10.TabIndex = 2;
             // 
@@ -1240,6 +1279,7 @@
             this.comboBox1.Size = new System.Drawing.Size(84, 20);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "一类灶";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // tabPage3
             // 
@@ -1295,6 +1335,7 @@
             // 
             this.textBox40.Location = new System.Drawing.Point(102, 207);
             this.textBox40.Name = "textBox40";
+            this.textBox40.ReadOnly = true;
             this.textBox40.Size = new System.Drawing.Size(100, 21);
             this.textBox40.TabIndex = 1;
             // 
@@ -1302,6 +1343,7 @@
             // 
             this.textBox47.Location = new System.Drawing.Point(318, 95);
             this.textBox47.Name = "textBox47";
+            this.textBox47.ReadOnly = true;
             this.textBox47.Size = new System.Drawing.Size(100, 21);
             this.textBox47.TabIndex = 1;
             // 
@@ -1309,6 +1351,7 @@
             // 
             this.textBox36.Location = new System.Drawing.Point(102, 95);
             this.textBox36.Name = "textBox36";
+            this.textBox36.ReadOnly = true;
             this.textBox36.Size = new System.Drawing.Size(100, 21);
             this.textBox36.TabIndex = 1;
             // 
@@ -1316,13 +1359,15 @@
             // 
             this.textBox46.Location = new System.Drawing.Point(318, 151);
             this.textBox46.Name = "textBox46";
+            this.textBox46.ReadOnly = true;
             this.textBox46.Size = new System.Drawing.Size(100, 21);
             this.textBox46.TabIndex = 1;
             // 
             // textBox39
             // 
-            this.textBox39.Location = new System.Drawing.Point(102, 151);
+            this.textBox39.Location = new System.Drawing.Point(102, 180);
             this.textBox39.Name = "textBox39";
+            this.textBox39.ReadOnly = true;
             this.textBox39.Size = new System.Drawing.Size(100, 21);
             this.textBox39.TabIndex = 1;
             // 
@@ -1330,6 +1375,7 @@
             // 
             this.textBox45.Location = new System.Drawing.Point(318, 39);
             this.textBox45.Name = "textBox45";
+            this.textBox45.ReadOnly = true;
             this.textBox45.Size = new System.Drawing.Size(100, 21);
             this.textBox45.TabIndex = 1;
             // 
@@ -1337,6 +1383,7 @@
             // 
             this.textBox34.Location = new System.Drawing.Point(102, 39);
             this.textBox34.Name = "textBox34";
+            this.textBox34.ReadOnly = true;
             this.textBox34.Size = new System.Drawing.Size(100, 21);
             this.textBox34.TabIndex = 1;
             // 
@@ -1353,12 +1400,13 @@
             // 
             this.textBox44.Location = new System.Drawing.Point(318, 180);
             this.textBox44.Name = "textBox44";
+            this.textBox44.ReadOnly = true;
             this.textBox44.Size = new System.Drawing.Size(100, 21);
             this.textBox44.TabIndex = 1;
             // 
             // textBox38
             // 
-            this.textBox38.Location = new System.Drawing.Point(102, 180);
+            this.textBox38.Location = new System.Drawing.Point(102, 152);
             this.textBox38.Name = "textBox38";
             this.textBox38.Size = new System.Drawing.Size(100, 21);
             this.textBox38.TabIndex = 1;
@@ -1403,6 +1451,7 @@
             // 
             this.textBox43.Location = new System.Drawing.Point(318, 68);
             this.textBox43.Name = "textBox43";
+            this.textBox43.ReadOnly = true;
             this.textBox43.Size = new System.Drawing.Size(100, 21);
             this.textBox43.TabIndex = 1;
             // 
@@ -1410,6 +1459,7 @@
             // 
             this.textBox35.Location = new System.Drawing.Point(102, 68);
             this.textBox35.Name = "textBox35";
+            this.textBox35.ReadOnly = true;
             this.textBox35.Size = new System.Drawing.Size(100, 21);
             this.textBox35.TabIndex = 1;
             // 
@@ -1453,6 +1503,7 @@
             // 
             this.textBox42.Location = new System.Drawing.Point(318, 124);
             this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
             this.textBox42.Size = new System.Drawing.Size(100, 21);
             this.textBox42.TabIndex = 1;
             // 
@@ -1460,6 +1511,7 @@
             // 
             this.textBox37.Location = new System.Drawing.Point(102, 124);
             this.textBox37.Name = "textBox37";
+            this.textBox37.ReadOnly = true;
             this.textBox37.Size = new System.Drawing.Size(100, 21);
             this.textBox37.TabIndex = 1;
             // 
@@ -1494,6 +1546,7 @@
             // 
             this.textBox41.Location = new System.Drawing.Point(318, 12);
             this.textBox41.Name = "textBox41";
+            this.textBox41.ReadOnly = true;
             this.textBox41.Size = new System.Drawing.Size(100, 21);
             this.textBox41.TabIndex = 1;
             // 
@@ -1519,6 +1572,7 @@
             // 
             this.textBox33.Location = new System.Drawing.Point(102, 12);
             this.textBox33.Name = "textBox33";
+            this.textBox33.ReadOnly = true;
             this.textBox33.Size = new System.Drawing.Size(100, 21);
             this.textBox33.TabIndex = 1;
             // 
@@ -1554,9 +1608,9 @@
             this.radioButton16.Name = "radioButton16";
             this.radioButton16.Size = new System.Drawing.Size(47, 16);
             this.radioButton16.TabIndex = 0;
-            this.radioButton16.TabStop = true;
             this.radioButton16.Text = "空勤";
             this.radioButton16.UseVisualStyleBackColor = true;
+            this.radioButton16.CheckedChanged += new System.EventHandler(this.radioButton16_CheckedChanged);
             // 
             // radioButton15
             // 
@@ -1565,9 +1619,9 @@
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(59, 16);
             this.radioButton15.TabIndex = 0;
-            this.radioButton15.TabStop = true;
             this.radioButton15.Text = "核潜艇";
             this.radioButton15.UseVisualStyleBackColor = true;
+            this.radioButton15.CheckedChanged += new System.EventHandler(this.radioButton15_CheckedChanged);
             // 
             // radioButton12
             // 
@@ -1576,9 +1630,9 @@
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(83, 16);
             this.radioButton12.TabIndex = 0;
-            this.radioButton12.TabStop = true;
             this.radioButton12.Text = "陆勤极重度";
             this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton12.CheckedChanged += new System.EventHandler(this.radioButton12_CheckedChanged);
             // 
             // radioButton14
             // 
@@ -1587,9 +1641,9 @@
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(47, 16);
             this.radioButton14.TabIndex = 0;
-            this.radioButton14.TabStop = true;
             this.radioButton14.Text = "潜艇";
             this.radioButton14.UseVisualStyleBackColor = true;
+            this.radioButton14.CheckedChanged += new System.EventHandler(this.radioButton14_CheckedChanged);
             // 
             // radioButton11
             // 
@@ -1598,9 +1652,9 @@
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(71, 16);
             this.radioButton11.TabIndex = 0;
-            this.radioButton11.TabStop = true;
             this.radioButton11.Text = "陆勤重度";
             this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
             // 
             // radioButton13
             // 
@@ -1609,9 +1663,9 @@
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(71, 16);
             this.radioButton13.TabIndex = 0;
-            this.radioButton13.TabStop = true;
             this.radioButton13.Text = "水面舰艇";
             this.radioButton13.UseVisualStyleBackColor = true;
+            this.radioButton13.CheckedChanged += new System.EventHandler(this.radioButton13_CheckedChanged);
             // 
             // radioButton10
             // 
@@ -1620,13 +1674,14 @@
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(71, 16);
             this.radioButton10.TabIndex = 0;
-            this.radioButton10.TabStop = true;
             this.radioButton10.Text = "陆勤中度";
             this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
+            this.radioButton9.Checked = true;
             this.radioButton9.Location = new System.Drawing.Point(13, 12);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(71, 16);
@@ -1634,6 +1689,7 @@
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "陆勤轻度";
             this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
             // 
             // button3
             // 
@@ -1665,6 +1721,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // form标准维护BindingSource
+            // 
+            this.form标准维护BindingSource.DataSource = typeof(SP.Form标准维护);
+            this.form标准维护BindingSource.CurrentChanged += new System.EventHandler(this.form标准维护BindingSource_CurrentChanged);
+            // 
             // Form标准维护
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1680,6 +1741,7 @@
             this.Name = "Form标准维护";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "标准维护";
+            this.Load += new System.EventHandler(this.Form标准维护_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -1692,6 +1754,7 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.form标准维护BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1851,5 +1914,6 @@
         private System.Windows.Forms.TextBox textBox41;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.BindingSource form标准维护BindingSource;
     }
 }

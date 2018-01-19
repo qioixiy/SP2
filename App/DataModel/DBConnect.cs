@@ -14,7 +14,7 @@ namespace DataModel
         //Initial Catalog=要连接的数据库名
         //Intergrated Security=true  开启windows身份验证
         //string ConnectString = "Server=(localdb)\\ProjectsV12;Initial Catalog=mrestaurant;Integrated Security=true";
-        string ConnectString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=SP;Integrated Security=True";
+        string ConnectString = "Data Source=localhost;Initial Catalog=SP;Integrated Security=True";
         private static DBConnect sDBConnect = null;
         private SqlConnection con = null;
 

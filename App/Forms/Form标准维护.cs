@@ -451,8 +451,6 @@ namespace SP
             Console.WriteLine(index);
             Common.dumpDataSet(dSet营养素标准);
 
-            SqlCommandBuilder sql_command = new SqlCommandBuilder(adapter营养素标准);
-            adapter营养素标准.Update(dSet营养素标准.Tables[0]);
             dSet营养素标准.Tables[0].Rows[index]["能量"] = textBox33.Text;
             dSet营养素标准.Tables[0].Rows[index]["蛋白质"] = textBox34.Text;
             dSet营养素标准.Tables[0].Rows[index]["钙"] = textBox35.Text;
@@ -468,6 +466,9 @@ namespace SP
             dSet营养素标准.Tables[0].Rows[index]["维生素D"] = textBox45.Text;
             dSet营养素标准.Tables[0].Rows[index]["烟酸"] = textBox46.Text;
             dSet营养素标准.Tables[0].Rows[index]["维生素B1"] = textBox47.Text;
+
+            SqlCommandBuilder sql_command = new SqlCommandBuilder(adapter营养素标准);
+            adapter营养素标准.Update(dSet营养素标准.Tables[0]);
 
             Common.dumpDataSet(dSet营养素标准);
 

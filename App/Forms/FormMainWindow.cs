@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SP.Forms;
 
 namespace SP
 {
@@ -213,22 +214,22 @@ namespace SP
 
         private void 常用原料ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form常用原料().ShowDialog();
         }
 
         private void 常用菜肴ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form菜肴优选().ShowDialog();
         }
 
         private void 原料编辑ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form原料编辑().ShowDialog();
         }
 
         private void 菜肴编辑ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form菜肴编辑().ShowDialog();
         }
 
         private void 模板编辑ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -238,22 +239,22 @@ namespace SP
 
         private void 标准模式ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            new Form食谱调试().ShowDialog();
         }
 
         private void 自定义模式ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            new Form自定义模式编辑().ShowDialog();
         }
 
         private void 权重调整ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form权重调整().ShowDialog();
         }
 
         private void 节日食谱ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            new Form数据管理节日食谱().ShowDialog();
         }
 
         private void 淡旺季区分ToolStripMenuItem_Click(object sender, EventArgs e)

@@ -20,5 +20,10 @@ namespace SP
         {
 
         }
+
+        private void Form食谱生成标准模式_Load(object sender, EventArgs e)
+        {
+            textBox3.Text = DateTime.Now.ToString("yyyy-MM-dd");
+        }
     }
 }

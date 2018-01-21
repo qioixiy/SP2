@@ -26,13 +26,12 @@ namespace SP.Forms
         private void Form菜肴优选_Load(object sender, EventArgs e)
         {
             adapter常用菜肴.Fill(dSet常用菜肴);
-            dSet常用菜肴 = new DataSet();
-            adapter常用菜肴.Fill(dSet常用菜肴);
             Common.dumpDataSet(dSet常用菜肴);
 
             comboBox1.Items.Add("全部");
             comboBox1.Items.AddRange(get所有常用菜肴());
 
+            checkedListBox1.SelectedIndex = 0;
             updateCheckedListBox1("全部");
         }
 
@@ -76,10 +75,14 @@ namespace SP.Forms
 
                 if (菜肴名称 == selectStr)
                 {
-                    string str = 菜肴名称;
-                    Console.Write(str);
+                    string 菜肴用料 = 菜肴名称 + "需要下列原料：";
+                    if (dr["用料1"].ToString() != "") 菜肴用料 += dr["用料1"] + " " + dr["用量1"];
+                    if (dr["用料2"].ToString() != "") 菜肴用料 += "," + dr["用料2"] + " " + dr["用量2"];
+                    if (dr["用料3"].ToString() != "") 菜肴用料 += "," + dr["用料3"] + " " + dr["用量3"];
+                    if (dr["用料4"].ToString() != "") 菜肴用料 += "," + dr["用料4"] + " " + dr["用量4"];
+                    if (dr["用料5"].ToString() != "") 菜肴用料 += "," + dr["用料5"] + " " + dr["用量5"];
 
-                    textBox1.Text = (string)dr["菜肴用料"];
+                    textBox1.Text = 菜肴用料;
                 }
             }
         }

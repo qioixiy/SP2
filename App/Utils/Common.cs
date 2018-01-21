@@ -66,5 +66,54 @@ namespace SP.Utils
                 }
             }
         }
+
+        public static object[] getUniqueItemsFromDataSet(DataSet dataSet, string rowName)
+        {
+            Dictionary<string, int> map = new Dictionary<string, int>();
+
+            foreach (DataTable dt in dataSet.Tables)
+            {
+                foreach (DataRow dr in dt.Rows)
+                {
+                    string str = (string)dr[rowName];
+                    if (map.ContainsKey(str))
+                    {
+                        map[str]++;
+                    }
+                    else
+                    {
+                        map.Add(str, 1);
+                    }
+                    Console.Write(str);
+                }
+            }
+
+            object[] ret = new object[map.Count];
+
+            int index = 0;
+            foreach (KeyValuePair<string, int> pair in map)
+            {
+                ret[index++] = pair.Key;
+            }
+
+            return ret;
+        }
+        public static object[] getItemsFromDataSet(DataSet dataSet, string rowName)
+        {
+            foreach (DataTable dt in dataSet.Tables)
+            {
+                int index = 0;
+                object[] ret = new object[dt.Rows.Count];
+                foreach (DataRow dr in dt.Rows)
+                {
+                    string str = (string)dr[rowName];
+                    Console.Write(str);
+                    ret[index++] = str;
+                }
+                return ret;
+            }
+
+            return null;
+        }
     }
 }

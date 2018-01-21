@@ -87,6 +87,8 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(72, 20);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.Text = "全部";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // checkedListBox1
             // 
@@ -95,6 +97,7 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(151, 244);
             this.checkedListBox1.TabIndex = 2;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -128,6 +131,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "查找";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -146,6 +150,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "退出";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form菜肴优选
             // 

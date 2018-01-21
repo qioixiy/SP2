@@ -41,31 +41,31 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -206,78 +206,12 @@
             this.panel1.Size = new System.Drawing.Size(309, 172);
             this.panel1.TabIndex = 4;
             // 
-            // label3
+            // textBox11
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 12);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "原料1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 12);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "原料2";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 12);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "原料3";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 112);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 12);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "原料4";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 146);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 12);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "原料5";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(60, 17);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(80, 21);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(60, 49);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(80, 21);
-            this.textBox3.TabIndex = 1;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(60, 79);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(80, 21);
-            this.textBox4.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(60, 109);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(80, 21);
-            this.textBox5.TabIndex = 1;
+            this.textBox11.Location = new System.Drawing.Point(202, 143);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(80, 21);
+            this.textBox11.TabIndex = 1;
             // 
             // textBox6
             // 
@@ -286,41 +220,54 @@
             this.textBox6.Size = new System.Drawing.Size(80, 21);
             this.textBox6.TabIndex = 1;
             // 
-            // label8
+            // textBox10
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(155, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 12);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "用量1";
+            this.textBox10.Location = new System.Drawing.Point(202, 109);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(80, 21);
+            this.textBox10.TabIndex = 1;
             // 
-            // label9
+            // textBox5
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(155, 52);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 12);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "用量2";
+            this.textBox5.Location = new System.Drawing.Point(60, 109);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(80, 21);
+            this.textBox5.TabIndex = 1;
             // 
-            // label10
+            // textBox9
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(155, 82);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 12);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "用量3";
+            this.textBox9.Location = new System.Drawing.Point(202, 79);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(80, 21);
+            this.textBox9.TabIndex = 1;
             // 
-            // label11
+            // textBox4
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(155, 112);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 12);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "用量4";
+            this.textBox4.Location = new System.Drawing.Point(60, 79);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(80, 21);
+            this.textBox4.TabIndex = 1;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(202, 49);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(80, 21);
+            this.textBox8.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(60, 49);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(80, 21);
+            this.textBox3.TabIndex = 1;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(202, 17);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(80, 21);
+            this.textBox7.TabIndex = 1;
             // 
             // label12
             // 
@@ -331,67 +278,93 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "用量5";
             // 
-            // textBox7
+            // textBox2
             // 
-            this.textBox7.Location = new System.Drawing.Point(202, 17);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(80, 21);
-            this.textBox7.TabIndex = 1;
+            this.textBox2.Location = new System.Drawing.Point(60, 17);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(80, 21);
+            this.textBox2.TabIndex = 1;
             // 
-            // textBox8
+            // label11
             // 
-            this.textBox8.Location = new System.Drawing.Point(202, 49);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(80, 21);
-            this.textBox8.TabIndex = 1;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(155, 112);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(35, 12);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "用量4";
             // 
-            // textBox9
+            // label7
             // 
-            this.textBox9.Location = new System.Drawing.Point(202, 79);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(80, 21);
-            this.textBox9.TabIndex = 1;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 146);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 12);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "原料5";
             // 
-            // textBox10
+            // label10
             // 
-            this.textBox10.Location = new System.Drawing.Point(202, 109);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(80, 21);
-            this.textBox10.TabIndex = 1;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(155, 82);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 12);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "用量3";
             // 
-            // textBox11
+            // label6
             // 
-            this.textBox11.Location = new System.Drawing.Point(202, 143);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(80, 21);
-            this.textBox11.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 112);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 12);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "原料4";
             // 
-            // label13
+            // label9
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(284, 20);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(17, 12);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "克";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(155, 52);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 12);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "用量2";
             // 
-            // label14
+            // label5
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(284, 52);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 12);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "克";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 12);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "原料3";
             // 
-            // label15
+            // label8
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(284, 82);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 12);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "克";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(155, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 12);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "用量1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 12);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "原料2";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(284, 146);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(17, 12);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "克";
             // 
             // label16
             // 
@@ -402,14 +375,41 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "克";
             // 
-            // label17
+            // label15
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(284, 146);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(17, 12);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "克";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(284, 82);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(17, 12);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "克";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(284, 52);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(17, 12);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "克";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(284, 20);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(17, 12);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "克";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "原料1";
             // 
             // button3
             // 
@@ -428,6 +428,7 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "原料编辑";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -437,6 +438,7 @@
             this.button5.TabIndex = 1;
             this.button5.Text = "退出";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form菜肴编辑
             // 

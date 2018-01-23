@@ -25,8 +25,6 @@ namespace SP.Forms
         private void Form常用原料_Load(object sender, EventArgs e)
         {
             adapter常用原料.Fill(dSet常用原料);
-            dSet常用原料 = new DataSet();
-            adapter常用原料.Fill(dSet常用原料);
             Common.dumpDataSet(dSet常用原料);
             dataGridView1.DataSource = dSet常用原料.Tables[0];
 

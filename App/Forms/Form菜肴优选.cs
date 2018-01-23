@@ -31,7 +31,6 @@ namespace SP.Forms
             comboBox1.Items.Add("全部");
             comboBox1.Items.AddRange(get所有常用菜肴());
 
-            checkedListBox1.SelectedIndex = 0;
             updateCheckedListBox1("全部");
         }
 

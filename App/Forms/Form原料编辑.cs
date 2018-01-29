@@ -45,68 +45,106 @@ namespace SP.Forms
             return Common.getUniqueItemsFromDataSet(dSet常用原料, "原料分类");
         }
 
+        private String current_Mode = "选择模式";
+        private void update_buttonsText(String mode)
+        {
+            current_Mode = mode;
+            switch (mode)
+            {
+                case "添加模式":
+                    button1.Text = "保存";
+                    button2.Text = "放弃";
+                    update_textBoxs_enable(true);
+                    break;
+                case "编辑模式":
+                    button1.Text = "保存";
+                    button2.Text = "放弃";
+                    update_textBoxs_enable(true);
+                    break;
+                case "选择模式":
+                    button1.Text = "添加";
+                    button2.Text = "编辑";
+                    update_textBoxs_enable(false);
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (button1.Text == "添加")
             {
-                button1.Text = "保存";
-                DataRow dr = dSet常用原料.Tables[0].NewRow();
-
-                dr["常用"] = "否";
-                dr["原料"] = textBox1.Text;
-                dr["价格(元/千克)"] = numericUpDown1.Text;
-                dr["损耗率(%)"] = numericUpDown2.Text;
-                dr["原料分类"] = comboBox2.Text;
-
-                dSet常用原料.Tables[0].Rows.Add(dr);
-
-                sync常用原料ToDB();
-                MessageBox.Show("添加成功");
+                update_buttonsText("添加模式");
             }
             else
             {
-                button1.Text = "保存";
+                update_buttonsText("选择模式");
+
+                if (current_Mode == "添加模式")
+                {
+                    DataRow dr = dSet常用原料.Tables[0].NewRow();
+
+                    dr["常用"] = "否";
+                    dr["原料"] = textBox1.Text;
+                    dr["价格(元/千克)"] = numericUpDown1.Text;
+                    dr["损耗率(%)"] = numericUpDown2.Text;
+                    dr["原料分类"] = comboBox2.Text;
+
+                    dSet常用原料.Tables[0].Rows.Add(dr);
+
+                    sync常用原料ToDB();
+                    MessageBox.Show("添加成功");
+                }
+                else
+                {
+                    if (listBox1.SelectedIndex < 0)
+                    {
+                        MessageBox.Show("保存失败，请选择需要编辑的项");
+                    }
+                    else
+                    {
+                        string oldName = (string)listBox1.Items[listBox1.SelectedIndex];
+                        foreach (DataRow dr in dSet常用原料.Tables[0].Rows)
+                        {
+                            string 原料 = (string)dr["原料"];
+
+                            if (原料 == oldName)
+                            {
+                                dr["原料"] = textBox1.Text;
+                                dr["价格(元/千克)"] = numericUpDown1.Text;
+                                dr["损耗率(%)"] = numericUpDown2.Text;
+                                dr["原料分类"] = comboBox2.Text;
+
+                                break;
+                            }
+                        }
+
+                        sync常用原料ToDB();
+                        MessageBox.Show("保存成功");
+                    }
+                }
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void update_textBoxs_enable(bool b)
         {
-            bool b = textBox1.Enabled;
-            b = !b;
             textBox1.Enabled = b;
             numericUpDown1.Enabled = b;
             numericUpDown2.Enabled = b;
             comboBox2.Enabled = b;
             comboBox3.Enabled = b;
+        }
 
-            if (b)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button2.Text == "编辑")
             {
-                button2.Text = "保存";
+                update_buttonsText("编辑模式");
             }
             else
             {
-                button2.Text = "编辑";
-            }
-            if (!b)
-            {
-                string oldName = (string)listBox1.Items[listBox1.SelectedIndex];
-                foreach (DataRow dr in dSet常用原料.Tables[0].Rows)
-                {
-                    string 原料 = (string)dr["原料"];
-
-                    if (原料 == oldName)
-                    {
-                        dr["原料"] = textBox1.Text;
-                        dr["价格(元/千克)"] = numericUpDown1.Text;
-                        dr["损耗率(%)"] = numericUpDown2.Text;
-                        dr["原料分类"] = comboBox2.Text;
-                        
-                        break;
-                    }
-                }
-
-                sync常用原料ToDB();
-                MessageBox.Show("保存成功");
+                update_buttonsText("选择模式");
             }
         }
 

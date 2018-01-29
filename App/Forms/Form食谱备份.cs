@@ -18,7 +18,13 @@ namespace SP
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("备份成功");
+            Close();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

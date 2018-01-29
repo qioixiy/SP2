@@ -52,6 +52,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "否（N）";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -78,7 +79,7 @@
             this.MinimizeBox = false;
             this.Name = "食谱备份";
             this.ShowInTaskbar = false;
-            this.Text = "Form食谱备份";
+            this.Text = "食谱备份";
             this.ResumeLayout(false);
             this.PerformLayout();
 

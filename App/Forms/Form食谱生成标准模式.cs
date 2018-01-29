@@ -37,6 +37,7 @@ namespace SP
             Common.dumpDataSet(dSet驻地);
 
             fillComboBox1();
+            fillComboBox2();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,8 +86,12 @@ namespace SP
 
         private void fillComboBox1()
         {
-
             comboBox1.Items.AddRange(Common.getUniqueItemsFromDataSet(dSet伙食单位参数, "名称"));
+        }
+
+        private void fillComboBox2()
+        {
+            comboBox2.Items.AddRange(Common.getUniqueItemsFromDataSet(dSet驻地, "名称"));
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -152,6 +157,11 @@ namespace SP
                     textBox6.Text = get地区By驻地(驻地);
                 }
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

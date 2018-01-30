@@ -98,6 +98,26 @@ namespace SP.Utils
 
             return ret;
         }
+
+        public static object selectDataItemFromDataSet(DataSet dataSet, string rowName, string colName, string target)
+        {
+            object ret = new object();
+
+            foreach (DataTable dt in dataSet.Tables)
+            {
+                foreach (DataRow dr in dt.Rows)
+                {
+                    string str = (string)dr[rowName];
+                    if (str == colName)
+                    {
+                        ret = (string)dr[target];
+                    }
+                }
+            }
+
+            return ret;
+
+        }
         public static object[] getItemsFromDataSet(DataSet dataSet, string rowName)
         {
             foreach (DataTable dt in dataSet.Tables)

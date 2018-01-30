@@ -36,8 +36,55 @@ namespace SP
             adapter驻地.Fill(dSet驻地);
             Common.dumpDataSet(dSet驻地);
 
+            init描述();
+            init第一步();
+            init第二步();
+            init第三步();
+            init第四步();
+            init第五步();
+        }
+
+        private void init描述()
+        {
             fillComboBox1();
             fillComboBox2();
+
+            textBox4.Text = "";
+
+            comboBox3.Items.Add("750");
+            comboBox3.Items.Add("650");
+            comboBox3.Items.Add("550");
+            comboBox3.Text = "750";
+
+            comboBox4.Items.Add("0");
+            comboBox4.Items.Add("50");
+            comboBox4.Items.Add("100");
+            comboBox4.Text = "0";
+        }
+        
+        private void init第一步()
+        {
+
+        }
+        
+        private void init第二步()
+        {
+
+        }
+
+        private void init第三步()
+        {
+
+        }
+
+        private void init第四步()
+        {
+
+        }
+
+        private void init第五步()
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -155,8 +202,21 @@ namespace SP
                     textBox25.Text = Convert.ToString(就餐人数);
                     comboBox2.Text = 驻地;
                     textBox6.Text = get地区By驻地(驻地);
+
+                    update_textBox4(get米面比例By名称驻地(驻地));
                 }
             }
+        }
+
+        private string get米面比例By名称驻地(string 驻地)
+        {
+            string ret= (string)Common.selectDataItemFromDataSet(dSet驻地, "名称", 驻地, "米面比例");
+            return ret;
+        }
+
+        private void update_textBox4(string s)
+        {
+            textBox4.Text = s;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

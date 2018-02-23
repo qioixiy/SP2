@@ -114,6 +114,12 @@
     <Compile Include="Forms\Form自定义模式编辑.Designer.cs">
       <DependentUpon>Form自定义模式编辑.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form节日与外出设定.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form节日与外出设定.Designer.cs">
+      <DependentUpon>Form节日与外出设定.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form菜肴优选.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form自定义模式编辑.resx">
       <DependentUpon>Form自定义模式编辑.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form节日与外出设定.resx">
+      <DependentUpon>Form节日与外出设定.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form节日食谱.resx">
       <DependentUpon>Form节日食谱.cs</DependentUpon>

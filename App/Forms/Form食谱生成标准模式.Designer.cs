@@ -34,6 +34,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -129,10 +130,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox25 = new System.Windows.Forms.TextBox();
             this.步骤.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -197,7 +198,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox25);
+            this.tabPage2.Controls.Add(this.numericUpDown1);
             this.tabPage2.Controls.Add(this.textBox6);
             this.tabPage2.Controls.Add(this.comboBox4);
             this.tabPage2.Controls.Add(this.comboBox3);
@@ -219,6 +220,19 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "第一步";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(342, 44);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.ReadOnly = true;
+            this.numericUpDown1.Size = new System.Drawing.Size(100, 21);
+            this.numericUpDown1.TabIndex = 9;
             // 
             // textBox6
             // 
@@ -259,6 +273,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(138, 20);
             this.comboBox2.TabIndex = 4;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
             // 
@@ -377,12 +392,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(101, 96);
+            this.button4.Location = new System.Drawing.Point(101, 98);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(111, 28);
+            this.button4.Size = new System.Drawing.Size(111, 20);
             this.button4.TabIndex = 3;
             this.button4.Text = "节日与外出设定";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label19
             // 
@@ -409,6 +425,8 @@
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(35, 21);
             this.textBox10.TabIndex = 1;
+            this.textBox10.Text = "0";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox9
             // 
@@ -417,6 +435,8 @@
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(35, 21);
             this.textBox9.TabIndex = 1;
+            this.textBox9.Text = "0";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox8
             // 
@@ -425,6 +445,7 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(57, 21);
             this.textBox8.TabIndex = 1;
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox7
             // 
@@ -433,6 +454,7 @@
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(57, 21);
             this.textBox7.TabIndex = 1;
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label17
             // 
@@ -476,6 +498,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(128, 21);
             this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label13
             // 
@@ -1112,14 +1135,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(347, 48);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(95, 21);
-            this.textBox25.TabIndex = 8;
-            // 
             // Form食谱生成标准模式
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1144,6 +1159,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1267,6 +1283,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

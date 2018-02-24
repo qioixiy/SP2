@@ -20,7 +20,20 @@ namespace SP
 
         SqlDataAdapter adapter驻地 = new SqlDataAdapter("select * from dbo.驻地", DBConnect.Instance().getConnectString());
         DataSet dSet驻地 = new DataSet();
+
+        SqlDataAdapter adapter伙食费标准 = new SqlDataAdapter("select * from dbo.伙食费标准", DBConnect.Instance().getConnectString());
+        DataSet dSet伙食费标准 = new DataSet();
+        int index伙食费标准 = 0;
+
+        SqlDataAdapter adapter食物定量标准 = new SqlDataAdapter("select * from dbo.食物定量标准", DBConnect.Instance().getConnectString());
+        DataSet dSet食物定量标准 = new DataSet();
+        int index食物定量标准 = 0;
+
+        SqlDataAdapter adapter营养素标准 = new SqlDataAdapter("select * from dbo.营养素标准", DBConnect.Instance().getConnectString());
+        DataSet dSet营养素标准 = new DataSet();
+        int index营养素标准 = 0;
         
+        bool inited = false;
 
         public Form食谱生成标准模式()
         {
@@ -30,6 +43,14 @@ namespace SP
         private void Form食谱生成标准模式_Load(object sender, EventArgs e)
         {
             textBox3.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            
+            adapter伙食费标准.Fill(dSet伙食费标准);
+            adapter食物定量标准.Fill(dSet食物定量标准);
+            adapter营养素标准.Fill(dSet营养素标准);
+
+            Common.dumpDataSet(dSet伙食费标准);
+            Common.dumpDataSet(dSet食物定量标准);
+            Common.dumpDataSet(dSet营养素标准);
 
             adapter伙食单位参数.Fill(dSet伙食单位参数);
             Common.dumpDataSet(dSet伙食单位参数);
@@ -43,6 +64,8 @@ namespace SP
             init第三步();
             init第四步();
             init第五步();
+
+            inited = true;
         }
 
         private void init描述()
@@ -73,9 +96,38 @@ namespace SP
             onValueChanged();
         }
 
+        private bool init第三步done = false;
         private void init第三步()
         {
+            comboBox5.Items.AddRange(new object[] {
+                "一类灶",
+                "二类灶",
+                "三类灶",
+                "四类灶",
+            });
+            comboBox5.SelectedIndex = 0;
+            
+            comboBox6.Items.AddRange(new object[] {
+                "一类区",
+                "二类区",
+                "三类区",
+                "四类区",
+                "五类区",
+            });
+            comboBox6.SelectedIndex = 0;
 
+            comboBox7.Items.AddRange(new object[] {
+                "无补助",
+                "一类补助",
+                "二类补助",
+                "三类补助",
+                "四类补助",
+            });
+            comboBox7.SelectedIndex = 0;
+            
+            init第三步done = true;
+
+            update第三步();
         }
 
         private void init第四步()
@@ -86,6 +138,96 @@ namespace SP
         private void init第五步()
         {
 
+        }
+
+        private bool update第三步ing = false;
+        private void update第三步()
+        {
+            if (update第三步ing)
+            {
+                return;
+            }
+
+            if (!init第三步done)
+            {
+                return;
+            }
+
+            update第三步ing = true;
+
+            string comboBox5Text = (string)comboBox5.Items[comboBox5.SelectedIndex];
+            if (comboBox5Text == "一类灶")
+            {
+                comboBox8.Items.Clear();
+                comboBox8.Items.AddRange(new object[] {
+                    "陆勤轻度",
+                    "陆勤中度",
+                    "陆勤重度",
+                    "陆勤极重度",
+                });
+            }
+            else if (comboBox5Text == "二类灶")
+            {
+                comboBox8.Items.Clear();
+                comboBox8.Items.AddRange(new object[] {
+                    "陆勤轻度",
+                    "陆勤中度",
+                    "陆勤重度",
+                    "陆勤极重度",
+                });
+            }
+            else if (comboBox5Text == "三类灶")
+            {
+                comboBox8.Items.Clear();
+                comboBox8.Items.AddRange(new object[] {
+                    "水面舰艇",
+                });
+            }
+            else if (comboBox5Text == "四类灶")
+            {
+                comboBox8.Items.Clear();
+                comboBox8.Items.AddRange(new object[] {
+                    "潜艇",
+                    "核潜艇",
+                    "空勤",
+                });
+            }
+            comboBox8.SelectedIndex = 0;
+
+            // textbox
+            textBox11.Text = (string)dSet食物定量标准.Tables[0].Rows[comboBox5.SelectedIndex]["植物油"];
+            textBox12.Text = (string)dSet食物定量标准.Tables[0].Rows[comboBox5.SelectedIndex]["黄豆"];
+            textBox13.Text = "3.60";
+            textBox14.Text = "2.60";
+            textBox15.Text = "0.00";
+
+            string comboBox6Text = (string)comboBox6.Items[comboBox6.SelectedIndex];
+            textBox16.Text = (string)Utils.Common.selectDataItemFromDataSet(dSet伙食费标准, "灶别", comboBox5Text, comboBox6Text);
+
+            string comboBox7Text = (string)comboBox7.Items[comboBox7.SelectedIndex];
+            if (comboBox7.Text == "无补助")
+            {
+                textBox17.Text = "0";
+            }
+            else
+            {
+                textBox16.Text = (string)Utils.Common.selectDataItemFromDataSet(dSet伙食费标准, "灶别", comboBox7.Text, comboBox6Text);
+            }
+            
+            textBox18.Text = "0.00";
+
+            double total = Convert.ToDouble(textBox11.Text) * Convert.ToDouble(textBox13.Text);
+            total += Convert.ToDouble(textBox12.Text) * Convert.ToDouble(textBox14.Text);
+            total /= 1000;
+            total = Math.Round(total, 2, MidpointRounding.AwayFromZero);
+            textBox19.Text = Convert.ToString(total);
+            textBox20.Text = Convert.ToString(Convert.ToDouble(textBox15.Text)
+                + Convert.ToDouble(textBox16.Text)
+                + Convert.ToDouble(textBox17.Text)
+                + Convert.ToDouble(textBox18.Text)
+                + Convert.ToDouble(textBox19.Text));
+
+            update第三步ing = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -352,6 +494,31 @@ namespace SP
                 textBox9.Text = tForm节日与外出设定.getTextBox1Text();
                 textBox10.Text = tForm节日与外出设定.getTextBox2Text();
             }
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            update第三步();
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            update第三步();
+        }
+
+        private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            update第三步();
+        }
+
+        private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            update第三步();
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

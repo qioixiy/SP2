@@ -578,6 +578,7 @@
             // 
             this.textBox20.Location = new System.Drawing.Point(86, 100);
             this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(73, 21);
             this.textBox20.TabIndex = 1;
             // 
@@ -585,6 +586,7 @@
             // 
             this.textBox19.Location = new System.Drawing.Point(86, 71);
             this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(73, 21);
             this.textBox19.TabIndex = 1;
             // 
@@ -599,6 +601,7 @@
             // 
             this.textBox17.Location = new System.Drawing.Point(86, 23);
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(73, 21);
             this.textBox17.TabIndex = 1;
             // 
@@ -606,6 +609,7 @@
             // 
             this.textBox16.Location = new System.Drawing.Point(86, -1);
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(73, 21);
             this.textBox16.TabIndex = 1;
             // 
@@ -742,6 +746,7 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(49, 21);
             this.textBox14.TabIndex = 10;
+            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
             // textBox13
             // 
@@ -754,6 +759,7 @@
             // 
             this.textBox12.Location = new System.Drawing.Point(92, 95);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(49, 21);
             this.textBox12.TabIndex = 10;
             // 
@@ -761,6 +767,7 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(92, 71);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(49, 21);
             this.textBox11.TabIndex = 10;
             // 
@@ -852,6 +859,7 @@
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(86, 20);
             this.comboBox8.TabIndex = 7;
+            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBox8_SelectedIndexChanged);
             // 
             // comboBox7
             // 
@@ -860,6 +868,7 @@
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(86, 20);
             this.comboBox7.TabIndex = 7;
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
             // 
             // label23
             // 
@@ -877,6 +886,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(76, 20);
             this.comboBox6.TabIndex = 5;
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // label22
             // 
@@ -894,6 +904,7 @@
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(64, 20);
             this.comboBox5.TabIndex = 3;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // label21
             // 

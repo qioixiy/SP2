@@ -520,5 +520,31 @@ namespace SP
         {
 
         }
+
+        Form选定军粮品种 tForm选定军粮品种;
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (tForm选定军粮品种 == null)
+            {
+                tForm选定军粮品种 = new Form选定军粮品种();
+            }
+
+            DialogResult tDialogResult = tForm选定军粮品种.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

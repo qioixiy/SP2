@@ -216,6 +216,12 @@
     <Compile Include="Forms\Form计划维护.Designer.cs">
       <DependentUpon>Form计划维护.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form选定军粮品种.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form选定军粮品种.Designer.cs">
+      <DependentUpon>Form选定军粮品种.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form食谱上报.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form计划维护.resx">
       <DependentUpon>Form计划维护.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form选定军粮品种.resx">
+      <DependentUpon>Form选定军粮品种.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱上报.resx">
       <DependentUpon>Form食谱上报.cs</DependentUpon>

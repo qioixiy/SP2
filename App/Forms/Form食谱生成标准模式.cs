@@ -17,6 +17,7 @@ namespace SP
     {
         Form选定军粮品种 tForm选定军粮品种;
         Form选定常用菜肴 tForm选定常用菜肴;
+        Form原料优选 tForm原料优选;
 
         SqlDataAdapter adapter伙食单位参数 = new SqlDataAdapter("select * from dbo.伙食单位参数", DBConnect.Instance().getConnectString());
         DataSet dSet伙食单位参数 = new DataSet();
@@ -548,7 +549,12 @@ namespace SP
 
         private void button7_Click(object sender, EventArgs e)
         {
+            if (tForm原料优选 == null)
+            {
+                tForm原料优选 = new Form原料优选();
+            }
 
+            DialogResult tDialogResult = tForm原料优选.ShowDialog();
         }
 
         private void button8_Click(object sender, EventArgs e)

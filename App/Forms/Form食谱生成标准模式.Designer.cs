@@ -130,6 +130,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.步骤.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -241,6 +242,7 @@
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(100, 21);
             this.textBox6.TabIndex = 8;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // comboBox4
             // 
@@ -455,6 +457,7 @@
             this.textBox7.Size = new System.Drawing.Size(57, 21);
             this.textBox7.TabIndex = 1;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label17
             // 
@@ -1029,6 +1032,7 @@
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(100, 21);
             this.textBox23.TabIndex = 1;
+            this.textBox23.Text = "王五";
             // 
             // textBox22
             // 
@@ -1036,6 +1040,7 @@
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(100, 21);
             this.textBox22.TabIndex = 1;
+            this.textBox22.Text = "李四";
             // 
             // textBox21
             // 
@@ -1043,6 +1048,7 @@
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(100, 21);
             this.textBox21.TabIndex = 1;
+            this.textBox21.Text = "张三";
             // 
             // label50
             // 
@@ -1150,6 +1156,16 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(388, 341);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "完成";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Form食谱生成标准模式
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1157,11 +1173,12 @@
             this.ClientSize = new System.Drawing.Size(566, 376);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.步骤);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button9);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -1299,5 +1316,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button button9;
     }
 }

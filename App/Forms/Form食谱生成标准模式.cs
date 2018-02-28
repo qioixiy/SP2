@@ -18,6 +18,7 @@ namespace SP
         Form选定军粮品种 tForm选定军粮品种;
         Form选定常用菜肴 tForm选定常用菜肴;
         Form原料优选 tForm原料优选;
+        Form预定菜肴 tForm预定菜肴;
 
         SqlDataAdapter adapter伙食单位参数 = new SqlDataAdapter("select * from dbo.伙食单位参数", DBConnect.Instance().getConnectString());
         DataSet dSet伙食单位参数 = new DataSet();
@@ -367,6 +368,8 @@ namespace SP
                     update_textBox4(get米面比例By名称驻地(驻地));
                 }
             }
+
+            update食谱名称();
         }
 
         private string get米面比例By名称驻地(string 驻地)
@@ -503,6 +506,7 @@ namespace SP
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
             update第三步();
+            update食谱名称(); 
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
@@ -559,7 +563,32 @@ namespace SP
 
         private void button8_Click(object sender, EventArgs e)
         {
+            if (tForm预定菜肴 == null)
+            {
+                tForm预定菜肴 = new Form预定菜肴();
+            }
 
+            DialogResult tDialogResult = tForm预定菜肴.ShowDialog();
+        }
+
+        private void update食谱名称()
+        {
+            textBox24.Text = comboBox1.Text + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "所用食谱(" + textBox6.Text + comboBox5.Text + textBox7.Text + "季)";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // 生成食谱
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            update食谱名称();
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            update食谱名称(); 
         }
     }
 }

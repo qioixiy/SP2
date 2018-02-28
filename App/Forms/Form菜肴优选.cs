@@ -74,7 +74,7 @@ namespace SP.Forms
 
                 if (菜肴名称 == selectStr)
                 {
-                    string 菜肴用料 = 菜肴名称 + "需要下列原料：";
+                    string 菜肴用料 = 菜肴名称 + "需要下列原料：\n";
                     if (dr["用料1"].ToString() != "") 菜肴用料 += dr["用料1"] + " " + dr["用量1"];
                     if (dr["用料2"].ToString() != "") 菜肴用料 += "," + dr["用料2"] + " " + dr["用量2"];
                     if (dr["用料3"].ToString() != "") 菜肴用料 += "," + dr["用料3"] + " " + dr["用量3"];

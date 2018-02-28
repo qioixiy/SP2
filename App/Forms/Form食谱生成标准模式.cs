@@ -15,6 +15,9 @@ namespace SP
 {
     public partial class Form食谱生成标准模式 : Form
     {
+        Form选定军粮品种 tForm选定军粮品种;
+        Form选定常用菜肴 tForm选定常用菜肴;
+
         SqlDataAdapter adapter伙食单位参数 = new SqlDataAdapter("select * from dbo.伙食单位参数", DBConnect.Instance().getConnectString());
         DataSet dSet伙食单位参数 = new DataSet();
 
@@ -521,7 +524,6 @@ namespace SP
 
         }
 
-        Form选定军粮品种 tForm选定军粮品种;
         private void button5_Click(object sender, EventArgs e)
         {
             if (tForm选定军粮品种 == null)
@@ -534,7 +536,14 @@ namespace SP
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (tForm选定常用菜肴 == null)
+            {
+                tForm选定常用菜肴 = new Form选定常用菜肴();
+            }
 
+            DialogResult tDialogResult = tForm选定常用菜肴.ShowDialog();
+
+            
         }
 
         private void button7_Click(object sender, EventArgs e)

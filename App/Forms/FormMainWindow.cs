@@ -129,7 +129,7 @@ namespace SP
 
         private void 食谱打印ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new 食谱打印().ShowDialog();
         }
 
         private void 节日食谱ToolStripMenuItem_Click(object sender, EventArgs e)

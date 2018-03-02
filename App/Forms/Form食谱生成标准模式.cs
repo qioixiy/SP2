@@ -604,6 +604,9 @@ namespace SP
             dr["名称"] = textBox24.Text;
             dr["标准伙食费合计"] = Convert.ToString(伙食费合计);
             dr["基本标准"] = "基本标准";
+            dr["单位首长"] = textBox21.Text;
+            dr["经委会"] = textBox22.Text;
+            dr["司务长"] = textBox23.Text;
 
             Random rd = new Random();
 

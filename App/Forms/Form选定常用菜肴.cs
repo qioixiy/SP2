@@ -35,7 +35,14 @@ namespace SP.Forms
                 {
                     object[] items = dr.ItemArray;
                     string str = (string)dr["菜肴名称"];
-                    chooseMap[str] = 0;
+                    if ((string)dr["常用"] == "是")
+                    {
+                        chooseMap[str] = 1;
+                    }
+                    else
+                    {
+                        chooseMap[str] = 0;
+                    }
                 }
             }
 

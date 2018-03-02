@@ -129,7 +129,18 @@ namespace SP
 
         private void 食谱打印ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form食谱公布表打印().ShowDialog();
+            try
+            {
+                new Form食谱公布表打印().ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("发生异常");
+            }
+            finally
+            {
+
+            }
         }
 
         private void 节日食谱ToolStripMenuItem_Click(object sender, EventArgs e)

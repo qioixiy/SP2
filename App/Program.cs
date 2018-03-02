@@ -14,13 +14,24 @@ namespace SP
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
 
-            FormLoginInstance = new FormLogin();
-            FormMainWindowInstance = new FormMainWindow();
+                FormLoginInstance = new FormLogin();
+                FormMainWindowInstance = new FormMainWindow();
 
-            Application.Run(new FormSplashScreen());
+                Application.Run(new FormSplashScreen());
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+
+            }
         }
 
         public static FormLogin FormLoginInstance;

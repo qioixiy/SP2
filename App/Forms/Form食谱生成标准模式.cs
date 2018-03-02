@@ -576,11 +576,6 @@ namespace SP
             textBox24.Text = comboBox1.Text + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "所用食谱(" + textBox6.Text + comboBox5.Text + textBox7.Text + "季)";
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            // 生成食谱
-        }
-
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
             update食谱名称();
@@ -589,6 +584,53 @@ namespace SP
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
             update食谱名称(); 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // 生成食谱
+
+            SqlDataAdapter adapter食谱 = new SqlDataAdapter("select * from dbo.食谱", DBConnect.Instance().getConnectString());
+            DataSet dSet食谱 = new DataSet();
+
+            adapter食谱.Fill(dSet食谱);
+            Common.dumpDataSet(dSet食谱);
+            
+            
+            List<string> list = tForm选定常用菜肴.get选定常用菜肴List();
+
+            double 伙食费合计 = Convert.ToDouble(textBox20.Text) * Convert.ToInt32(numericUpDown1.Value.ToString());
+            DataRow dr = dSet食谱.Tables[0].NewRow();
+            dr["名称"] = textBox24.Text;
+            dr["标准伙食费合计"] = Convert.ToString(伙食费合计);
+            dr["基本标准"] = "基本标准";
+
+            Random rd = new Random();
+
+            int offset = 1;
+
+            for (int i = 0; i < 21; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    int rand = rd.Next(0, list.Count-1);
+
+                    int index = offset + i * 10 + j;
+                    string 序号 = "菜肴" + index;
+                    string 菜肴名称 = list[rand];
+
+                    dr[序号] = 菜肴名称;
+                }
+            }
+
+            dSet食谱.Tables[0].Rows.Add(dr);
+
+            SqlCommandBuilder sql_command = new SqlCommandBuilder(adapter食谱);
+            adapter食谱.Update(dSet食谱.Tables[0]);
+
+            MessageBox.Show("生成成功");
+
+            Close();
         }
     }
 }

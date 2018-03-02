@@ -47,6 +47,18 @@ namespace SP.Forms
             ;
         }
 
+        public List<string> get选定常用菜肴List()
+        {
+            List<string> ret = new List<string>();
+
+            foreach (string key in chooseMap.Keys)
+            {
+                ret.Add(key);
+            }
+
+            return ret;
+        }
+
         private object[] get所有常用菜肴()
         {
             return Common.getUniqueItemsFromDataSet(dSet常用菜肴, "菜肴类型");

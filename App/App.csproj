@@ -76,6 +76,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -333,6 +334,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SPDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SPDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SPDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserContext.cs" />
     <Compile Include="Utils\Common.cs" />
     <EmbeddedResource Include="Forms\Form食谱公布表打印.resx">
@@ -502,6 +513,28 @@
     </None>
     <None Include="SPDataSet2.xss">
       <DependentUpon>SPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet3.xsc">
+      <DependentUpon>SPDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPDataSet3.xss">
+      <DependentUpon>SPDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet4.xsc">
+      <DependentUpon>SPDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPDataSet4.xss">
+      <DependentUpon>SPDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

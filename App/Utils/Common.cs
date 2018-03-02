@@ -67,6 +67,23 @@ namespace SP.Utils
             }
         }
 
+        public static void dumpDataTable(DataTable dt)
+        {
+            foreach (DataColumn dc in dt.Columns)
+            {
+                Console.Write(dc.ColumnName + " ");
+            }
+            Console.Write('\n');
+            foreach (DataRow dr in dt.Rows)
+            {
+                foreach (object obj in dr.ItemArray)
+                {
+                    Console.Write(obj + " ");
+                }
+                Console.Write('\n');
+            }
+        }
+
         public static object[] getUniqueItemsFromDataSet(DataSet dataSet, string rowName)
         {
             Dictionary<string, int> map = new Dictionary<string, int>();

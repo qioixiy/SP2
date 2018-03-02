@@ -93,6 +93,12 @@
     <Compile Include="DataModel\DBUtils.cs" />
     <Compile Include="DataModel\Model用户.cs" />
     <Compile Include="DataModel\Model伙食单位.cs" />
+    <Compile Include="Forms\Form食谱公布表打印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form食谱公布表打印.Designer.cs">
+      <DependentUpon>Form食谱公布表打印.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form食谱打印.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,8 +323,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SPDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SPDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SPDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserContext.cs" />
     <Compile Include="Utils\Common.cs" />
+    <EmbeddedResource Include="Forms\Form食谱公布表打印.resx">
+      <DependentUpon>Form食谱公布表打印.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱打印.resx">
       <DependentUpon>Form食谱打印.cs</DependentUpon>
     </EmbeddedResource>
@@ -433,6 +452,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report食谱打印.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -458,6 +480,28 @@
     </None>
     <None Include="SPDataSet.xss">
       <DependentUpon>SPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet1.xsc">
+      <DependentUpon>SPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPDataSet1.xss">
+      <DependentUpon>SPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet2.xsc">
+      <DependentUpon>SPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SPDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPDataSet2.xss">
+      <DependentUpon>SPDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

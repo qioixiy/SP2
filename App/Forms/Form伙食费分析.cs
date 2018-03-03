@@ -13,7 +13,22 @@ namespace SP.Forms
 {
     public partial class Form伙食费分析 : Form
     {
+
+        class 伙食费
+        {
+            public 伙食费(string 名称, string 调剂标准, string 食谱开支)
+            {
+                this.名称 = 名称;
+                this.调剂标准 = 调剂标准;
+                this.食谱开支 = 食谱开支;
+            }
+            public string 名称;
+            public string 调剂标准, 食谱开支;
+        };
+
         PrintDocument printDocument1 = new PrintDocument();
+
+        List<伙食费> 一周伙食费 = new List<伙食费>();
 
         public Form伙食费分析()
         {
@@ -23,18 +38,33 @@ namespace SP.Forms
 
         private void Form伙食费分析_Load(object sender, EventArgs e)
         {
+            get一周伙食费();
+
             initListView();
             initChart();
         }
 
+        private void get一周伙食费()
+        {
+            一周伙食费.Add(new 伙食费("星期一", "20", "10"));
+            一周伙食费.Add(new 伙食费("星期二", "22", "12"));
+            一周伙食费.Add(new 伙食费("星期三", "24", "12"));
+            一周伙食费.Add(new 伙食费("星期四", "23", "14"));
+            一周伙食费.Add(new 伙食费("星期五", "21", "18"));
+            一周伙食费.Add(new 伙食费("星期六", "19", "12"));
+            一周伙食费.Add(new 伙食费("星期日", "15", "11"));
+        }
+
         private void initListView()
         {
-            ListViewItem listViewItem = new ListViewItem();
-            listViewItem.SubItems.AddRange(new string[] {
-                "1", "2"
-            });
+            for (int index = 0; index < 7; index++)
+            {
+                ListViewItem listViewItem = new ListViewItem();
 
-            listView1.Items.Add(listViewItem);
+                listViewItem.SubItems.AddRange(new string[] { 一周伙食费[index].调剂标准, 一周伙食费[index].食谱开支 });
+                listView1.Items.Add(listViewItem);
+            }
+
         }
 
         private void initChart()
@@ -62,19 +92,11 @@ namespace SP.Forms
             chart1.ChartAreas[0].AxisY.TitleForeColor = System.Drawing.Color.Crimson;
             chart1.ChartAreas[0].AxisY.TextOrientation = TextOrientation.Horizontal;
 
-            series1.Points.AddXY("A", "90");
-            series1.Points.AddXY("B", "88");
-            series1.Points.AddXY("C", "60");
-            series1.Points.AddXY("D", "93");
-            series1.Points.AddXY("E", "79");
-            series1.Points.AddXY("F", "85");
-
-            series2.Points.AddXY("A", "120");
-            series2.Points.AddXY("B", "133");
-            series2.Points.AddXY("C", "100");
-            series2.Points.AddXY("D", "98");
-            series2.Points.AddXY("E", "126");
-            series2.Points.AddXY("F", "89");
+            for (int i = 0; i < 一周伙食费.Count; i++)
+            {
+                series1.Points.AddXY(一周伙食费[i].名称, 一周伙食费[i].调剂标准);
+                series1.Points.AddXY(一周伙食费[i].名称, 一周伙食费[i].食谱开支);
+            }
 
             //把series添加到chart上
             chart1.Series.Add(series1);
@@ -82,25 +104,25 @@ namespace SP.Forms
 
         }
         
-        Bitmap memoryImage;
-        private void CaptureScreen()
+        private Bitmap CaptureScreen()
         {
+            Bitmap memoryImage;
             Graphics myGraphics = this.CreateGraphics();
             Size s = this.Size;
             memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
             Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(
-           this.Location.X, this.Location.Y, 0, 0, s);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+
+            return memoryImage;
         }
 
         private void printDocument1_PrintPage(System.Object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(memoryImage, 0, 0);
+            e.Graphics.DrawImage(CaptureScreen(), 0, 0);
         } 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CaptureScreen();
             printDocument1.Print();
         }
 

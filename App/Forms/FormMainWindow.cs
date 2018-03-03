@@ -137,7 +137,7 @@ namespace SP
 
         private void 总体评估ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form食谱评估结果报告().ShowDialog();
         }
 
         private void 伙食费评估ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -147,7 +147,7 @@ namespace SP
 
         private void 热能分析ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form热能分析().ShowDialog();
         }
 
         private void 食谱打印ToolStripMenuItem_Click(object sender, EventArgs e)

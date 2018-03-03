@@ -102,6 +102,12 @@
     <Compile Include="Forms\Form伙食费分析.Designer.cs">
       <DependentUpon>Form伙食费分析.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form热能分析.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form热能分析.Designer.cs">
+      <DependentUpon>Form热能分析.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form食谱公布表打印.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -312,6 +318,12 @@
     <Compile Include="Forms\Form食谱生成自定义模式.Designer.cs">
       <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form食谱评估结果报告.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form食谱评估结果报告.Designer.cs">
+      <DependentUpon>Form食谱评估结果报告.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form食谱调用.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,6 +349,9 @@
     <Compile Include="Utils\PubFunction.cs" />
     <EmbeddedResource Include="Forms\Form伙食费分析.resx">
       <DependentUpon>Form伙食费分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form热能分析.resx">
+      <DependentUpon>Form热能分析.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱公布表打印.resx">
       <DependentUpon>Form食谱公布表打印.cs</DependentUpon>
@@ -443,6 +458,9 @@
     <EmbeddedResource Include="Forms\Form食谱生成自定义模式.resx">
       <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form食谱评估结果报告.resx">
+      <DependentUpon>Form食谱评估结果报告.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱调用.resx">
       <DependentUpon>Form食谱调用.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,7 +472,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report食谱评估结果报告.rdlc" />
     <EmbeddedResource Include="Report食谱打印.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>

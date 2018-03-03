@@ -606,6 +606,7 @@ namespace SP
             double 伙食费合计 = Convert.ToDouble(textBox20.Text) * Convert.ToInt32(numericUpDown1.Value.ToString());
             DataRow dr = dSet食谱.Tables[0].NewRow();
             dr["名称"] = textBox24.Text;
+            dr["食谱来源"] = "标准模式";
             dr["标准伙食费合计"] = Convert.ToString(伙食费合计);
             dr["生成日期"] = textBox3.Text;
             dr["地区"] = comboBox2.Text;

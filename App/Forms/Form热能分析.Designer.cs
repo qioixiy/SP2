@@ -127,6 +127,8 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.chart1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form热能分析";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "热能分析";

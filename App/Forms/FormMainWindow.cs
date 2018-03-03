@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SP.Forms;
+using DataModel;
+using System.Data.SqlClient;
 
 namespace SP
 {
@@ -54,7 +56,28 @@ namespace SP
 
         private void 食谱清空ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection con = new SqlConnection();//实例化一个类
+                con.ConnectionString = DBConnect.Instance().getConnectString();
+                con.Open();
 
+                string strdel = "DELETE FROM [SP].[dbo].[食谱]";
+                SqlCommand comm = new SqlCommand(strdel, con);//sql 语句命令
+                comm.ExecuteNonQuery();// 执行sql 语句命令
+
+                con.Close();
+
+                MessageBox.Show("食谱已经清空");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("发生异常" + ex.ToString());
+            }
+            finally
+            {
+
+            }
         }
 
         private void 标准维护ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -336,6 +359,11 @@ namespace SP
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
             new Form营养维护().ShowDialog();
+        }
+
+        private void FormMainWindow_Load(object sender, EventArgs e)
+        {
+            this.Text = Program.FormMainWindowInstance.mUserContext.当前食谱;
         }
     }
 }

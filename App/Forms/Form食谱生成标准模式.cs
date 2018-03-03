@@ -588,14 +588,18 @@ namespace SP
 
         private void button9_Click(object sender, EventArgs e)
         {
-            // 生成食谱
+            if (tForm选定常用菜肴 == null)
+            {
+                MessageBox.Show("请到第四步，先选择常用菜肴");
+                return;
+            }
 
+            // 生成食谱
             SqlDataAdapter adapter食谱 = new SqlDataAdapter("select * from dbo.食谱", DBConnect.Instance().getConnectString());
             DataSet dSet食谱 = new DataSet();
 
             adapter食谱.Fill(dSet食谱);
             Common.dumpDataSet(dSet食谱);
-            
             
             List<string> list = tForm选定常用菜肴.get选定常用菜肴List();
 
@@ -632,6 +636,8 @@ namespace SP
             adapter食谱.Update(dSet食谱.Tables[0]);
 
             MessageBox.Show("生成成功");
+
+            Program.FormMainWindowInstance.mUserContext.当前食谱 = textBox24.Text;
 
             Close();
         }

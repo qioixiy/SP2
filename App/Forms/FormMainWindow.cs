@@ -142,7 +142,7 @@ namespace SP
 
         private void 伙食费评估ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form伙食费分析().ShowDialog();
         }
 
         private void 热能分析ToolStripMenuItem_Click(object sender, EventArgs e)

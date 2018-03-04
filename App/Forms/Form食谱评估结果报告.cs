@@ -47,6 +47,9 @@ namespace SP.Forms
                 conn.Dispose();
             }
 
+            ReportParameter strrp = new ReportParameter("ReportParameter使用单位", "参数值");
+            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { strrp });
+
             ReportDataSource rds = new ReportDataSource("DataSet1", dt);
             this.reportViewer1.LocalReport.DataSources.Clear();
 

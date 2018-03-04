@@ -56,5 +56,11 @@ namespace SP.Forms
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void Form食谱公布表打印_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            reportViewer1.LocalReport.ReleaseSandboxAppDomain();
+            reportViewer1.LocalReport.Dispose();
+        }
     }
 }

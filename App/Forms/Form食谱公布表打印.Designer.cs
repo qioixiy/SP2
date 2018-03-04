@@ -64,6 +64,7 @@
             this.Name = "Form食谱公布表打印";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "食谱公布表打印";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form食谱公布表打印_FormClosing);
             this.Load += new System.EventHandler(this.Form食谱公布表打印_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

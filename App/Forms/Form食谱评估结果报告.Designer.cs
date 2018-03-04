@@ -37,14 +37,14 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "SP.Report食谱评估结果报告.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(-2, 1);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(728, 515);
+            this.reportViewer1.Size = new System.Drawing.Size(906, 376);
             this.reportViewer1.TabIndex = 0;
             // 
             // Form食谱评估结果报告
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 511);
+            this.ClientSize = new System.Drawing.Size(906, 511);
             this.Controls.Add(this.reportViewer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -52,6 +52,7 @@
             this.Name = "Form食谱评估结果报告";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "食谱评估结果报告";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form食谱评估结果报告_FormClosing);
             this.Load += new System.EventHandler(this.Form食谱评估结果报告_Load);
             this.ResumeLayout(false);
 

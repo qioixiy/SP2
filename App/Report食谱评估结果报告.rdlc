@@ -123,7 +123,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>一级指标</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -153,7 +155,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>权重</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -183,7 +187,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>二级指标</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -213,7 +219,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>标准值</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -243,7 +251,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>实际值</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -273,7 +283,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>权重</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -303,7 +315,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>得分</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -321,6 +335,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -333,7 +348,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>总分</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -643,7 +660,9 @@
             <TextRuns>
               <TextRun>
                 <Value>食谱评估结果报告</Value>
-                <Style />
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -651,7 +670,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.28258cm</Top>
-        <Left>7.88397cm</Left>
+        <Left>6.37584cm</Left>
         <Height>0.6cm</Height>
         <Width>4.405cm</Width>
         <ZIndex>1</ZIndex>
@@ -673,7 +692,9 @@
             <TextRuns>
               <TextRun>
                 <Value>使用单位：</Value>
-                <Style />
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -733,7 +754,9 @@
             <TextRuns>
               <TextRun>
                 <Value>使用时间：</Value>
-                <Style />
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -793,7 +816,9 @@
             <TextRuns>
               <TextRun>
                 <Value>食谱要求：</Value>
-                <Style />
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -852,7 +877,9 @@
             <TextRuns>
               <TextRun>
                 <Value>评估时间：</Value>
-                <Style />
+                <Style>
+                  <FontFamily>宋体</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />

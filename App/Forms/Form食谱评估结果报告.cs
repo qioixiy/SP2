@@ -20,6 +20,16 @@ namespace SP.Forms
             InitializeComponent();
         }
 
+        class Pair
+        {
+            public Pair(string key, string value)
+            {
+                this.key = key;
+                this.value = value;
+            }
+            public string key, value;
+        };
+
         private void Form食谱评估结果报告_Load(object sender, EventArgs e)
         {
             string connstring = DBConnect.Instance().getConnectString();
@@ -47,8 +57,67 @@ namespace SP.Forms
                 conn.Dispose();
             }
 
-            ReportParameter strrp = new ReportParameter("ReportParameter使用单位", "参数值");
-            reportViewer1.LocalReport.SetParameters(new ReportParameter[] { strrp });
+            List<ReportParameter> reportParameterList = new List<ReportParameter>();
+
+            reportParameterList.Add(new ReportParameter("ReportParameter使用单位", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter使用时间", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食谱要求", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter评估时间", "参数值"));
+
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_实际值_1", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_实际值_2", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_实际值_3", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_实际值_4", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_实际值_5", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_实际值_6", "参数值"));
+
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_得分_1", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_得分_2", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_得分_3", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_得分_4", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_得分_5", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_得分_6", "参数值"));
+
+            reportParameterList.Add(new ReportParameter("ReportParameter食物定量_得分_和", "参数值"));
+
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_热能", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_蛋白质", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_优质蛋白质", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_蛋白质脂肪糖发热", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_动物性来源脂肪", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_钙", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_铁", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_锌", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_硒", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_维A", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_维E", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_维B1", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_维B2", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_维PP", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_实际值_维C", "参数值"));
+
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_热能", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_蛋白质", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_优质蛋白质", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_蛋白质脂肪糖发热", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_动物性来源脂肪", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_钙", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_铁", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_锌", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_硒", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_维A", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_维E", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_维B1", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_维B2", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_维PP", "参数值"));
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_维C", "参数值"));
+
+            reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_和", "参数值"));
+
+            
+
+
+            reportViewer1.LocalReport.SetParameters(reportParameterList);
 
             ReportDataSource rds = new ReportDataSource("DataSet1", dt);
             this.reportViewer1.LocalReport.DataSources.Clear();

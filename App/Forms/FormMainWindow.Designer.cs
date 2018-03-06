@@ -34,7 +34,6 @@
             this.使用单位ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.食谱恢复ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.食谱清空ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.标准维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,14 +44,9 @@
             this.食谱生成ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.食谱新建ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.标准模式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.自定义模式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.食谱调用ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.食谱编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.食谱评估ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.总体评估ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.伙食费评估ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.热能分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.食谱打印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.食谱评估ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.总体评估ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,18 +58,12 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.外购计划ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.数据管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.基础数据备份ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.基础数据恢复ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.常用原料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.常用菜肴ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.原料编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.菜肴编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.模板编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.标准模式ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.自定义模式ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.权重调整ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -108,7 +96,6 @@
             this.使用单位ToolStripMenuItem,
             this.系统密码ToolStripMenuItem,
             this.toolStripSeparator1,
-            this.食谱恢复ToolStripMenuItem,
             this.食谱清空ToolStripMenuItem,
             this.toolStripSeparator2,
             this.标准维护ToolStripMenuItem,
@@ -138,13 +125,6 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
-            // 
-            // 食谱恢复ToolStripMenuItem
-            // 
-            this.食谱恢复ToolStripMenuItem.Name = "食谱恢复ToolStripMenuItem";
-            this.食谱恢复ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.食谱恢复ToolStripMenuItem.Text = "食谱恢复";
-            this.食谱恢复ToolStripMenuItem.Click += new System.EventHandler(this.食谱恢复ToolStripMenuItem_Click);
             // 
             // 食谱清空ToolStripMenuItem
             // 
@@ -199,7 +179,6 @@
             this.食谱调用ToolStripMenuItem,
             this.toolStripSeparator4,
             this.食谱编辑ToolStripMenuItem,
-            this.食谱评估ToolStripMenuItem,
             this.食谱打印ToolStripMenuItem});
             this.食谱生成ToolStripMenuItem.Name = "食谱生成ToolStripMenuItem";
             this.食谱生成ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
@@ -208,8 +187,7 @@
             // 食谱新建ToolStripMenuItem
             // 
             this.食谱新建ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.标准模式ToolStripMenuItem,
-            this.自定义模式ToolStripMenuItem});
+            this.标准模式ToolStripMenuItem});
             this.食谱新建ToolStripMenuItem.Name = "食谱新建ToolStripMenuItem";
             this.食谱新建ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.食谱新建ToolStripMenuItem.Text = "食谱新建";
@@ -220,14 +198,6 @@
             this.标准模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.标准模式ToolStripMenuItem.Text = "标准模式";
             this.标准模式ToolStripMenuItem.Click += new System.EventHandler(this.标准模式ToolStripMenuItem_Click);
-            // 
-            // 自定义模式ToolStripMenuItem
-            // 
-            this.自定义模式ToolStripMenuItem.Name = "自定义模式ToolStripMenuItem";
-            this.自定义模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.自定义模式ToolStripMenuItem.Text = "自定义模式";
-            this.自定义模式ToolStripMenuItem.Visible = false;
-            this.自定义模式ToolStripMenuItem.Click += new System.EventHandler(this.自定义模式ToolStripMenuItem_Click);
             // 
             // 食谱调用ToolStripMenuItem
             // 
@@ -247,39 +217,6 @@
             this.食谱编辑ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.食谱编辑ToolStripMenuItem.Text = "食谱编辑";
             this.食谱编辑ToolStripMenuItem.Click += new System.EventHandler(this.食谱编辑ToolStripMenuItem_Click);
-            // 
-            // 食谱评估ToolStripMenuItem
-            // 
-            this.食谱评估ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.总体评估ToolStripMenuItem,
-            this.伙食费评估ToolStripMenuItem,
-            this.热能分析ToolStripMenuItem});
-            this.食谱评估ToolStripMenuItem.Name = "食谱评估ToolStripMenuItem";
-            this.食谱评估ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.食谱评估ToolStripMenuItem.Text = "食谱评估";
-            this.食谱评估ToolStripMenuItem.Visible = false;
-            this.食谱评估ToolStripMenuItem.Click += new System.EventHandler(this.食谱评估ToolStripMenuItem_Click);
-            // 
-            // 总体评估ToolStripMenuItem
-            // 
-            this.总体评估ToolStripMenuItem.Name = "总体评估ToolStripMenuItem";
-            this.总体评估ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.总体评估ToolStripMenuItem.Text = "总体评估";
-            this.总体评估ToolStripMenuItem.Click += new System.EventHandler(this.总体评估ToolStripMenuItem_Click);
-            // 
-            // 伙食费评估ToolStripMenuItem
-            // 
-            this.伙食费评估ToolStripMenuItem.Name = "伙食费评估ToolStripMenuItem";
-            this.伙食费评估ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.伙食费评估ToolStripMenuItem.Text = "伙食费评估";
-            this.伙食费评估ToolStripMenuItem.Click += new System.EventHandler(this.伙食费评估ToolStripMenuItem_Click);
-            // 
-            // 热能分析ToolStripMenuItem
-            // 
-            this.热能分析ToolStripMenuItem.Name = "热能分析ToolStripMenuItem";
-            this.热能分析ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.热能分析ToolStripMenuItem.Text = "热能分析";
-            this.热能分析ToolStripMenuItem.Click += new System.EventHandler(this.热能分析ToolStripMenuItem_Click);
             // 
             // 食谱打印ToolStripMenuItem
             // 
@@ -360,36 +297,16 @@
             // 数据管理ToolStripMenuItem
             // 
             this.数据管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.基础数据备份ToolStripMenuItem,
-            this.基础数据恢复ToolStripMenuItem,
             this.toolStripSeparator6,
             this.常用原料ToolStripMenuItem,
             this.常用菜肴ToolStripMenuItem,
             this.原料编辑ToolStripMenuItem,
             this.菜肴编辑ToolStripMenuItem,
             this.toolStripSeparator7,
-            this.模板编辑ToolStripMenuItem,
-            this.权重调整ToolStripMenuItem,
             this.toolStripSeparator8});
             this.数据管理ToolStripMenuItem.Name = "数据管理ToolStripMenuItem";
             this.数据管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.数据管理ToolStripMenuItem.Text = "数据管理";
-            // 
-            // 基础数据备份ToolStripMenuItem
-            // 
-            this.基础数据备份ToolStripMenuItem.Name = "基础数据备份ToolStripMenuItem";
-            this.基础数据备份ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.基础数据备份ToolStripMenuItem.Text = "基础数据备份";
-            this.基础数据备份ToolStripMenuItem.Visible = false;
-            this.基础数据备份ToolStripMenuItem.Click += new System.EventHandler(this.基础数据备份ToolStripMenuItem_Click);
-            // 
-            // 基础数据恢复ToolStripMenuItem
-            // 
-            this.基础数据恢复ToolStripMenuItem.Name = "基础数据恢复ToolStripMenuItem";
-            this.基础数据恢复ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.基础数据恢复ToolStripMenuItem.Text = "基础数据恢复";
-            this.基础数据恢复ToolStripMenuItem.Visible = false;
-            this.基础数据恢复ToolStripMenuItem.Click += new System.EventHandler(this.基础数据恢复ToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
@@ -428,37 +345,6 @@
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(145, 6);
-            // 
-            // 模板编辑ToolStripMenuItem
-            // 
-            this.模板编辑ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.标准模式ToolStripMenuItem1,
-            this.自定义模式ToolStripMenuItem1});
-            this.模板编辑ToolStripMenuItem.Name = "模板编辑ToolStripMenuItem";
-            this.模板编辑ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.模板编辑ToolStripMenuItem.Text = "模板编辑";
-            this.模板编辑ToolStripMenuItem.Click += new System.EventHandler(this.模板编辑ToolStripMenuItem_Click);
-            // 
-            // 标准模式ToolStripMenuItem1
-            // 
-            this.标准模式ToolStripMenuItem1.Name = "标准模式ToolStripMenuItem1";
-            this.标准模式ToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
-            this.标准模式ToolStripMenuItem1.Text = "标准模式";
-            this.标准模式ToolStripMenuItem1.Click += new System.EventHandler(this.标准模式ToolStripMenuItem1_Click);
-            // 
-            // 自定义模式ToolStripMenuItem1
-            // 
-            this.自定义模式ToolStripMenuItem1.Name = "自定义模式ToolStripMenuItem1";
-            this.自定义模式ToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
-            this.自定义模式ToolStripMenuItem1.Text = "自定义模式";
-            this.自定义模式ToolStripMenuItem1.Click += new System.EventHandler(this.自定义模式ToolStripMenuItem1_Click);
-            // 
-            // 权重调整ToolStripMenuItem
-            // 
-            this.权重调整ToolStripMenuItem.Name = "权重调整ToolStripMenuItem";
-            this.权重调整ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.权重调整ToolStripMenuItem.Text = "权重调整";
-            this.权重调整ToolStripMenuItem.Click += new System.EventHandler(this.权重调整ToolStripMenuItem_Click);
             // 
             // toolStripSeparator8
             // 
@@ -577,7 +463,6 @@
         private System.Windows.Forms.ToolStripMenuItem 数据管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 使用单位ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 系统密码ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 食谱恢复ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 食谱清空ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 标准维护ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 营养标准ToolStripMenuItem;
@@ -585,27 +470,16 @@
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 食谱新建ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 标准模式ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 自定义模式ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 食谱调用ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 食谱编辑ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 食谱评估ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 食谱打印ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 计划汇总ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 计划维护ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 外购计划ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 基础数据备份ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 基础数据恢复ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 常用原料ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 常用菜肴ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 原料编辑ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 菜肴编辑ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 模板编辑ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 标准模式ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem 自定义模式ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem 权重调整ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 总体评估ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 伙食费评估ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 热能分析ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 食谱评估ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 总体评估ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 伙食费评估ToolStripMenuItem1;

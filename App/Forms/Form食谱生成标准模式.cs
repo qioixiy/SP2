@@ -137,7 +137,10 @@ namespace SP
 
         private void init第四步()
         {
-
+            if (tForm选定常用菜肴 == null)
+            {
+                tForm选定常用菜肴 = new Form选定常用菜肴();
+            }
         }
 
         private void init第五步()
@@ -600,13 +603,14 @@ namespace SP
 
             adapter食谱.Fill(dSet食谱);
             Common.dumpDataSet(dSet食谱);
-            
-            List<string> list = tForm选定常用菜肴.get选定常用菜肴List();
 
-            double 伙食费合计 = Convert.ToDouble(textBox20.Text) * Convert.ToInt32(numericUpDown1.Value.ToString());
             DataRow dr = dSet食谱.Tables[0].NewRow();
+            List<string> list = tForm选定常用菜肴.get选定常用菜肴List();
+            getOneTimeSPList(list, dr);
+
             dr["名称"] = textBox24.Text;
             dr["食谱来源"] = "标准模式";
+            double 伙食费合计 = Convert.ToDouble(textBox20.Text) * Convert.ToInt32(numericUpDown1.Value.ToString());
             dr["标准伙食费合计"] = Convert.ToString(伙食费合计);
             dr["生成日期"] = textBox3.Text;
             dr["地区"] = comboBox2.Text;
@@ -638,24 +642,6 @@ namespace SP
             dr["经委会"] = textBox22.Text;
             dr["司务长"] = textBox23.Text;
 
-            Random rd = new Random();
-
-            int offset = 1;
-
-            for (int i = 0; i < 21; i++)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    int rand = rd.Next(0, list.Count-1);
-
-                    int index = offset + i * 10 + j;
-                    string 序号 = "菜肴" + index;
-                    string 菜肴名称 = list[rand];
-
-                    dr[序号] = 菜肴名称;
-                }
-            }
-
             dSet食谱.Tables[0].Rows.Add(dr);
 
             SqlCommandBuilder sql_command = new SqlCommandBuilder(adapter食谱);
@@ -666,6 +652,27 @@ namespace SP
             Program.FormMainWindowInstance.mUserContext.当前食谱 = textBox24.Text;
 
             Close();
+        }
+
+        private void getOneTimeSPList(List<string> list常用菜肴, DataRow dr)
+        {
+            Random rd = new Random();
+
+            int offset = 1;
+
+            for (int i = 0; i < 3 * 7; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    int rand = rd.Next(0, list常用菜肴.Count - 1);
+
+                    int index = offset + i * 10 + j;
+                    string 序号 = "菜肴" + index;
+                    string 菜肴名称 = list常用菜肴[rand];
+
+                    dr[序号] = 菜肴名称;
+                }
+            }
         }
     }
 }

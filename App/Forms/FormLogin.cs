@@ -56,5 +56,10 @@ namespace SP
         {
 
         }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            label1.BackColor = System.Drawing.Color.Transparent;
+        }
     }
 }

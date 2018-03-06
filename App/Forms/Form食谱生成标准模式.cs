@@ -606,7 +606,7 @@ namespace SP
 
             DataRow dr = dSet食谱.Tables[0].NewRow();
             List<string> list = tForm选定常用菜肴.get选定常用菜肴List();
-            getOneTimeSPList(list, dr);
+            getOneWeekSPList(list, dr);
 
             dr["名称"] = textBox24.Text;
             dr["食谱来源"] = "标准模式";
@@ -654,19 +654,22 @@ namespace SP
             Close();
         }
 
+        private void getOneWeekSPList(List<string> list常用菜肴, DataRow dr)
+        {
+            getOneTimeSPList(list常用菜肴, dr);
+        }
+
         private void getOneTimeSPList(List<string> list常用菜肴, DataRow dr)
         {
             Random rd = new Random();
 
-            int offset = 1;
-
             for (int i = 0; i < 3 * 7; i++)
             {
-                for (int j = 0; j < 10; j++)
+                for (int j = 0; j < 10; j++) // 最多10个菜
                 {
                     int rand = rd.Next(0, list常用菜肴.Count - 1);
 
-                    int index = offset + i * 10 + j;
+                    int index = 1 + i * 10 + j;
                     string 序号 = "菜肴" + index;
                     string 菜肴名称 = list常用菜肴[rand];
 

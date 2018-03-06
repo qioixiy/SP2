@@ -37,7 +37,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "SP.Report食谱评估结果报告.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(-2, 1);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(906, 376);
+            this.reportViewer1.Size = new System.Drawing.Size(906, 510);
             this.reportViewer1.TabIndex = 0;
             // 
             // Form食谱评估结果报告

@@ -164,12 +164,6 @@
     <Compile Include="Forms\Form菜肴优选.Designer.cs">
       <DependentUpon>Form菜肴优选.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormIconTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormIconTest.Designer.cs">
-      <DependentUpon>FormIconTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,6 +320,12 @@
     <Compile Include="Forms\Form食谱生成自定义模式.Designer.cs">
       <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form食谱编辑.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form食谱编辑.Designer.cs">
+      <DependentUpon>Form食谱编辑.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form食谱评估结果报告.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +345,7 @@
     <Compile Include="Forms\Form食谱调试.Designer.cs">
       <DependentUpon>Form食谱调试.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SqlDataPool.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SPDataSet.Designer.cs">
@@ -366,9 +367,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱打印.resx">
       <DependentUpon>Form食谱打印.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormIconTest.resx">
-      <DependentUpon>FormIconTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -468,6 +466,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱生成自定义模式.resx">
       <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form食谱编辑.resx">
+      <DependentUpon>Form食谱编辑.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱评估结果报告.resx">
       <DependentUpon>Form食谱评估结果报告.cs</DependentUpon>

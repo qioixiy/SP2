@@ -137,7 +137,7 @@ namespace SP
 
         private void 食谱编辑ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Form食谱编辑().ShowDialog();
         }
 
         private void 食谱评估ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -323,7 +323,7 @@ namespace SP
 
         private void 关于食谱ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FormIconTest().ShowDialog();
+            ;
         }
 
         private void 总体评估ToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -377,6 +377,11 @@ namespace SP
         }
 
         private void 采购计划ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

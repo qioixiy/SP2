@@ -651,6 +651,8 @@ namespace SP
 
             Program.FormMainWindowInstance.mUserContext.当前食谱 = textBox24.Text;
 
+            DialogResult = DialogResult.OK;
+
             Close();
         }
 
@@ -665,7 +667,8 @@ namespace SP
 
             for (int i = 0; i < 3 * 7; i++)
             {
-                for (int j = 0; j < 10; j++) // 最多10个菜
+                List<string> list已经挑选菜肴 = new List<string>();
+                for (int j = 0; j < 10;) // 每顿最多10个菜
                 {
                     int rand = rd.Next(0, list常用菜肴.Count - 1);
 
@@ -673,7 +676,15 @@ namespace SP
                     string 序号 = "菜肴" + index;
                     string 菜肴名称 = list常用菜肴[rand];
 
+                    if (list已经挑选菜肴.Find(s => s.Equals(菜肴名称)) != null)
+                    {
+                        Console.WriteLine("find " + 菜肴名称 + ",retry");
+                        continue;
+                    }
+
                     dr[序号] = 菜肴名称;
+
+                    j++;
                 }
             }
         }

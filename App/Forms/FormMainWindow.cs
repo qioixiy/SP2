@@ -107,7 +107,17 @@ namespace SP
 
         private void 标准模式ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form食谱生成标准模式().ShowDialog();
+            Form食谱生成标准模式 tForm食谱生成标准模式 = new Form食谱生成标准模式();
+            DialogResult result = tForm食谱生成标准模式.ShowDialog();
+
+            if (result == DialogResult.Cancel)
+            {
+                ;
+            }
+            else if (result == DialogResult.OK)
+            {
+                new Form食谱生成成功().ShowDialog();
+            }
         }
 
         private void 自定义模式ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -364,6 +374,11 @@ namespace SP
         private void FormMainWindow_Load(object sender, EventArgs e)
         {
             this.Text = Program.FormMainWindowInstance.mUserContext.当前食谱;
+        }
+
+        private void 采购计划ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

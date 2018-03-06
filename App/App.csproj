@@ -19,6 +19,9 @@
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -507,9 +510,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ebffab0bd6177411bf1121d4649cc633353e2acc1715c-6cmlfD_fw658.jpg" />
+    <None Include="Resources\cc7295d2fd8455667b814a930b1aaf8f.png" />
+    <None Include="Resources\235092-1305101H63074.jpg" />
+    <None Include="Resources\large_2uFt_7afe00001160125b.jpg" />
     <Content Include="Resources\login_bg.jpg" />
     <Content Include="Resources\SPSC.ICO" />
     <Content Include="Resources\system_bg.jpg" />
+    <None Include="Resources\图片1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

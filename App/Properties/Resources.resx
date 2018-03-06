@@ -118,10 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dialogPassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ebffab0bd6177411bf1121d4649cc633353e2acc1715c-6cmlfD_fw658" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ebffab0bd6177411bf1121d4649cc633353e2acc1715c-6cmlfD_fw658.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="输入密码" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dialogPassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login_bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cc7295d2fd8455667b814a930b1aaf8f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cc7295d2fd8455667b814a930b1aaf8f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图片1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图片1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="235092-1305101H63074" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\235092-1305101H63074.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_2uFt_7afe00001160125b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\large_2uFt_7afe00001160125b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

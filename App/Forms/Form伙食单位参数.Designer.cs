@@ -40,9 +40,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 366);
+            this.button1.Location = new System.Drawing.Point(17, 458);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "修改";
             this.button1.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(95, 366);
+            this.button2.Location = new System.Drawing.Point(127, 458);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 1;
             this.button2.Text = "添加";
             this.button2.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(177, 365);
+            this.button3.Location = new System.Drawing.Point(236, 456);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 29);
             this.button3.TabIndex = 2;
             this.button3.Text = "删除";
             this.button3.UseVisualStyleBackColor = true;
@@ -70,9 +73,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(259, 364);
+            this.button4.Location = new System.Drawing.Point(345, 455);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 29);
             this.button4.TabIndex = 3;
             this.button4.Text = "打印";
             this.button4.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(341, 365);
+            this.button5.Location = new System.Drawing.Point(455, 456);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 29);
             this.button5.TabIndex = 4;
             this.button5.Text = "退出";
             this.button5.UseVisualStyleBackColor = true;
@@ -90,22 +95,24 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 15);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(693, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(924, 422);
             this.dataGridView1.TabIndex = 6;
             // 
             // Form伙食单位参数
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 400);
+            this.BackgroundImage = global::SP.Properties.Resources.large_2uFt_7afe00001160125b;
+            this.ClientSize = new System.Drawing.Size(956, 500);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -113,6 +120,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form伙食单位参数";

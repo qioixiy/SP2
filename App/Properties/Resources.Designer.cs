@@ -63,9 +63,39 @@ namespace SP.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap dialogPassword {
+        internal static System.Drawing.Bitmap _235092_1305101H63074 {
             get {
-                object obj = ResourceManager.GetObject("dialogPassword", resourceCulture);
+                object obj = ResourceManager.GetObject("235092-1305101H63074", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap cc7295d2fd8455667b814a930b1aaf8f {
+            get {
+                object obj = ResourceManager.GetObject("cc7295d2fd8455667b814a930b1aaf8f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ebffab0bd6177411bf1121d4649cc633353e2acc1715c_6cmlfD_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("ebffab0bd6177411bf1121d4649cc633353e2acc1715c-6cmlfD_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap large_2uFt_7afe00001160125b {
+            get {
+                object obj = ResourceManager.GetObject("large_2uFt_7afe00001160125b", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +106,26 @@ namespace SP.Properties {
         internal static System.Drawing.Bitmap login_bg {
             get {
                 object obj = ResourceManager.GetObject("login_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 图片1 {
+            get {
+                object obj = ResourceManager.GetObject("图片1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 输入密码 {
+            get {
+                object obj = ResourceManager.GetObject("输入密码", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

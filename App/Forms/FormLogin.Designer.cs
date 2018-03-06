@@ -39,9 +39,10 @@
             // 
             // buttonOk
             // 
-            this.buttonOk.Location = new System.Drawing.Point(150, 129);
+            this.buttonOk.Location = new System.Drawing.Point(200, 161);
+            this.buttonOk.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(75, 23);
+            this.buttonOk.Size = new System.Drawing.Size(100, 29);
             this.buttonOk.TabIndex = 1;
             this.buttonOk.Text = "确定";
             this.buttonOk.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(251, 129);
+            this.buttonCancel.Location = new System.Drawing.Point(335, 161);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(100, 29);
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "取消";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -60,44 +62,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(153, 35);
+            this.label1.Font = new System.Drawing.Font("华文中宋", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(204, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 12);
+            this.label1.Size = new System.Drawing.Size(290, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "请输入登陆口令（区分大小写）";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 77);
+            this.textBox1.Location = new System.Drawing.Point(200, 96);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(176, 21);
+            this.textBox1.Size = new System.Drawing.Size(233, 25);
             this.textBox1.TabIndex = 0;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::SP.Properties.Resources.dialogPassword;
+            this.pictureBox1.BackgroundImage = global::SP.Properties.Resources.输入密码;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 25);
+            this.pictureBox1.Image = global::SP.Properties.Resources._235092_1305101H63074;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 97);
+            this.pictureBox1.Size = new System.Drawing.Size(128, 121);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(358, 176);
+            this.BackgroundImage = global::SP.Properties.Resources.large_2uFt_7afe00001160125b;
+            this.ClientSize = new System.Drawing.Size(477, 220);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLogin";

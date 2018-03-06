@@ -51,5 +51,10 @@ namespace SP
                 buttonOk_Click(sender, e);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

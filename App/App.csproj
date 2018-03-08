@@ -345,6 +345,9 @@
     <Compile Include="Forms\Form食谱调试.Designer.cs">
       <DependentUpon>Form食谱调试.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RowMergeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\SqlDataPool.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

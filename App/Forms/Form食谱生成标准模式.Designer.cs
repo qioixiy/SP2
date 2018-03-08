@@ -950,6 +950,7 @@
             this.button8.TabIndex = 3;
             this.button8.Text = "预定菜肴";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Visible = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
@@ -960,6 +961,7 @@
             this.button7.TabIndex = 3;
             this.button7.Text = "选定常用原料";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Visible = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
@@ -980,6 +982,7 @@
             this.button5.TabIndex = 3;
             this.button5.Text = "选定军粮品种";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label45

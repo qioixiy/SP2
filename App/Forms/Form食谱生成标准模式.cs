@@ -606,7 +606,16 @@ namespace SP
 
             DataRow dr = dSet食谱.Tables[0].NewRow();
             List<string> list = tForm选定常用菜肴.get选定常用菜肴List();
-            getOneWeekSPList(list, dr);
+
+            try
+            {
+                getOneWeekSPList(list, dr);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("生成失败");
+                return;
+            }
 
             dr["名称"] = textBox24.Text;
             dr["食谱来源"] = "标准模式";
@@ -656,24 +665,234 @@ namespace SP
             Close();
         }
 
-        private void getOneWeekSPList(List<string> list常用菜肴, DataRow dr)
+        private string[] get能量(string 强度类型)
         {
-            getOneTimeSPList(list常用菜肴, dr);
+            SqlData sqlData = SqlDataPool.Instance().GetSqlDataByName("营养素标准");
+
+            object obj = Common.selectDataItemFromDataSet(sqlData.mDataSet, "类型", 强度类型, "能量");
+
+            string str = (string)obj;
+
+            string[] sArray = str.Split(new char[2] { '(', ')' });
+
+            string[] sArray2 = sArray[1].Split(new char[2] { '~', '<' });
+
+            return sArray2;
         }
 
-        private void getOneTimeSPList(List<string> list常用菜肴, DataRow dr)
+        class ScopeDouble
         {
+            public ScopeDouble(double start, double end)
+            {
+                this.start = start;
+                this.end = end;
+            }
+            public double start, end;
+        }
+
+        class ScopeDouble能量
+        {
+            public ScopeDouble d蛋白质start;
+            public ScopeDouble d蛋白质end;
+
+            public ScopeDouble d脂肪start;
+            public ScopeDouble d脂肪end;
+
+            public ScopeDouble d糖start;
+            public ScopeDouble d糖end;
+        }
+
+        class 原料营养值
+        {
+            public 原料营养值()
+            {
+                蛋白质 = 0;
+                脂肪 = 0;
+                糖 = 0;
+            }
+            public double 蛋白质, 脂肪, 糖;
+        }
+
+        /*
+         * 食谱生成过程
+         * 1. 根据每人每天的劳动强度获取对应的能量和营养供应量
+         * 2. 分配能量配比：蛋白质占11%~13%,脂肪20%~30%，糖55%~65%
+         //*/
+        private void getOneWeekSPList(List<string> list常用菜肴, DataRow dr)
+        {
+            // 获取每天劳动强度对应的能量和营养供应量
+            string[] 能量 = get能量(comboBox8.Text);
+            double dstart = Convert.ToDouble(能量[0]);
+            double dend = Convert.ToDouble(能量[0]);
+            ScopeDouble d能量 = new ScopeDouble(dstart, dend);
+
+            ScopeDouble能量 scopeDouble能量 = new ScopeDouble能量();
+
+            scopeDouble能量.d蛋白质start = new ScopeDouble(d能量.start * 0.11, d能量.start * 0.13);
+            scopeDouble能量.d蛋白质end = new ScopeDouble(d能量.end * 0.11, d能量.end * 0.13);
+
+            scopeDouble能量.d脂肪start = new ScopeDouble(d能量.start * 0.20, d能量.start * 0.30);
+            scopeDouble能量.d脂肪end = new ScopeDouble(d能量.end * 0.20, d能量.end * 0.30);
+
+            scopeDouble能量.d糖start = new ScopeDouble(d能量.start * 0.55, d能量.start * 0.65);
+            scopeDouble能量.d糖end = new ScopeDouble(d能量.end * 0.55, d能量.end * 0.65);
+
+            int offset = 1;
+            for (int i = 0; i < 7; i++)
+            {
+                List<string> list = getOneDaySPList(list常用菜肴);
+
+                while(true) 
+                {
+                    if (verfiyOneDaySPList(list, scopeDouble能量))
+                    {
+                        break;
+                    }
+                }
+
+                foreach (string item in list)
+                {
+                    string 序号 = "菜肴" + offset++;
+                    string 菜肴名称 = item;
+
+                    dr[序号] = 菜肴名称;
+                }
+            }
+        }
+
+        /*
+         * 验证过程
+         * 1. 取出菜肴名称
+         * 2. 在常用菜肴table里面查找对应的各种原料，认为用量单位是克
+         * 3. 通过查询营养维护table，计算出每种原料含有的营养素,认为营养维护table是100g对应的营养素
+         * 4. 验证每个营养素是否在合理的区间，返回结果
+         */
+        private Boolean verfiyOneDaySPList(List<string> list, ScopeDouble能量 scopeDouble能量)
+        {
+            double 蛋白质总合 = 0;
+            double 脂肪总合 = 0;
+            double 糖总合 = 0;
+
+            foreach (string item in list)
+            {
+                string 菜肴名称 = item;
+                
+                SqlData sqlData = SqlDataPool.Instance().GetSqlDataByName("常用菜肴");
+
+                object _用量1 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用量1");
+                object _用量2 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用量2");
+                object _用量3 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用量3");
+                object _用量4 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用量4");
+                object _用量5 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用量5");
+
+                object _用料1 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用料1");
+                object _用料2 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用料2");
+                object _用料3 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用料3");
+                object _用料4 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用料4");
+                object _用料5 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用料5");
+
+                if (_用料1 != null)
+                {
+                    string 用料1 = (string)_用料1;
+                    double 用量1 = Convert.ToDouble((string)_用量1);
+
+                    原料营养值 val = get原料营养值(用料1);
+                    蛋白质总合 += val.蛋白质 * 用量1;
+                    脂肪总合 += val.脂肪 * 用量1;
+                    糖总合 += val.糖 * 用量1;
+                }
+                if (_用料2 != null)
+                {
+                    string 用料2 = (string)_用料2;
+                    double 用量2 = Convert.ToDouble((string)_用量2);
+
+                    原料营养值 val = get原料营养值(用料2);
+                    蛋白质总合 += val.蛋白质 * 用量2;
+                    脂肪总合 += val.脂肪 * 用量2;
+                    糖总合 += val.糖 * 用量2;
+                }
+                if (_用料3 != null)
+                {
+                    string 用料3 = (string)_用料3;
+                    double 用量3 = Convert.ToDouble((string)_用量3);
+
+                    原料营养值 val = get原料营养值(用料3);
+                    蛋白质总合 += val.蛋白质 * 用量3;
+                    脂肪总合 += val.脂肪 * 用量3;
+                    糖总合 += val.糖 * 用量3;
+                }
+                if (_用料4 != null)
+                {
+                    string 用料4 = (string)_用料4;
+                    double 用量4 = Convert.ToDouble((string)_用量4);
+
+                    原料营养值 val = get原料营养值(用料4);
+                    蛋白质总合 += val.蛋白质 * 用量4;
+                    脂肪总合 += val.脂肪 * 用量4;
+                    糖总合 += val.糖 * 用量4;
+                }
+                if (_用料5 != null)
+                {
+                    string 用料5 = (string)_用料5;
+                    double 用量5 = Convert.ToDouble((string)_用量5);
+
+                    原料营养值 val = get原料营养值(用料5);
+                    蛋白质总合 += val.蛋白质 * 用量5;
+                    脂肪总合 += val.脂肪 * 用量5;
+                    糖总合 += val.糖 * 用量5;
+                }
+            }
+
+            if (((scopeDouble能量.d蛋白质start.start <= 蛋白质总合) && (蛋白质总合 <= scopeDouble能量.d蛋白质end.end))
+                && ((scopeDouble能量.d脂肪start.start <= 脂肪总合) && (脂肪总合 <= scopeDouble能量.d脂肪end.end))
+                && ((scopeDouble能量.d糖start.start <= 糖总合) && (糖总合 <= scopeDouble能量.d糖end.end)))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private 原料营养值 get原料营养值(string 原料名称)
+        {
+            原料营养值 ret = new 原料营养值();
+
+            SqlData sqlData营养维护 = SqlDataPool.Instance().GetSqlDataByName("营养维护");
+            object _营养蛋白质 = Common.selectDataItemFromDataSet(sqlData营养维护.mDataSet, "原料名称", 原料名称, "蛋白质");
+            object _营养脂肪 = Common.selectDataItemFromDataSet(sqlData营养维护.mDataSet, "原料名称", 原料名称, "脂肪");
+            object _营养糖 = Common.selectDataItemFromDataSet(sqlData营养维护.mDataSet, "原料名称", 原料名称, "糖");
+
+            if (_营养蛋白质 != null)
+            {
+                ret.蛋白质 = Convert.ToDouble((string)_营养蛋白质) / 100;
+            }
+            if (_营养脂肪 != null)
+            {
+                ret.脂肪 = Convert.ToDouble((string)_营养脂肪) / 100;
+            }
+            if (_营养糖 != null)
+            {
+                ret.糖 = Convert.ToDouble((string)_营养糖) / 100;
+            }
+
+            return ret;
+        }
+
+        /*
+         */
+        private List<string> getOneDaySPList(List<string> list常用菜肴)
+        {
+            List<string> ret = new List<string>();
+
             Random rd = new Random();
 
-            for (int i = 0; i < 3 * 7; i++)
+            for (int i = 0; i < 3; i++)
             {
                 List<string> list已经挑选菜肴 = new List<string>();
                 for (int j = 0; j < 10;) // 每顿最多10个菜
                 {
                     int rand = rd.Next(0, list常用菜肴.Count - 1);
 
-                    int index = 1 + i * 10 + j;
-                    string 序号 = "菜肴" + index;
                     string 菜肴名称 = list常用菜肴[rand];
 
                     if (list已经挑选菜肴.Find(s => s.Equals(菜肴名称)) != null)
@@ -682,11 +901,12 @@ namespace SP
                         continue;
                     }
 
-                    dr[序号] = 菜肴名称;
-
+                    ret.Add(菜肴名称);
                     j++;
                 }
             }
+
+            return ret;
         }
     }
 }

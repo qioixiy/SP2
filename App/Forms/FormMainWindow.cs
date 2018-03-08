@@ -107,16 +107,23 @@ namespace SP
 
         private void 标准模式ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form食谱生成标准模式 tForm食谱生成标准模式 = new Form食谱生成标准模式();
-            DialogResult result = tForm食谱生成标准模式.ShowDialog();
+            try
+            {
+                Form食谱生成标准模式 tForm食谱生成标准模式 = new Form食谱生成标准模式();
+                DialogResult result = tForm食谱生成标准模式.ShowDialog();
 
-            if (result == DialogResult.Cancel)
-            {
-                ;
+                if (result == DialogResult.Cancel)
+                {
+                    ;
+                }
+                else if (result == DialogResult.OK)
+                {
+                    new Form食谱生成成功().ShowDialog();
+                }
             }
-            else if (result == DialogResult.OK)
+            catch (Exception ex)
             {
-                new Form食谱生成成功().ShowDialog();
+                Console.WriteLine(ex.ToString());
             }
         }
 

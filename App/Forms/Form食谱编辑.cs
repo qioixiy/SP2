@@ -50,8 +50,17 @@ namespace SP.Forms
                 int index = this.dataGridView1.Rows.Add();
 
                 int offset = 0;
+                switch(i/30)
+                {
+                    case 0: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期一"; break;
+                    case 1: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期二"; break;
+                    case 2: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期三"; break;
+                    case 3: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期四"; break;
+                    case 4: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期五"; break;
+                    case 5: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期六"; break;
+                    case 6: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期日"; break;
+                }
 
-                this.dataGridView1.Rows[index].Cells[offset++].Value = "星期一";
                 this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
                 this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
                 this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;

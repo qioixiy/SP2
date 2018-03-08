@@ -23,13 +23,14 @@ namespace SP.Forms
         {
             // Form http://blog.csdn.net/bigpudding24/article/details/50541276
 
-
             string connstring = DBConnect.Instance().getConnectString();
 
             SqlConnection conn = new SqlConnection(connstring);
 
             SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "select * from dbo.常用菜肴";
+            string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
+
+            cmd.CommandText = "select * from dbo.食谱 where 名称 = '" + 当前食谱 + "'";
 
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -49,7 +50,7 @@ namespace SP.Forms
                 conn.Dispose();
             }
 
-            ReportDataSource rds = new ReportDataSource("DataSet1", dt);
+            ReportDataSource rds = new ReportDataSource("DataSet食谱", dt);
             this.reportViewer1.LocalReport.DataSources.Clear();
 
             this.reportViewer1.LocalReport.DataSources.Add(rds);

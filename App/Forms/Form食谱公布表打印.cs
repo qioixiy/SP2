@@ -27,7 +27,8 @@ namespace SP.Forms
             SqlConnection conn = new SqlConnection(connstring);
 
             SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "select * from dbo.食谱";
+            string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
+            cmd.CommandText = "select * from dbo.食谱 where 名称 = '" + 当前食谱 + "'";
 
             conn.Open();
             cmd.ExecuteNonQuery();

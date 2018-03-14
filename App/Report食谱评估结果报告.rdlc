@@ -100,7 +100,7 @@
               <Width>1.14368in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.3905in</Width>
+              <Width>0.39572in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.46863in</Width>
@@ -699,7 +699,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>280</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_标准值_1.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -727,7 +727,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>80</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_标准值_2.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -756,7 +756,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>750</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_标准值_3.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -786,7 +786,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>30</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_标准值_4.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -815,7 +815,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>15</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_标准值_5.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -845,7 +845,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>25</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_标准值_6.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1075,7 +1075,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.40</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_权重_1.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1083,6 +1083,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox111</rd:DefaultName>
+                          <Left>0.01325cm</Left>
                           <Height>0.6cm</Height>
                           <Width>0.9125cm</Width>
                           <Style>
@@ -1102,7 +1103,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.20</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_权重_2.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1111,6 +1112,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox111</rd:DefaultName>
                           <Top>0.67056cm</Top>
+                          <Left>0.01325cm</Left>
                           <Height>0.6cm</Height>
                           <Width>0.9125cm</Width>
                           <ZIndex>1</ZIndex>
@@ -1131,7 +1133,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.05</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_权重_4.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1140,7 +1142,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox111</rd:DefaultName>
                           <Top>1.94111cm</Top>
-                          <Left>0.03969cm</Left>
+                          <Left>0.05294cm</Left>
                           <Height>0.6cm</Height>
                           <Width>0.9125cm</Width>
                           <ZIndex>2</ZIndex>
@@ -1161,7 +1163,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.05</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_权重_5.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1170,6 +1172,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox111</rd:DefaultName>
                           <Top>2.64611cm</Top>
+                          <Left>0.01325cm</Left>
                           <Height>0.6cm</Height>
                           <Width>0.9125cm</Width>
                           <ZIndex>3</ZIndex>
@@ -1190,7 +1193,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.05</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_权重_6.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1199,7 +1202,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox111</rd:DefaultName>
                           <Top>3.28222cm</Top>
-                          <Left>0.03969cm</Left>
+                          <Left>0.05294cm</Left>
                           <Height>0.6cm</Height>
                           <Width>0.9125cm</Width>
                           <ZIndex>4</ZIndex>
@@ -1220,7 +1223,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.25</Value>
+                                  <Value>=Parameters!ReportParameter食物定量_权重_3.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2135,7 +2138,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>3000</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_热能.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2164,7 +2167,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>100</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_蛋白质.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2193,7 +2196,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>30-50</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_优质蛋白质.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2223,7 +2226,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>800</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_钙.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2253,7 +2256,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>40</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_动物性来源脂肪.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2283,7 +2286,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>13.5:25:60</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_蛋白质脂肪糖发热.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2313,7 +2316,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>50</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_硒.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2343,7 +2346,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>15</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_锌.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2373,7 +2376,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>15</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_铁.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2403,7 +2406,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>2</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_维B1.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2433,7 +2436,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>10</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_维E.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2463,7 +2466,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>1000</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_维A.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2493,7 +2496,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>75</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_维C.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2523,7 +2526,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>20</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_维PP.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2553,7 +2556,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>1.50</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_标准值_维B2.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3058,7 +3061,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.25</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_热能.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3087,7 +3090,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.10</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_蛋白质.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3116,7 +3119,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.25</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_蛋白质脂肪糖发热.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3145,7 +3148,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.15</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_优质蛋白质.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3175,7 +3178,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.01</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_铁.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3204,7 +3207,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.02</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_钙.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3233,7 +3236,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.10</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_动物性来源脂肪.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3262,7 +3265,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.01</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_锌.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3292,7 +3295,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.01</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_硒.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3321,7 +3324,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.02</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_维A.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3350,7 +3353,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.01</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_维E.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3379,7 +3382,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.01</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_维B1.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3408,7 +3411,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.02</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_维B2.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3437,7 +3440,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.01</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_维PP.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3466,7 +3469,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.03</Value>
+                                  <Value>=Parameters!ReportParameter营养素供给_权重_维C.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -4343,7 +4346,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>4.30893cm</Top>
         <Height>14.91864cm</Height>
-        <Width>19.74552cm</Width>
+        <Width>19.75878cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -4821,6 +4824,174 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="ReportParameter营养素供给_得分_和">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_标准值_1">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_标准值_2">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_标准值_3">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_标准值_4">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_标准值_5">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_标准值_6">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_热能">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_蛋白质">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_优质蛋白质">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_蛋白质脂肪糖发热">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_动物性来源脂肪">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_钙">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_铁">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_锌">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_硒">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_维A">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_维E">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_维B1">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_维B2">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_维PP">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_标准值_维C">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_权重_1">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_权重_2">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_权重_3">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_权重_4">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_权重_5">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter食物定量_权重_6">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_热能">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_蛋白质">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_优质蛋白质">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_蛋白质脂肪糖发热">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_动物性来源脂肪">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_钙">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_铁">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_锌">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_硒">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_维A">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_维E">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_维B1">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_维B2">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_维PP">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter营养素供给_权重_维C">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>

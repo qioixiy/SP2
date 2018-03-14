@@ -79,7 +79,7 @@
             this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(631, 55);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(220, 229);
+            this.listView1.Size = new System.Drawing.Size(220, 271);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -100,7 +100,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(695, 290);
+            this.button1.Location = new System.Drawing.Point(695, 332);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -110,7 +110,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(776, 290);
+            this.button2.Location = new System.Drawing.Point(776, 332);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -129,6 +129,8 @@
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form伙食费分析";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "伙食费分析";

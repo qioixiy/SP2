@@ -23,12 +23,12 @@ namespace SP.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            new Form食谱编辑().ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("还没有支持");
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -27,7 +27,7 @@ namespace SP
         {
             adapter营养维护.Fill(dSet营养维护);
 
-            Common.dumpDataSet(dSet营养维护);
+            //Common.dumpDataSet(dSet营养维护);
 
             comboBox1.Items.Add("全部");
             comboBox1.Items.AddRange(get分类());

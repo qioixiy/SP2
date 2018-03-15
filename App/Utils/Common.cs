@@ -118,7 +118,7 @@ namespace SP.Utils
 
         public static object selectDataItemFromDataSet(DataSet dataSet, string rowName, string colName, string target)
         {
-            object ret = new object();
+            object ret = null;
 
             foreach (DataTable dt in dataSet.Tables)
             {
@@ -127,7 +127,8 @@ namespace SP.Utils
                     string str = (string)dr[rowName];
                     if (str == colName)
                     {
-                        ret = (string)dr[target];
+                        ret = dr[target];
+                        break;
                     }
                 }
             }

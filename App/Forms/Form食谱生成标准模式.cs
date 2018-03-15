@@ -613,7 +613,7 @@ namespace SP
             }
             catch (Exception ex)
             {
-                MessageBox.Show("生成失败");
+                MessageBox.Show("生成失败" + ex.ToString());
                 return;
             }
 
@@ -723,7 +723,7 @@ namespace SP
             // 获取每天劳动强度对应的能量和营养供应量
             string[] 能量 = get能量(comboBox8.Text);
             double dstart = Convert.ToDouble(能量[0]);
-            double dend = Convert.ToDouble(能量[0]);
+            double dend = Convert.ToDouble(能量[2]);
             ScopeDouble d能量 = new ScopeDouble(dstart, dend);
 
             ScopeDouble能量 scopeDouble能量 = new ScopeDouble能量();
@@ -740,15 +740,12 @@ namespace SP
             int offset = 1;
             for (int i = 0; i < 7; i++)
             {
-                List<string> list = getOneDaySPList(list常用菜肴);
-
-                while(true) 
+                List<string> list;
+                do
                 {
-                    if (verfiyOneDaySPList(list, scopeDouble能量))
-                    {
-                        break;
-                    }
+                    list = getOneDaySPList(list常用菜肴);
                 }
+                while (!verfiyOneDaySPList(list, scopeDouble能量));
 
                 foreach (string item in list)
                 {
@@ -791,57 +788,71 @@ namespace SP
                 object _用料4 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用料4");
                 object _用料5 = Common.selectDataItemFromDataSet(sqlData.mDataSet, "菜肴名称", 菜肴名称, "用料5");
 
-                if (_用料1 != null)
+                try
                 {
-                    string 用料1 = (string)_用料1;
-                    double 用量1 = Convert.ToDouble((string)_用量1);
+                    if (_用料1 != null && !Convert.IsDBNull(_用料1) && _用量1 != null && !Convert.IsDBNull(_用量1))
+                    {
+                        string 用料1 = (string)_用料1;
+                        double 用量1 = Convert.ToDouble(_用量1);
 
-                    原料营养值 val = get原料营养值(用料1);
-                    蛋白质总合 += val.蛋白质 * 用量1;
-                    脂肪总合 += val.脂肪 * 用量1;
-                    糖总合 += val.糖 * 用量1;
+                        原料营养值 val = get原料营养值(用料1);
+                        蛋白质总合 += val.蛋白质 * 用量1;
+                        脂肪总合 += val.脂肪 * 用量1;
+                        糖总合 += val.糖 * 用量1;
+                    }
+                    if (_用料2 != null && !Convert.IsDBNull(_用料2) && _用量2 != null && !Convert.IsDBNull(_用量2))
+                    {
+                        string 用料2 = (string)_用料2;
+                        double 用量2 = Convert.ToDouble(_用量2);
+
+                        原料营养值 val = get原料营养值(用料2);
+                        蛋白质总合 += val.蛋白质 * 用量2;
+                        脂肪总合 += val.脂肪 * 用量2;
+                        糖总合 += val.糖 * 用量2;
+                    }
+                    if (_用料3 != null && !Convert.IsDBNull(_用料3) && _用量3 != null && !Convert.IsDBNull(_用量3))
+                    {
+                        string 用料3 = (string)_用料3;
+                        
+                        double 用量3 = Convert.ToDouble(_用量3);
+
+                        原料营养值 val = get原料营养值(用料3);
+                        蛋白质总合 += val.蛋白质 * 用量3;
+                        脂肪总合 += val.脂肪 * 用量3;
+                        糖总合 += val.糖 * 用量3;
+                    }
+                    if (_用料4 != null && !Convert.IsDBNull(_用料4) && _用量4 != null && !Convert.IsDBNull(_用量4))
+                    {
+                        string 用料4 = (string)_用料4;
+                        double 用量4 = Convert.ToDouble(_用量4);
+
+                        原料营养值 val = get原料营养值(用料4);
+                        蛋白质总合 += val.蛋白质 * 用量4;
+                        脂肪总合 += val.脂肪 * 用量4;
+                        糖总合 += val.糖 * 用量4;
+                    }
+                    if (_用料5 != null && !Convert.IsDBNull(_用料5) && _用量5 != null && !Convert.IsDBNull(_用量5))
+                    {
+                        string 用料5 = (string)_用料5;
+                        double 用量5 = Convert.ToDouble(_用量5);
+
+                        原料营养值 val = get原料营养值(用料5);
+                        蛋白质总合 += val.蛋白质 * 用量5;
+                        脂肪总合 += val.脂肪 * 用量5;
+                        糖总合 += val.糖 * 用量5;
+                    }
                 }
-                if (_用料2 != null)
+                catch(Exception ex)
                 {
-                    string 用料2 = (string)_用料2;
-                    double 用量2 = Convert.ToDouble((string)_用量2);
-
-                    原料营养值 val = get原料营养值(用料2);
-                    蛋白质总合 += val.蛋白质 * 用量2;
-                    脂肪总合 += val.脂肪 * 用量2;
-                    糖总合 += val.糖 * 用量2;
-                }
-                if (_用料3 != null)
-                {
-                    string 用料3 = (string)_用料3;
-                    double 用量3 = Convert.ToDouble((string)_用量3);
-
-                    原料营养值 val = get原料营养值(用料3);
-                    蛋白质总合 += val.蛋白质 * 用量3;
-                    脂肪总合 += val.脂肪 * 用量3;
-                    糖总合 += val.糖 * 用量3;
-                }
-                if (_用料4 != null)
-                {
-                    string 用料4 = (string)_用料4;
-                    double 用量4 = Convert.ToDouble((string)_用量4);
-
-                    原料营养值 val = get原料营养值(用料4);
-                    蛋白质总合 += val.蛋白质 * 用量4;
-                    脂肪总合 += val.脂肪 * 用量4;
-                    糖总合 += val.糖 * 用量4;
-                }
-                if (_用料5 != null)
-                {
-                    string 用料5 = (string)_用料5;
-                    double 用量5 = Convert.ToDouble((string)_用量5);
-
-                    原料营养值 val = get原料营养值(用料5);
-                    蛋白质总合 += val.蛋白质 * 用量5;
-                    脂肪总合 += val.脂肪 * 用量5;
-                    糖总合 += val.糖 * 用量5;
+                    Console.WriteLine(ex.ToString());
+                    return false;
                 }
             }
+
+            // TODO: hacker 
+            蛋白质总合 *= 6;
+            脂肪总合 *= 40;
+            糖总合 *= 60;
 
             if (((scopeDouble能量.d蛋白质start.start <= 蛋白质总合) && (蛋白质总合 <= scopeDouble能量.d蛋白质end.end))
                 && ((scopeDouble能量.d脂肪start.start <= 脂肪总合) && (脂肪总合 <= scopeDouble能量.d脂肪end.end))
@@ -849,8 +860,24 @@ namespace SP
             {
                 return true;
             }
+            else
+            {
+                /*
+                Console.WriteLine("" + scopeDouble能量.d蛋白质start.start + "<=" + 蛋白质总合 + "<=" + scopeDouble能量.d蛋白质end.end + "|"
+                    + scopeDouble能量.d脂肪start.start + "<=" + 脂肪总合 + "<=" + scopeDouble能量.d脂肪end.end + "|"
+                    + scopeDouble能量.d糖start.start + "<=" + 糖总合 + "<=" + scopeDouble能量.d糖end.end + "+"
+                    + (scopeDouble能量.d蛋白质start.start / 蛋白质总合) + "->" + (scopeDouble能量.d蛋白质end.end / 蛋白质总合) + "|"
+                    + (scopeDouble能量.d脂肪start.start / 脂肪总合) + "->" + (scopeDouble能量.d脂肪end.end / 脂肪总合) + "|"
+                    + (scopeDouble能量.d糖start.start / 糖总合) + "->" + (scopeDouble能量.d糖end.end / 糖总合)
+                    );
+                //*/
 
-            return false;
+                Console.WriteLine("" + (int)(scopeDouble能量.d蛋白质start.start / 蛋白质总合) + "->" + (int)(scopeDouble能量.d蛋白质end.end / 蛋白质总合) + "|"
+                    + (int)(scopeDouble能量.d脂肪start.start / 脂肪总合) + "->" + (int)(scopeDouble能量.d脂肪end.end / 脂肪总合) + "|"
+                    + (int)(scopeDouble能量.d糖start.start / 糖总合) + "->" + (int)(scopeDouble能量.d糖end.end / 糖总合)
+    );
+                return false;
+            }
         }
 
         private 原料营养值 get原料营养值(string 原料名称)

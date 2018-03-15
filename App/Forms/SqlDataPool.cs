@@ -45,7 +45,7 @@ namespace SP.Forms
                 dict[name].mDataSet = dSet;
 
                 adapter.Fill(dSet);
-                Common.dumpDataSet(dSet);
+                //Common.dumpDataSet(dSet);
             }
 
             return dict[name];

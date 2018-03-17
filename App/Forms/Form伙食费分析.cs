@@ -225,8 +225,8 @@ namespace SP.Forms
             for (int index = 0; index < 7; index++)
             {
                 ListViewItem listViewItem = new ListViewItem();
-
-                listViewItem.SubItems.AddRange(new string[] { 一周伙食费[index].调剂标准, 一周伙食费[index].食谱开支 });
+                listViewItem.Text = "星期" + (index + 1);
+                listViewItem.SubItems.AddRange(new string[] {一周伙食费[index].调剂标准, 一周伙食费[index].食谱开支 });
                 listView1.Items.Add(listViewItem);
             }
 

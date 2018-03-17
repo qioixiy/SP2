@@ -77,9 +77,10 @@
             this.columnHeader2,
             this.columnHeader3});
             this.listView1.FullRowSelect = true;
+            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.Location = new System.Drawing.Point(631, 55);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(220, 271);
+            this.listView1.Size = new System.Drawing.Size(208, 271);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -100,7 +101,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(695, 332);
+            this.button1.Location = new System.Drawing.Point(686, 332);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -110,7 +111,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(776, 332);
+            this.button2.Location = new System.Drawing.Point(764, 332);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -122,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 367);
+            this.ClientSize = new System.Drawing.Size(845, 367);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);

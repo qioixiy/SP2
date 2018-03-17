@@ -211,13 +211,13 @@ namespace SP.Forms
                 伙食费List = 伙食费ListNew;
             }
 
-            一周伙食费.Add(new 伙食费("星期一", 伙食费标准List[0], 伙食费List[0]));
-            一周伙食费.Add(new 伙食费("星期二", 伙食费标准List[1], 伙食费List[1]));
-            一周伙食费.Add(new 伙食费("星期三", 伙食费标准List[2], 伙食费List[2]));
-            一周伙食费.Add(new 伙食费("星期四", 伙食费标准List[3], 伙食费List[3]));
-            一周伙食费.Add(new 伙食费("星期五", 伙食费标准List[4], 伙食费List[4]));
-            一周伙食费.Add(new 伙食费("星期六", 伙食费标准List[5], 伙食费List[5]));
-            一周伙食费.Add(new 伙食费("星期日", 伙食费标准List[6], 伙食费List[6]));
+            一周伙食费.Add(new 伙食费("星期1", 伙食费标准List[0], 伙食费List[0]));
+            一周伙食费.Add(new 伙食费("星期2", 伙食费标准List[1], 伙食费List[1]));
+            一周伙食费.Add(new 伙食费("星期3", 伙食费标准List[2], 伙食费List[2]));
+            一周伙食费.Add(new 伙食费("星期4", 伙食费标准List[3], 伙食费List[3]));
+            一周伙食费.Add(new 伙食费("星期5", 伙食费标准List[4], 伙食费List[4]));
+            一周伙食费.Add(new 伙食费("星期6", 伙食费标准List[5], 伙食费List[5]));
+            一周伙食费.Add(new 伙食费("星期7", 伙食费标准List[6], 伙食费List[6]));
         }
 
         private void initListView()

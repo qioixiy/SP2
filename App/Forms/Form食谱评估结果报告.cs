@@ -84,7 +84,7 @@ namespace SP.Forms
                 get营养素供给得分();
             }
 
-            void get食物定量实际值()
+            void get食物定量标准值()
             {
                 string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
                 SqlData sqlData = SqlDataPool.Instance().GetSqlDataByName("食谱");
@@ -101,12 +101,22 @@ namespace SP.Forms
                 string 海带 = (string)Common.selectDataItemFromDataSet(sqlData.mDataSet, "灶别", (string)obj, "海带");
                 string 豆乳粉 = (string)Common.selectDataItemFromDataSet(sqlData.mDataSet, "灶别", (string)obj, "豆乳粉");
 
-                食物定量实际值.动物性食品 = 动物性食品;
-                食物定量实际值.黄豆 = 黄豆;
-                食物定量实际值.蔬菜 = 蔬菜;
-                食物定量实际值.蔗糖 = 蔗糖;
-                食物定量实际值.海带 = 海带;
-                食物定量实际值.豆乳粉 = 豆乳粉;
+                食物定量标准值.动物性食品 = 动物性食品;
+                食物定量标准值.黄豆 = 黄豆;
+                食物定量标准值.蔬菜 = 蔬菜;
+                食物定量标准值.蔗糖 = 蔗糖;
+                食物定量标准值.海带 = 海带;
+                食物定量标准值.豆乳粉 = 豆乳粉;
+            }
+
+            void get食物定量实际值()
+            {
+                食物定量实际值.动物性食品 = 食物定量标准值.动物性食品;
+                食物定量实际值.黄豆 = 食物定量标准值.黄豆;
+                食物定量实际值.蔬菜 = 食物定量标准值.蔬菜;
+                食物定量实际值.蔗糖 = 食物定量标准值.蔗糖;
+                食物定量实际值.海带 = 食物定量标准值.海带;
+                食物定量实际值.豆乳粉 = 食物定量标准值.豆乳粉;
             }
 
             void get食物定量权重()
@@ -234,17 +244,7 @@ namespace SP.Forms
                 营养素供给得分.维PP = Convert.ToString(Math.Round(Convert.ToDouble(营养素供给标准值.维PP) / Convert.ToDouble(营养素供给实际值.维PP) * 100)); ;
                 营养素供给得分.维C = Convert.ToString(Math.Round(Convert.ToDouble(营养素供给标准值.维C) / Convert.ToDouble(营养素供给实际值.维C) * 100)); ;
             }
-
-            void get食物定量标准值()
-            {
-                食物定量标准值.动物性食品 = "280";
-                食物定量标准值.黄豆 = "80";
-                食物定量标准值.蔬菜 = "750";
-                食物定量标准值.蔗糖 = "30";
-                食物定量标准值.海带 = "15";
-                食物定量标准值.豆乳粉 = "25";
-            }
-
+            
             public 食物定量 食物定量标准值;
             public 食物定量 食物定量实际值;
             public 食物定量 食物定量权重;
@@ -418,6 +418,28 @@ namespace SP.Forms
                 + Convert.ToDouble(tParameter.营养素供给得分.维PP) * Convert.ToDouble(tParameter.营养素供给权重.维PP)
                 + Convert.ToDouble(tParameter.营养素供给得分.维C) * Convert.ToDouble(tParameter.营养素供给权重.维C);
             reportParameterList.Add(new ReportParameter("ReportParameter营养素供给_得分_和", Convert.ToString(Math.Round(营养素供给得分))));
+
+            string 伙食费标准值 = "25.97";
+            string 伙食费实际值 = "25.97";
+            string 伙食费权重 = "0.30";
+            string 伙食费得分 = Convert.ToString(Math.Round(Convert.ToDouble(伙食费实际值) / Convert.ToDouble(伙食费标准值) * 100));
+            string 伙食费得分和 = 伙食费得分;
+
+            reportParameterList.Add(new ReportParameter("ReportParameter伙食费标准值", 伙食费标准值));
+            reportParameterList.Add(new ReportParameter("ReportParameter伙食费实际值", 伙食费实际值));
+            reportParameterList.Add(new ReportParameter("ReportParameter伙食费权重", 伙食费权重));
+            reportParameterList.Add(new ReportParameter("ReportParameter伙食费得分", 伙食费得分));
+            reportParameterList.Add(new ReportParameter("ReportParameter伙食费得分和", 伙食费得分和));
+
+            string 食物定量权重 = "0.40";
+            string 营养素供给权重 = "0.30";
+
+            string 总分 = Convert.ToString(Math.Round(
+                Convert.ToDouble(食物定量得分) * Convert.ToDouble(食物定量权重)
+                + Convert.ToDouble(营养素供给得分) * Convert.ToDouble(营养素供给权重)
+                + Convert.ToDouble(伙食费得分和) * Convert.ToDouble(伙食费权重)));
+            reportParameterList.Add(new ReportParameter("ReportParameter总分", 总分));
+
             reportViewer1.LocalReport.SetParameters(reportParameterList);
 
             ReportDataSource rds = new ReportDataSource("DataSet1", dt);

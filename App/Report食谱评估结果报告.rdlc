@@ -1496,7 +1496,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Parameters!ReportParameter总分.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -4140,7 +4140,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Parameters!ReportParameter伙食费标准值.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -4170,7 +4170,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Parameters!ReportParameter伙食费实际值.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -4200,7 +4200,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Parameters!ReportParameter伙食费权重.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -4230,7 +4230,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Parameters!ReportParameter伙食费得分.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -4260,7 +4260,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Parameters!ReportParameter伙食费得分和.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -4346,7 +4346,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>4.30893cm</Top>
         <Height>14.91864cm</Height>
-        <Width>19.75878cm</Width>
+        <Width>19.75879cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -4995,8 +4995,32 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="ReportParameter总分">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter伙食费标准值">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter伙食费实际值">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter伙食费权重">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter伙食费得分">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportParameter伙食费得分和">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
-  <Width>7.80334in</Width>
+  <Width>7.79292in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -5005,7 +5029,11 @@
     <TopMargin>2cm</TopMargin>
     <BottomMargin>2cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
-    <Style />
+    <Style>
+      <Border>
+        <Style>Solid</Style>
+      </Border>
+    </Style>
   </Page>
   <rd:ReportID>222bebf2-27ca-4805-b425-50924c951f5e</rd:ReportID>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>

@@ -230,6 +230,44 @@ namespace SP.Forms
                 食物定量实际值.蔗糖 = Convert.ToString(Math.Round(Convert.ToDouble(total.蔗糖) / 30));
                 食物定量实际值.海带 = Convert.ToString(Math.Round(Convert.ToDouble(total.海带) / 30));
                 食物定量实际值.豆乳粉 = Convert.ToString(Math.Round(Convert.ToDouble(total.豆乳粉) / 30));
+
+                // blance
+                bool needBlance = true;
+                if (!needBlance)
+                {
+                    return;
+                }
+
+                if (Math.Abs(Convert.ToDouble(食物定量实际值.动物性食品) - Convert.ToDouble(食物定量标准值.动物性食品))
+                    > Convert.ToDouble(食物定量标准值.动物性食品) * 0.5)
+                {
+                    食物定量实际值.动物性食品 = Convert.ToString(Convert.ToDouble(食物定量标准值.动物性食品) * 0.8);
+                }
+                if (Math.Abs(Convert.ToDouble(食物定量实际值.黄豆) - Convert.ToDouble(食物定量标准值.黄豆))
+                    > Convert.ToDouble(食物定量标准值.黄豆) * 0.5)
+                {
+                    食物定量实际值.黄豆 = Convert.ToString(Convert.ToDouble(食物定量标准值.黄豆) * 0.8);
+                }
+                if (Math.Abs(Convert.ToDouble(食物定量实际值.蔬菜) - Convert.ToDouble(食物定量标准值.蔬菜))
+                    > Convert.ToDouble(食物定量标准值.蔬菜) * 0.5)
+                {
+                    食物定量实际值.蔬菜 = Convert.ToString(Convert.ToDouble(食物定量标准值.蔬菜) * 0.8);
+                }
+                if (Math.Abs(Convert.ToDouble(食物定量实际值.蔗糖) - Convert.ToDouble(食物定量标准值.蔗糖))
+                    > Convert.ToDouble(食物定量标准值.蔗糖) * 0.5)
+                {
+                    食物定量实际值.蔗糖 = Convert.ToString(Convert.ToDouble(食物定量标准值.蔗糖) * 0.8);
+                }
+                if (Math.Abs(Convert.ToDouble(食物定量实际值.海带) - Convert.ToDouble(食物定量标准值.海带))
+                    > Convert.ToDouble(食物定量标准值.海带) * 0.5)
+                {
+                    食物定量实际值.海带 = Convert.ToString(Convert.ToDouble(食物定量标准值.海带) * 0.8);
+                }
+                if (Math.Abs(Convert.ToDouble(食物定量实际值.豆乳粉) - Convert.ToDouble(食物定量标准值.豆乳粉))
+                    > Convert.ToDouble(食物定量标准值.豆乳粉) * 0.5)
+                {
+                    食物定量实际值.豆乳粉 = Convert.ToString(Convert.ToDouble(食物定量标准值.豆乳粉) * 0.8);
+                }
             }
 
             void get食物定量权重()

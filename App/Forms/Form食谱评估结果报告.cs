@@ -109,14 +109,127 @@ namespace SP.Forms
                 食物定量标准值.豆乳粉 = 豆乳粉;
             }
 
+            食物定量 get食物定量By原料用量(object 原料名称, object 原料用量)
+            {
+                食物定量 ret = new 食物定量();
+
+                if (原料名称 == null || Convert.IsDBNull(原料名称) || 原料用量 == null || Convert.IsDBNull(原料用量))
+                {
+                    Console.WriteLine("get价格By原料 exception");
+                }
+                else
+                {
+                    string str原料名称 = (string)原料名称;
+
+                    SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("常用原料");
+
+                    object 单位价格 = Utils.Common.selectDataItemFromDataSet(tSqlData.mDataSet, "原料", str原料名称, "价格(元/千克)");
+
+                    // TODO: 怎样去获取原料中对应的食物类别的量，目前不清楚就写个值代替
+                    Random rd = new Random();
+                    ret.动物性食品 = Convert.ToString(rd.Next(0, Convert.ToInt32(食物定量标准值.动物性食品)));
+                    ret.黄豆 = Convert.ToString(rd.Next(0, Convert.ToInt32(食物定量标准值.黄豆)));
+                    ret.蔬菜 = Convert.ToString(rd.Next(0, Convert.ToInt32(食物定量标准值.蔬菜)));
+                    ret.蔗糖 = Convert.ToString(rd.Next(0, Convert.ToInt32(食物定量标准值.蔗糖)));
+                    ret.蔗糖 = Convert.ToString(rd.Next(0, Convert.ToInt32(食物定量标准值.蔗糖)));
+                    ret.豆乳粉 = Convert.ToString(rd.Next(0, Convert.ToInt32(食物定量标准值.豆乳粉)));
+                }
+
+                return ret;
+            }
+
+            食物定量 get食物定量By菜肴名称(string 菜肴名称)
+            {
+                食物定量 ret = new 食物定量();
+
+                SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("常用菜肴");
+                foreach (DataTable dt in tSqlData.mDataSet.Tables)
+                {
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        string str = (string)dr["菜肴名称"];
+                        if (菜肴名称 == str)
+                        {
+                            object 用料1 = dr["用料1"];
+                            object 用料2 = dr["用料2"];
+                            object 用料3 = dr["用料3"];
+                            object 用料4 = dr["用料4"];
+                            object 用料5 = dr["用料5"];
+
+                            object 用量1 = dr["用量1"];
+                            object 用量2 = dr["用量2"];
+                            object 用量3 = dr["用量3"];
+                            object 用量4 = dr["用量4"];
+                            object 用量5 = dr["用量5"];
+
+                            食物定量 total1 = get食物定量By原料用量(用料1, 用量1);
+                            食物定量 total2 = get食物定量By原料用量(用料2, 用量2);
+                            食物定量 total3 = get食物定量By原料用量(用料3, 用量3);
+                            食物定量 total4 = get食物定量By原料用量(用料4, 用量4);
+                            食物定量 total5 = get食物定量By原料用量(用料5, 用量5);
+
+                            ret.动物性食品 = Convert.ToString(Convert.ToDouble(total1.动物性食品) + Convert.ToDouble(total2.动物性食品)
+                                + Convert.ToDouble(total3.动物性食品) + Convert.ToDouble(total4.动物性食品) + Convert.ToDouble(total5.动物性食品));
+                            ret.黄豆 = Convert.ToString(Convert.ToDouble(total1.黄豆) + Convert.ToDouble(total2.黄豆)
+                                + Convert.ToDouble(total3.黄豆) + Convert.ToDouble(total4.黄豆) + Convert.ToDouble(total5.黄豆));
+                            ret.蔬菜 = Convert.ToString(Convert.ToDouble(total1.蔬菜) + Convert.ToDouble(total2.蔬菜)
+                                + Convert.ToDouble(total3.蔬菜) + Convert.ToDouble(total4.蔬菜) + Convert.ToDouble(total5.蔬菜));
+                            ret.蔗糖 = Convert.ToString(Convert.ToDouble(total1.蔗糖) + Convert.ToDouble(total2.蔗糖)
+                                + Convert.ToDouble(total3.蔗糖) + Convert.ToDouble(total4.蔗糖) + Convert.ToDouble(total5.蔗糖));
+                            ret.海带 = Convert.ToString(Convert.ToDouble(total1.海带) + Convert.ToDouble(total2.海带)
+                                + Convert.ToDouble(total3.海带) + Convert.ToDouble(total4.海带) + Convert.ToDouble(total5.海带));
+                            ret.豆乳粉 = Convert.ToString(Convert.ToDouble(total1.豆乳粉) + Convert.ToDouble(total2.豆乳粉)
+                                + Convert.ToDouble(total3.豆乳粉) + Convert.ToDouble(total4.豆乳粉) + Convert.ToDouble(total5.豆乳粉));
+                            break;
+                        }
+                    }
+                }
+
+                return ret;
+            }
+
             void get食物定量实际值()
             {
-                食物定量实际值.动物性食品 = 食物定量标准值.动物性食品;
-                食物定量实际值.黄豆 = 食物定量标准值.黄豆;
-                食物定量实际值.蔬菜 = 食物定量标准值.蔬菜;
-                食物定量实际值.蔗糖 = 食物定量标准值.蔗糖;
-                食物定量实际值.海带 = 食物定量标准值.海带;
-                食物定量实际值.豆乳粉 = 食物定量标准值.豆乳粉;
+                食物定量 total = new 食物定量();
+
+                string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
+
+                SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("食谱");
+                foreach (DataTable dt in tSqlData.mDataSet.Tables)
+                {
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        string str = (string)dr["名称"];
+                        if (当前食谱 == str)
+                        {
+                            for (int index = 1; index <= 210; index++)
+                            {
+                                string 菜肴名称 = (string)dr["菜肴" + index];
+                                食物定量 a食物定量 = get食物定量By菜肴名称(菜肴名称);
+
+                                total.动物性食品 = Convert.ToString(Convert.ToDouble(total.动物性食品) + Convert.ToDouble(a食物定量.动物性食品));
+                                total.黄豆 = Convert.ToString(Convert.ToDouble(total.黄豆) + Convert.ToDouble(a食物定量.黄豆));
+                                total.蔬菜 = Convert.ToString(Convert.ToDouble(total.蔬菜) + Convert.ToDouble(a食物定量.蔬菜));
+                                total.蔗糖 = Convert.ToString(Convert.ToDouble(total.蔗糖) + Convert.ToDouble(a食物定量.蔗糖));
+                                total.海带 = Convert.ToString(Convert.ToDouble(total.海带) + Convert.ToDouble(a食物定量.海带));
+                                total.豆乳粉 = Convert.ToString(Convert.ToDouble(total.豆乳粉) + Convert.ToDouble(a食物定量.豆乳粉));
+                                
+                                if (index % 30 == 0)
+                                {
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+
+                食物定量实际值.动物性食品 = Convert.ToString(Math.Round(Convert.ToDouble(total.动物性食品) / 30));
+                食物定量实际值.黄豆 = Convert.ToString(Math.Round(Convert.ToDouble(total.黄豆) / 30));
+                食物定量实际值.蔬菜 = Convert.ToString(Math.Round(Convert.ToDouble(total.蔬菜) / 30));
+                食物定量实际值.蔗糖 = Convert.ToString(Math.Round(Convert.ToDouble(total.蔗糖) / 30));
+                食物定量实际值.海带 = Convert.ToString(Math.Round(Convert.ToDouble(total.海带) / 30));
+                食物定量实际值.豆乳粉 = Convert.ToString(Math.Round(Convert.ToDouble(total.豆乳粉) / 30));
             }
 
             void get食物定量权重()
@@ -131,12 +244,12 @@ namespace SP.Forms
 
             void get食物定量得分()
             {
-                食物定量得分.动物性食品 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量标准值.动物性食品) / Convert.ToDouble(食物定量实际值.动物性食品) * 100));
-                食物定量得分.黄豆 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量标准值.黄豆) / Convert.ToDouble(食物定量实际值.黄豆) * 100));
-                食物定量得分.蔬菜 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量标准值.蔬菜) / Convert.ToDouble(食物定量实际值.蔬菜) * 100));
-                食物定量得分.蔗糖 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量标准值.蔗糖) / Convert.ToDouble(食物定量实际值.蔗糖) * 100));
-                食物定量得分.海带 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量标准值.海带) / Convert.ToDouble(食物定量实际值.海带) * 100));
-                食物定量得分.豆乳粉 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量标准值.豆乳粉) / Convert.ToDouble(食物定量实际值.豆乳粉) * 100));
+                食物定量得分.动物性食品 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量实际值.动物性食品) / Convert.ToDouble(食物定量标准值.动物性食品) * 100));
+                食物定量得分.黄豆 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量实际值.黄豆) / Convert.ToDouble(食物定量标准值.黄豆) * 100));
+                食物定量得分.蔬菜 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量实际值.蔬菜) / Convert.ToDouble(食物定量标准值.蔬菜) * 100));
+                食物定量得分.蔗糖 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量实际值.蔗糖) / Convert.ToDouble(食物定量标准值.蔗糖) * 100));
+                食物定量得分.海带 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量实际值.海带) / Convert.ToDouble(食物定量标准值.海带) * 100));
+                食物定量得分.豆乳粉 = Convert.ToString(Math.Round(Convert.ToDouble(食物定量实际值.豆乳粉) / Convert.ToDouble(食物定量标准值.豆乳粉) * 100));
             }
 
             void get营养素供给标准值()

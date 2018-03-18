@@ -487,7 +487,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report食谱评估结果报告.rdlc" />
+    <EmbeddedResource Include="Report食谱评估结果报告.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report食谱打印.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -44,7 +44,6 @@
             this.reportViewer1.ShowExportButton = false;
             this.reportViewer1.ShowFindControls = false;
             this.reportViewer1.ShowPageNavigationControls = false;
-            this.reportViewer1.ShowParameterPrompts = false;
             this.reportViewer1.ShowPromptAreaButton = false;
             this.reportViewer1.ShowRefreshButton = false;
             this.reportViewer1.ShowStopButton = false;

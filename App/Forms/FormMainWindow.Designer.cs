@@ -266,33 +266,33 @@
             this.外购计划ToolStripMenuItem});
             this.采购计划ToolStripMenuItem.Name = "采购计划ToolStripMenuItem";
             this.采购计划ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.采购计划ToolStripMenuItem.Text = "采购计划";
+            this.采购计划ToolStripMenuItem.Text = "外购计划";
             this.采购计划ToolStripMenuItem.Click += new System.EventHandler(this.采购计划ToolStripMenuItem_Click);
             // 
             // 计划汇总ToolStripMenuItem
             // 
             this.计划汇总ToolStripMenuItem.Name = "计划汇总ToolStripMenuItem";
-            this.计划汇总ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.计划汇总ToolStripMenuItem.Text = "计划汇总";
+            this.计划汇总ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.计划汇总ToolStripMenuItem.Text = "外购清单";
             this.计划汇总ToolStripMenuItem.Click += new System.EventHandler(this.计划汇总ToolStripMenuItem_Click);
             // 
             // 计划维护ToolStripMenuItem
             // 
             this.计划维护ToolStripMenuItem.Name = "计划维护ToolStripMenuItem";
-            this.计划维护ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.计划维护ToolStripMenuItem.Text = "计划维护";
+            this.计划维护ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.计划维护ToolStripMenuItem.Text = "清单调用";
             this.计划维护ToolStripMenuItem.Click += new System.EventHandler(this.计划维护ToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
             // 
             // 外购计划ToolStripMenuItem
             // 
             this.外购计划ToolStripMenuItem.Name = "外购计划ToolStripMenuItem";
-            this.外购计划ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.外购计划ToolStripMenuItem.Text = "外购计划";
+            this.外购计划ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.外购计划ToolStripMenuItem.Text = "清单打印";
             this.外购计划ToolStripMenuItem.Click += new System.EventHandler(this.外购计划ToolStripMenuItem_Click);
             // 
             // 数据管理ToolStripMenuItem

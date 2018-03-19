@@ -104,6 +104,24 @@
     <Compile Include="Forms\Form伙食费分析.Designer.cs">
       <DependentUpon>Form伙食费分析.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form外购清单生成.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form外购清单生成.Designer.cs">
+      <DependentUpon>Form外购清单生成.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form外购清单调用.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form外购清单调用.Designer.cs">
+      <DependentUpon>Form外购清单调用.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form清单打印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form清单打印.Designer.cs">
+      <DependentUpon>Form清单打印.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form热能分析.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +380,15 @@
     <EmbeddedResource Include="Forms\Form伙食费分析.resx">
       <DependentUpon>Form伙食费分析.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form外购清单生成.resx">
+      <DependentUpon>Form外购清单生成.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form外购清单调用.resx">
+      <DependentUpon>Form外购清单调用.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form清单打印.resx">
+      <DependentUpon>Form清单打印.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form热能分析.resx">
       <DependentUpon>Form热能分析.cs</DependentUpon>
     </EmbeddedResource>
@@ -493,6 +520,7 @@
     <EmbeddedResource Include="Report食谱打印.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Report清单打印.rdlc" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

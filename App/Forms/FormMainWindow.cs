@@ -190,17 +190,17 @@ namespace SP
 
         private void 计划汇总ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form计划汇总().ShowDialog();
+            new Form外购清单生成().ShowDialog();
         }
 
         private void 计划维护ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form计划维护().ShowDialog();
+            new Form外购清单调用().ShowDialog();
         }
 
         private void 外购计划ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form外购计划().ShowDialog();
+            new Form清单打印().ShowDialog();
         }
 
         private void 食谱上报ToolStripMenuItem_Click(object sender, EventArgs e)

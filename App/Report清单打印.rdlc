@@ -1,15 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="SPDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>7e3ca185-1dbc-4aa6-98cd-ba69e082a5cb</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="名称">
+          <DataField>名称</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="对应食谱名称">
+          <DataField>对应食谱名称</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称1">
+          <DataField>原料名称1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称2">
+          <DataField>原料名称2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称3">
+          <DataField>原料名称3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称4">
+          <DataField>原料名称4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称5">
+          <DataField>原料名称5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称6">
+          <DataField>原料名称6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称7">
+          <DataField>原料名称7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称8">
+          <DataField>原料名称8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称9">
+          <DataField>原料名称9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称10">
+          <DataField>原料名称10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称11">
+          <DataField>原料名称11</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称12">
+          <DataField>原料名称12</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称13">
+          <DataField>原料名称13</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称14">
+          <DataField>原料名称14</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称15">
+          <DataField>原料名称15</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称16">
+          <DataField>原料名称16</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称17">
+          <DataField>原料名称17</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称18">
+          <DataField>原料名称18</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称19">
+          <DataField>原料名称19</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="原料名称20">
+          <DataField>原料名称20</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量1">
+          <DataField>总量1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量2">
+          <DataField>总量2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量3">
+          <DataField>总量3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量4">
+          <DataField>总量4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量5">
+          <DataField>总量5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量6">
+          <DataField>总量6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量7">
+          <DataField>总量7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量8">
+          <DataField>总量8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量9">
+          <DataField>总量9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量10">
+          <DataField>总量10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量11">
+          <DataField>总量11</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量12">
+          <DataField>总量12</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量13">
+          <DataField>总量13</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量14">
+          <DataField>总量14</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量15">
+          <DataField>总量15</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量16">
+          <DataField>总量16</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量17">
+          <DataField>总量17</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量18">
+          <DataField>总量18</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量19">
+          <DataField>总量19</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="总量20">
+          <DataField>总量20</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SPDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>SPDataSet</rd:DataSetName>
+        <rd:SchemaPath>E:\zspace\projects\bishe\05_军人食谱\src\SP2\App\SPDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>外购清单</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>外购清单TableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <Body>
     <ReportItems>
       <Tablix Name="Tablix1">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.80208in</Width>
+              <Width>3.36458in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.04167in</Width>
+              <Width>2.88542in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -120,7 +319,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>[@ReportParameter总量1]</Value>
+                              <Value>=Parameters!ReportParameter总量1.Value</Value>
                               <Style>
                                 <FontStyle>Normal</FontStyle>
                                 <FontWeight>Normal</FontWeight>
@@ -1423,8 +1622,8 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Height>12.64445cm</Height>
-        <Width>12.30312cm</Width>
+        <Height>12.64443cm</Height>
+        <Width>15.875cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1737,7 +1936,7 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
-  <Width>4.84375in</Width>
+  <Width>6.27083in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

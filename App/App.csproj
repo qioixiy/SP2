@@ -98,6 +98,7 @@
     <Compile Include="DataModel\DBUtils.cs" />
     <Compile Include="DataModel\Model用户.cs" />
     <Compile Include="DataModel\Model伙食单位.cs" />
+    <Compile Include="DataModel\原料清单.cs" />
     <Compile Include="Forms\Form伙食费分析.cs">
       <SubType>Form</SubType>
     </Compile>

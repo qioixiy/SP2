@@ -33,7 +33,7 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SP.Utils.Report清单打印.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SP.Report清单打印.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ShowBackButton = false;

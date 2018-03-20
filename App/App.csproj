@@ -520,7 +520,7 @@
     <EmbeddedResource Include="Report食谱打印.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Utils\Report清单打印.rdlc" />
+    <EmbeddedResource Include="Report清单打印.rdlc" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

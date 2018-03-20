@@ -141,6 +141,15 @@ namespace SP.Forms
                 reportParameterList.Add(new ReportParameter("ReportParameter总量19", 外购清单Obj.总量19));
                 reportParameterList.Add(new ReportParameter("ReportParameter总量20", 外购清单Obj.总量20));
 
+                string 当前外购清单 = Program.FormMainWindowInstance.mUserContext.当前外购清单;
+                SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("外购清单");
+                string 食谱 = (string)Utils.Common.selectDataItemFromDataSet(tSqlData.mDataSet, "名称",当前外购清单, "对应食谱名称");
+                tSqlData = SqlDataPool.Instance().GetSqlDataByName("食谱");
+                string 单位首长 = (string)Utils.Common.selectDataItemFromDataSet(tSqlData.mDataSet, "名称",食谱, "单位首长");
+                string 司务长 = (string)Utils.Common.selectDataItemFromDataSet(tSqlData.mDataSet, "名称", 食谱, "司务长");
+                reportParameterList.Add(new ReportParameter("ReportParameter单位首长", 单位首长));
+                reportParameterList.Add(new ReportParameter("ReportParameter司务长", 司务长));
+
                 reportViewer1.LocalReport.SetParameters(reportParameterList);
 
                 this.reportViewer1.RefreshReport();

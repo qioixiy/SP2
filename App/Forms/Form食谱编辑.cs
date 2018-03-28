@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SP.Forms
 {
@@ -92,8 +93,56 @@ namespace SP.Forms
             }
         }
 
+
+        void sync食谱ToDB()
+        {
+            SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("食谱");
+
+            //collectDataSet
+            foreach (DataRow dr in tSqlData.mDataSet.Tables[0].Rows)
+            {
+                string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
+                string str = (string)dr["名称"];
+                if (当前食谱 == str)
+                {
+                    {
+                        int i = 0;
+                        for (int offset = 1; offset <= 7; offset++)
+                        {
+                            int index = 0;
+                            for (int j = 0; j < 10; j++)
+                            {
+                                dr["菜肴" + (i + 1)] = this.dataGridView1.Rows[index++].Cells[offset].Value; i++;
+                            }
+                        }
+                        for (int offset = 1; offset <= 7; offset++)
+                        {
+                            int index = 10;
+                            for (int j = 0; j < 10; j++)
+                            {
+                                dr["菜肴" + (i + 1)] = this.dataGridView1.Rows[index++].Cells[offset].Value; i++;
+                            }
+                        }
+                        for (int offset = 1; offset <= 7; offset++)
+                        {
+                            int index = 20;
+                            for (int j = 0; j < 10; j++)
+                            {
+                                dr["菜肴" + (i + 1)] = this.dataGridView1.Rows[index++].Cells[offset].Value; i++;
+                            }
+                        }
+                    }
+                    break;
+                }
+            }
+
+            SqlCommandBuilder sql_command = new SqlCommandBuilder(tSqlData.mSqlDataAdapter);
+            tSqlData.mSqlDataAdapter.Update(tSqlData.mDataSet.Tables[0]);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            sync食谱ToDB();
             Close();
         }
 

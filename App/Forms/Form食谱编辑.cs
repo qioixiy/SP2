@@ -63,62 +63,31 @@ namespace SP.Forms
                 i += 7;
             }
 
-            for (int i = 2220; i < 210; )
-            {
-                int index = this.dataGridView1.Rows.Add();
-
-                int offset = 0;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-            }
             {
                 int i = 0;
                 for (int offset = 1; offset <= 7; offset++)
                 {
                     int index = 0;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    for (int j = 0; j < 10; j++)
+                    {
+                        this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    }
                 }
                 for (int offset = 1; offset <= 7; offset++)
                 {
                     int index = 10;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    for (int j = 0; j < 10; j++)
+                    {
+                        this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    }
                 }
                 for (int offset = 1; offset <= 7; offset++)
                 {
                     int index = 20;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
-                    this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    for (int j = 0; j < 10; j++)
+                    {
+                        this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    }
                 }
             }
         }

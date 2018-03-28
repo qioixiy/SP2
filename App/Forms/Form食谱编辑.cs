@@ -26,6 +26,8 @@ namespace SP.Forms
         {
             string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
 
+            label2.Text = 当前食谱;
+
             SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("食谱");
 
             foreach (DataTable dt in tSqlData.mDataSet.Tables)

@@ -255,7 +255,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>总量（单位／克）</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -290,7 +292,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称1.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -321,9 +325,7 @@
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量1.Value</Value>
                               <Style>
-                                <FontStyle>Normal</FontStyle>
-                                <FontWeight>Normal</FontWeight>
-                                <TextDecoration>None</TextDecoration>
+                                <FontFamily>宋体</FontFamily>
                                 <Color>#000000</Color>
                               </Style>
                             </TextRun>
@@ -360,7 +362,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称2.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -390,7 +394,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量2.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -425,7 +431,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称3.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -455,7 +463,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量3.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -490,7 +500,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称4.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -520,7 +532,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量4.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -555,7 +569,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称5.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -585,7 +601,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量5.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -620,7 +638,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称6.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -650,7 +670,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量6.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -685,7 +707,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称7.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -715,7 +739,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量7.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -750,7 +776,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称8.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -780,7 +808,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量8.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -815,7 +845,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称9.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -845,7 +877,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量9.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -880,7 +914,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称10.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -910,7 +946,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量10.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -945,7 +983,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称11.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -975,7 +1015,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量11.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1010,7 +1052,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称12.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1040,7 +1084,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量12.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1075,7 +1121,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称13.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1105,7 +1153,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量13.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1140,7 +1190,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称14.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1170,7 +1222,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量14.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1205,7 +1259,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称15.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1235,7 +1291,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量15.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1270,7 +1328,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称16.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1300,7 +1360,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量16.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1335,7 +1397,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称17.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1365,7 +1429,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量17.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1400,7 +1466,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称18.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1430,7 +1498,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量18.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1465,7 +1535,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称19.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1495,7 +1567,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量19.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1530,7 +1604,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter原料名称20.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1560,7 +1636,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Parameters!ReportParameter总量20.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />

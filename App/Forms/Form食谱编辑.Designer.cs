@@ -37,6 +37,12 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
+=======
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+>>>>>>> 034d8d0f2094c82c69a5fd7a90d16484761b256f
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,8 +72,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 19F);
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(99, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.label1.Location = new System.Drawing.Point(12, 12);
+>>>>>>> 034d8d0f2094c82c69a5fd7a90d16484761b256f
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 33);
             this.label1.TabIndex = 2;
@@ -123,12 +133,39 @@
             this.Column5.HeaderText = "晚餐";
             this.Column5.Name = "Column5";
             // 
+<<<<<<< HEAD
+=======
+            // Column6
+            // 
+            this.Column6.HeaderText = "星期六";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "星期日";
+            this.Column7.Name = "Column7";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(125, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
+>>>>>>> 034d8d0f2094c82c69a5fd7a90d16484761b256f
             // Form食谱编辑
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1168, 771);
             this.Controls.Add(this.dataGridView1);
+=======
+            this.ClientSize = new System.Drawing.Size(876, 617);
+            this.Controls.Add(this.label2);
+>>>>>>> 034d8d0f2094c82c69a5fd7a90d16484761b256f
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -156,5 +193,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Label label2;
+>>>>>>> 034d8d0f2094c82c69a5fd7a90d16484761b256f
     }
 }

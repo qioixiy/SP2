@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SP.Forms
 {
@@ -26,6 +27,8 @@ namespace SP.Forms
         {
             string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
 
+            label2.Text = 当前食谱;
+
             SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("食谱");
 
             foreach (DataTable dt in tSqlData.mDataSet.Tables)
@@ -45,34 +48,101 @@ namespace SP.Forms
 
         private void updateInfoByDataRow(DataRow dr)
         {
-            for (int i = 0; i < 210;) 
+            for (int i = 0; i < 210; )
             {
                 int index = this.dataGridView1.Rows.Add();
 
                 int offset = 0;
-                switch(i/30)
+                switch (i / 70)
                 {
-                    case 0: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期一"; break;
-                    case 1: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期二"; break;
-                    case 2: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期三"; break;
-                    case 3: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期四"; break;
-                    case 4: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期五"; break;
-                    case 5: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期六"; break;
-                    case 6: this.dataGridView1.Rows[index].Cells[offset++].Value = "星期日"; break;
+                    case 0: this.dataGridView1.Rows[index].Cells[offset++].Value = "早餐"; break;
+                    case 1: this.dataGridView1.Rows[index].Cells[offset++].Value = "午餐"; break;
+                    case 2: this.dataGridView1.Rows[index].Cells[offset++].Value = "晚餐"; break;
+                    default: this.dataGridView1.Rows[index].Cells[offset++].Value = "error"; break;
                 }
 
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
-                this.dataGridView1.Rows[index].Cells[offset++].Value = dr["菜肴" + (i + 1)]; i++;
+                i += 7;
             }
+
+            {
+                int i = 0;
+                for (int offset = 1; offset <= 7; offset++)
+                {
+                    int index = 0;
+                    for (int j = 0; j < 10; j++)
+                    {
+                        this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    }
+                }
+                for (int offset = 1; offset <= 7; offset++)
+                {
+                    int index = 10;
+                    for (int j = 0; j < 10; j++)
+                    {
+                        this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    }
+                }
+                for (int offset = 1; offset <= 7; offset++)
+                {
+                    int index = 20;
+                    for (int j = 0; j < 10; j++)
+                    {
+                        this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
+                    }
+                }
+            }
+        }
+
+
+        void sync食谱ToDB()
+        {
+            SqlData tSqlData = SqlDataPool.Instance().GetSqlDataByName("食谱");
+
+            //collectDataSet
+            foreach (DataRow dr in tSqlData.mDataSet.Tables[0].Rows)
+            {
+                string 当前食谱 = Program.FormMainWindowInstance.mUserContext.当前食谱;
+                string str = (string)dr["名称"];
+                if (当前食谱 == str)
+                {
+                    {
+                        int i = 0;
+                        for (int offset = 1; offset <= 7; offset++)
+                        {
+                            int index = 0;
+                            for (int j = 0; j < 10; j++)
+                            {
+                                dr["菜肴" + (i + 1)] = this.dataGridView1.Rows[index++].Cells[offset].Value; i++;
+                            }
+                        }
+                        for (int offset = 1; offset <= 7; offset++)
+                        {
+                            int index = 10;
+                            for (int j = 0; j < 10; j++)
+                            {
+                                dr["菜肴" + (i + 1)] = this.dataGridView1.Rows[index++].Cells[offset].Value; i++;
+                            }
+                        }
+                        for (int offset = 1; offset <= 7; offset++)
+                        {
+                            int index = 20;
+                            for (int j = 0; j < 10; j++)
+                            {
+                                dr["菜肴" + (i + 1)] = this.dataGridView1.Rows[index++].Cells[offset].Value; i++;
+                            }
+                        }
+                    }
+                    break;
+                }
+            }
+
+            SqlCommandBuilder sql_command = new SqlCommandBuilder(tSqlData.mSqlDataAdapter);
+            tSqlData.mSqlDataAdapter.Update(tSqlData.mDataSet.Tables[0]);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            sync食谱ToDB();
             Close();
         }
 

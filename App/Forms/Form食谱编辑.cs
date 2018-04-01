@@ -64,6 +64,7 @@ namespace SP.Forms
                 i += 7;
             }
 
+            try
             {
                 int i = 0;
                 for (int offset = 1; offset <= 7; offset++)
@@ -90,6 +91,10 @@ namespace SP.Forms
                         this.dataGridView1.Rows[index++].Cells[offset].Value = dr["菜肴" + (i + 1)]; i++;
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
         }
 

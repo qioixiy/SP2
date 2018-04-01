@@ -75,11 +75,13 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(1, 1);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(613, 28);
@@ -87,10 +89,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(605, 0);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "一般菜肴编辑";
@@ -98,10 +100,10 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(605, 0);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "四类灶点心编辑";
@@ -109,10 +111,10 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(605, 0);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "四类灶小菜编辑";
@@ -121,7 +123,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(7, 302);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 1;
@@ -132,7 +134,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(115, 302);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 1;
@@ -155,7 +157,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(16, 64);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(161, 214);
             this.listBox1.TabIndex = 1;
@@ -165,7 +167,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(55, 35);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(123, 23);
             this.comboBox1.TabIndex = 2;
@@ -185,7 +187,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(249, 41);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(125, 25);
@@ -193,6 +195,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::SP.Properties.Resources._5c129d16b33635427cfe1584d27731d4660ac28a49ff_OR46A1_fw658;
             this.panel1.Controls.Add(this.textBox11);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.textBox10);
@@ -219,7 +222,7 @@
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(189, 64);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(412, 215);
             this.panel1.TabIndex = 4;
@@ -227,7 +230,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(269, 179);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(105, 25);
@@ -236,7 +239,7 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(80, 179);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(105, 25);
@@ -245,7 +248,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(269, 136);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(105, 25);
@@ -254,7 +257,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(80, 136);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(105, 25);
@@ -263,7 +266,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(269, 99);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(105, 25);
@@ -272,7 +275,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(80, 99);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(105, 25);
@@ -281,7 +284,7 @@
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(269, 61);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(105, 25);
@@ -290,7 +293,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(80, 61);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(105, 25);
@@ -299,7 +302,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(269, 21);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(105, 25);
@@ -318,7 +321,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(80, 21);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(105, 25);
@@ -467,7 +470,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(289, 302);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 29);
             this.button3.TabIndex = 1;
@@ -477,7 +480,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(397, 302);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 29);
             this.button4.TabIndex = 1;
@@ -488,7 +491,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(505, 302);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 29);
             this.button5.TabIndex = 1;
@@ -500,7 +503,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SP.Properties.Resources.large_2uFt_7afe00001160125b;
+            this.BackgroundImage = global::SP.Properties.Resources._5c129d16b33635427cfe1584d27731d4660ac28a49ff_OR46A1_fw658;
             this.ClientSize = new System.Drawing.Size(616, 341);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
@@ -515,7 +518,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form菜肴编辑";

@@ -88,7 +88,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(41, 91);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(95, 23);
             this.comboBox1.TabIndex = 1;
@@ -99,7 +99,7 @@
             // 
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(153, 91);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(200, 304);
             this.checkedListBox1.TabIndex = 2;
@@ -108,7 +108,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(389, 109);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(219, 150);
@@ -117,7 +117,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(389, 292);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(219, 25);
             this.textBox2.TabIndex = 4;
@@ -135,7 +135,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(389, 326);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 5;
@@ -146,7 +146,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(389, 368);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 5;
@@ -156,7 +156,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(509, 368);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 29);
             this.button3.TabIndex = 5;
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SP.Properties.Resources.large_2uFt_7afe00001160125b;
+            this.BackgroundImage = global::SP.Properties.Resources._5c129d16b33635427cfe1584d27731d4660ac28a49ff_OR46A1_fw658;
             this.ClientSize = new System.Drawing.Size(676, 418);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -183,7 +183,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form菜肴优选";

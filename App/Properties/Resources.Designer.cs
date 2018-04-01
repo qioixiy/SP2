@@ -73,6 +73,66 @@ namespace SP.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _3271c3944d5e8985fb17e247c7854f8120b0824643c8c_xaAT1b_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("3271c3944d5e8985fb17e247c7854f8120b0824643c8c-xaAT1b_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _4fa108275f7edb23f1d653f38040128c10a46b84c9a2_lU8ntN_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("4fa108275f7edb23f1d653f38040128c10a46b84c9a2-lU8ntN_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _552e62a7eeb0d90293bf388921105e010713ea322d542_g5db7p_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("552e62a7eeb0d90293bf388921105e010713ea322d542-g5db7p_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _5c129d16b33635427cfe1584d27731d4660ac28a49ff_OR46A1_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("5c129d16b33635427cfe1584d27731d4660ac28a49ff-OR46A1_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _7da5cbccff20fef9e99a01c3ceffa979dbe42b164a32_vssdUf_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("7da5cbccff20fef9e99a01c3ceffa979dbe42b164a32-vssdUf_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap c548500a485c1634f290678a75957e092c61fc6410697_W4y65v_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("c548500a485c1634f290678a75957e092c61fc6410697-W4y65v_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap cc7295d2fd8455667b814a930b1aaf8f {
             get {
                 object obj = ResourceManager.GetObject("cc7295d2fd8455667b814a930b1aaf8f", resourceCulture);
@@ -83,9 +143,49 @@ namespace SP.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap d5c3c846ea2f6eda6fffda3ddb8ac3dabe61f69948ca_2uuwwL_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("d5c3c846ea2f6eda6fffda3ddb8ac3dabe61f69948ca-2uuwwL_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap e3e190b33a20d8c2e858e8b3874dd4e1d0097d3522398_kDKl1A_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("e3e190b33a20d8c2e858e8b3874dd4e1d0097d3522398-kDKl1A_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap ebffab0bd6177411bf1121d4649cc633353e2acc1715c_6cmlfD_fw658 {
             get {
                 object obj = ResourceManager.GetObject("ebffab0bd6177411bf1121d4649cc633353e2acc1715c-6cmlfD_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap f15442baa65ef623dcbc3c6cf062203a94ef8404906d_7kYBGE_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("f15442baa65ef623dcbc3c6cf062203a94ef8404906d-7kYBGE_fw658", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap f222659d251f9c30de6115145f5bd0e2b191e1fc58bbb_QrL9YU_fw658 {
+            get {
+                object obj = ResourceManager.GetObject("f222659d251f9c30de6115145f5bd0e2b191e1fc58bbb-QrL9YU_fw658", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SP
 {
-    public partial class FormSplashScreen : Form
+    public partial class FormSplashScreen : Form//splashsreen意思是启动画面
     {
         public FormSplashScreen()
         {
@@ -23,9 +23,9 @@ namespace SP
             ;
         }
 
-        private void FormSplashScreen_Click(object sender, EventArgs e)
+        private void FormSplashScreen_Click(object sender, EventArgs e)//单击窗体
         {
-            DialogResult result = Program.FormLoginInstance.ShowDialog();
+            DialogResult result = Program.FormLoginInstance.ShowDialog();//调用在program主程序中创建的函数
             if (result == DialogResult.Cancel)
             {
                 ;

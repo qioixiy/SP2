@@ -171,7 +171,7 @@ namespace SP
         {
             try
             {
-                new Form食谱公布表打印().ShowDialog();
+                new Form食谱公布表打印().ShowDialog();//?
             }
             catch
             {

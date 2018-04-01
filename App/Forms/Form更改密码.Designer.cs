@@ -42,7 +42,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(187, 199);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 4;
@@ -53,7 +53,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(295, 199);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 5;
@@ -94,7 +94,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(209, 52);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(184, 25);
@@ -103,7 +103,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(209, 100);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(184, 25);
@@ -112,7 +112,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(209, 145);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
             this.textBox3.ShortcutsEnabled = false;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SP.Properties.Resources.large_2uFt_7afe00001160125b;
+            this.BackgroundImage = global::SP.Properties.Resources._5c129d16b33635427cfe1584d27731d4660ac28a49ff_OR46A1_fw658;
             this.ClientSize = new System.Drawing.Size(468, 259);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -135,7 +135,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form更改密码";

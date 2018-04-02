@@ -153,24 +153,6 @@
     <Compile Include="Forms\Form原料编辑.Designer.cs">
       <DependentUpon>Form原料编辑.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form数据管理节日食谱.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form数据管理节日食谱.Designer.cs">
-      <DependentUpon>Form数据管理节日食谱.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form权重调整.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form权重调整.Designer.cs">
-      <DependentUpon>Form权重调整.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form自定义模式编辑.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form自定义模式编辑.Designer.cs">
-      <DependentUpon>Form自定义模式编辑.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Form节日与外出设定.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,18 +189,6 @@
     <Compile Include="Forms\Form伙食单位参数.Designer.cs">
       <DependentUpon>Form伙食单位参数.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form军粮差价.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form军粮差价.Designer.cs">
-      <DependentUpon>Form军粮差价.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form外购计划.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form外购计划.Designer.cs">
-      <DependentUpon>Form外购计划.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Form常用原料.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,12 +207,6 @@
     <Compile Include="Forms\Form标准维护.Designer.cs">
       <DependentUpon>Form标准维护.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form节日食谱.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form节日食谱.Designer.cs">
-      <DependentUpon>Form节日食谱.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Form菜肴编辑.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,18 +218,6 @@
     </Compile>
     <Compile Include="Forms\Form营养维护.Designer.cs">
       <DependentUpon>Form营养维护.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form计划汇总.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form计划汇总.Designer.cs">
-      <DependentUpon>Form计划汇总.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form计划维护.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form计划维护.Designer.cs">
-      <DependentUpon>Form计划维护.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form选定军粮品种.cs">
       <SubType>Form</SubType>
@@ -285,36 +237,6 @@
     <Compile Include="Forms\Form预定菜肴.Designer.cs">
       <DependentUpon>Form预定菜肴.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form食谱上报.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱上报.Designer.cs">
-      <DependentUpon>Form食谱上报.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form食谱备份.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱备份.Designer.cs">
-      <DependentUpon>Form食谱备份.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form食谱恢复.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱恢复.Designer.cs">
-      <DependentUpon>Form食谱恢复.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form食谱查看.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱查看.Designer.cs">
-      <DependentUpon>Form食谱查看.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form食谱清空.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱清空.Designer.cs">
-      <DependentUpon>Form食谱清空.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Form食谱生成成功.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,18 +248,6 @@
     </Compile>
     <Compile Include="Forms\Form食谱生成标准模式.Designer.cs">
       <DependentUpon>Form食谱生成标准模式.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form食谱生成点菜模式.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱生成点菜模式.Designer.cs">
-      <DependentUpon>Form食谱生成点菜模式.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form食谱生成自定义模式.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱生成自定义模式.Designer.cs">
-      <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form食谱编辑.cs">
       <SubType>Form</SubType>
@@ -358,12 +268,6 @@
       <DependentUpon>Form食谱调用.cs</DependentUpon>
     </Compile>
     <Compile Include="DataModel\DBConnect.cs" />
-    <Compile Include="Forms\Form食谱调试.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form食谱调试.Designer.cs">
-      <DependentUpon>Form食谱调试.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\RowMergeView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -411,41 +315,23 @@
     <EmbeddedResource Include="Forms\Form伙食单位参数.resx">
       <DependentUpon>Form伙食单位参数.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form军粮差价.resx">
-      <DependentUpon>Form军粮差价.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form原料优选.resx">
       <DependentUpon>Form原料优选.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form原料编辑.resx">
       <DependentUpon>Form原料编辑.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form外购计划.resx">
-      <DependentUpon>Form外购计划.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form常用原料.resx">
       <DependentUpon>Form常用原料.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form数据管理节日食谱.resx">
-      <DependentUpon>Form数据管理节日食谱.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form更改密码.resx">
       <DependentUpon>Form更改密码.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form权重调整.resx">
-      <DependentUpon>Form权重调整.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form标准维护.resx">
       <DependentUpon>Form标准维护.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form自定义模式编辑.resx">
-      <DependentUpon>Form自定义模式编辑.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form节日与外出设定.resx">
       <DependentUpon>Form节日与外出设定.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form节日食谱.resx">
-      <DependentUpon>Form节日食谱.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form菜肴优选.resx">
       <DependentUpon>Form菜肴优选.cs</DependentUpon>
@@ -456,12 +342,6 @@
     <EmbeddedResource Include="Forms\Form营养维护.resx">
       <DependentUpon>Form营养维护.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form计划汇总.resx">
-      <DependentUpon>Form计划汇总.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form计划维护.resx">
-      <DependentUpon>Form计划维护.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form选定军粮品种.resx">
       <DependentUpon>Form选定军粮品种.cs</DependentUpon>
     </EmbeddedResource>
@@ -471,32 +351,11 @@
     <EmbeddedResource Include="Forms\Form预定菜肴.resx">
       <DependentUpon>Form预定菜肴.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱上报.resx">
-      <DependentUpon>Form食谱上报.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱备份.resx">
-      <DependentUpon>Form食谱备份.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱恢复.resx">
-      <DependentUpon>Form食谱恢复.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱查看.resx">
-      <DependentUpon>Form食谱查看.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱清空.resx">
-      <DependentUpon>Form食谱清空.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱生成成功.resx">
       <DependentUpon>Form食谱生成成功.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱生成标准模式.resx">
       <DependentUpon>Form食谱生成标准模式.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱生成点菜模式.resx">
-      <DependentUpon>Form食谱生成点菜模式.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱生成自定义模式.resx">
-      <DependentUpon>Form食谱生成自定义模式.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱编辑.resx">
       <DependentUpon>Form食谱编辑.cs</DependentUpon>
@@ -506,9 +365,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form食谱调用.resx">
       <DependentUpon>Form食谱调用.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form食谱调试.resx">
-      <DependentUpon>Form食谱调试.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

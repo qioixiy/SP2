@@ -46,12 +46,12 @@ namespace SP
 
         private void 食谱备份ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new 食谱备份().ShowDialog();
+            ;
         }
 
         private void 食谱恢复ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form食谱恢复().ShowDialog();
+            ;
         }
 
         private void 食谱清空ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace SP
 
         private void 军粮差价ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form军粮差价().ShowDialog();
+            ;
         }
 
         private void 打印设置ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -129,12 +129,12 @@ namespace SP
 
         private void 自定义模式ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form食谱生成自定义模式().ShowDialog();
+            ;
         }
 
         private void 点菜模式ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form食谱生成点菜模式().ShowDialog();
+            ;
         }
 
         private void 食谱调用ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -185,7 +185,7 @@ namespace SP
 
         private void 节日食谱ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form节日食谱().ShowDialog();
+            ;
         }
 
         private void 计划汇总ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,7 +205,7 @@ namespace SP
 
         private void 食谱上报ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form食谱上报().ShowDialog();
+            ;
         }
 
         private void 食谱接收ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -215,7 +215,7 @@ namespace SP
 
         private void 食谱查看ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form食谱查看().ShowDialog();
+            ;
         }
 
         private void 包伙制食堂ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -290,22 +290,22 @@ namespace SP
 
         private void 标准模式ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            new Form食谱调试().ShowDialog();
+            ;
         }
 
         private void 自定义模式ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            new Form自定义模式编辑().ShowDialog();
+            ;
         }
 
         private void 权重调整ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form权重调整().ShowDialog();
+            ;
         }
 
         private void 节日食谱ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            new Form数据管理节日食谱().ShowDialog();
+            ;
         }
 
         private void 淡旺季区分ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -355,7 +355,7 @@ namespace SP
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            new 食谱备份().ShowDialog();
+            ;
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
@@ -365,12 +365,12 @@ namespace SP
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            new 食谱备份().ShowDialog();
+            ;
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            new Form食谱恢复().ShowDialog();
+            ;
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
